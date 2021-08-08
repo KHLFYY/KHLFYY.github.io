@@ -6,7 +6,7 @@
   <link href="http://example.com/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
-  <updated>2021-08-08T10:17:00.216Z</updated>
+  <updated>2021-08-08T10:22:29.806Z</updated>
   <id>http://example.com/</id>
   
   <author>
@@ -15,6 +15,31 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>欢迎光临KH的博客</title>
+    <link href="http://example.com/2021/08/08/%E6%AC%A2%E8%BF%8E%E5%85%89%E4%B8%B4KH%E7%9A%84%E5%8D%9A%E5%AE%A2/"/>
+    <id>http://example.com/2021/08/08/%E6%AC%A2%E8%BF%8E%E5%85%89%E4%B8%B4KH%E7%9A%84%E5%8D%9A%E5%AE%A2/</id>
+    <published>2021-08-08T10:19:50.000Z</published>
+    <updated>2021-08-08T10:22:29.806Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="欢迎光临！"><a href="#欢迎光临！" class="headerlink" title="欢迎光临！"></a>欢迎光临！</h1><p>这篇文章应该就是评论用的</p><p><img src="https://pic.imgdb.cn/item/610f653e5132923bf8eb598c.png"></p><p>评论！下面！来玩！</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h1 id=&quot;欢迎光临！&quot;&gt;&lt;a href=&quot;#欢迎光临！&quot; class=&quot;headerlink&quot; title=&quot;欢迎光临！&quot;&gt;&lt;/a&gt;欢迎光临！&lt;/h1&gt;&lt;p&gt;这篇文章应该就是评论用的&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://pic.imgdb.cn/item/61</summary>
+      
+    
+    
+    
+    <category term="日常" scheme="http://example.com/categories/%E6%97%A5%E5%B8%B8/"/>
+    
+    
+    <category term="-日常" scheme="http://example.com/tags/%E6%97%A5%E5%B8%B8/"/>
+    
+  </entry>
   
   <entry>
     <title>我的第一篇文章——建立个人博客</title>
