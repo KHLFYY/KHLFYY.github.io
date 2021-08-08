@@ -6,7 +6,7 @@
   <link href="http://example.com/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
-  <updated>1985-10-26T08:15:00.000Z</updated>
+  <updated>2021-08-08T10:17:00.216Z</updated>
   <id>http://example.com/</id>
   
   <author>
@@ -17,11 +17,44 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>我的第一篇文章——建立个人博客</title>
+    <link href="http://example.com/2021/08/08/%E7%AC%AC%E4%B8%80%E7%AF%87%E6%96%87%E7%AB%A0-%E5%BB%BA%E7%AB%8B%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/"/>
+    <id>http://example.com/2021/08/08/%E7%AC%AC%E4%B8%80%E7%AF%87%E6%96%87%E7%AB%A0-%E5%BB%BA%E7%AB%8B%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/</id>
+    <published>2021-08-08T07:43:54.000Z</published>
+    <updated>2021-08-08T10:17:00.216Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="关于网站"><a href="#关于网站" class="headerlink" title="关于网站"></a>关于网站</h1><ul><li><p>这是KHLFYY的第一个网站，也是个人博客。</p></li><li><p>项目的GitHub地址：<a href="https://github.com/KHLFYY/KHLFYY.github.io">KHLFYY.github.io项目</a></p></li></ul><h1 id="一些教程"><a href="#一些教程" class="headerlink" title="一些教程"></a>一些教程</h1><ul><li><p>建立博客教程：<a href="https://blog.csdn.net/qq_36759224/article/details/82121420">CSDN-使用 Github Pages 和 Hexo 搭建自己的独立博客</a></p></li><li><p>Markdown教程：<a href="https://www.jianshu.com/p/q81RER/">献给写作者的 Markdown 新手指南</a></p></li><li><p>Hexo配置：<a href="https://hexo.io/zh-cn/docs/configuration.html">config.yml配置教程</a></p></li></ul><h1 id="基础设施"><a href="#基础设施" class="headerlink" title="基础设施"></a>基础设施</h1><ul><li><p>Hexo：<a href="https://hexo.io/">官网</a></p></li><li><p>Valine：<a href="https://valine.js.org/quickstart.html">官网</a></p></li><li><p>LeanCloud：<a href="https://console.leancloud.cn/">官网</a></p></li><li><p>聚合图床：<a href="https://www.superbed.cn/">官网</a></p></li></ul><h1 id="蛮大的头像"><a href="#蛮大的头像" class="headerlink" title="蛮大的头像"></a>蛮大的头像</h1><p> <img src="https://pic.imgdb.cn/item/610faeba5132923bf88a2bde.png"></p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h1 id=&quot;关于网站&quot;&gt;&lt;a href=&quot;#关于网站&quot; class=&quot;headerlink&quot; title=&quot;关于网站&quot;&gt;&lt;/a&gt;关于网站&lt;/h1&gt;&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;这是KHLFYY的第一个网站，也是个人博客。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;项目的GitHub地址：&lt;</summary>
+      
+    
+    
+    
+    <category term="helloworld" scheme="http://example.com/categories/helloworld/"/>
+    
+    
+    <category term="helloworld" scheme="http://example.com/tags/helloworld/"/>
+    
+    <category term="备忘" scheme="http://example.com/tags/%E5%A4%87%E5%BF%98/"/>
+    
+    <category term="教程" scheme="http://example.com/tags/%E6%95%99%E7%A8%8B/"/>
+    
+    <category term="地址" scheme="http://example.com/tags/%E5%9C%B0%E5%9D%80/"/>
+    
+  </entry>
+  
+  <entry>
     <title>Hello World</title>
     <link href="http://example.com/2021/08/08/hello-world/"/>
     <id>http://example.com/2021/08/08/hello-world/</id>
     <published>2021-08-08T00:24:17.785Z</published>
-    <updated>1985-10-26T08:15:00.000Z</updated>
+    <updated>2021-08-08T10:05:37.404Z</updated>
     
     <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p><h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="code"><pre><code class="hljs bash">$ hexo new <span class="hljs-string">&quot;My New Post&quot;</span><br></code></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p><h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="code"><pre><code class="hljs bash">$ hexo server<br></code></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p><h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="code"><pre><code class="hljs bash">$ hexo generate<br></code></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p><h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="code"><pre><code class="hljs bash">$ hexo deploy<br></code></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>]]></content>
     
@@ -32,6 +65,8 @@
       
     
     
+    
+    <category term="helloworld" scheme="http://example.com/categories/helloworld/"/>
     
     
   </entry>
