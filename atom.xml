@@ -6,7 +6,7 @@
   <link href="http://example.com/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
-  <updated>2021-08-08T10:22:29.806Z</updated>
+  <updated>2021-08-08T15:05:00.532Z</updated>
   <id>http://example.com/</id>
   
   <author>
@@ -21,7 +21,7 @@
     <link href="http://example.com/2021/08/08/%E6%AC%A2%E8%BF%8E%E5%85%89%E4%B8%B4KH%E7%9A%84%E5%8D%9A%E5%AE%A2/"/>
     <id>http://example.com/2021/08/08/%E6%AC%A2%E8%BF%8E%E5%85%89%E4%B8%B4KH%E7%9A%84%E5%8D%9A%E5%AE%A2/</id>
     <published>2021-08-08T10:19:50.000Z</published>
-    <updated>2021-08-08T10:22:29.806Z</updated>
+    <updated>2021-08-08T15:05:00.532Z</updated>
     
     <content type="html"><![CDATA[<h1 id="欢迎光临！"><a href="#欢迎光临！" class="headerlink" title="欢迎光临！"></a>欢迎光临！</h1><p>这篇文章应该就是评论用的</p><p><img src="https://pic.imgdb.cn/item/610f653e5132923bf8eb598c.png"></p><p>评论！下面！来玩！</p>]]></content>
     
@@ -37,7 +37,7 @@
     <category term="日常" scheme="http://example.com/categories/%E6%97%A5%E5%B8%B8/"/>
     
     
-    <category term="-日常" scheme="http://example.com/tags/%E6%97%A5%E5%B8%B8/"/>
+    <category term="日常" scheme="http://example.com/tags/%E6%97%A5%E5%B8%B8/"/>
     
   </entry>
   
@@ -46,9 +46,9 @@
     <link href="http://example.com/2021/08/08/%E7%AC%AC%E4%B8%80%E7%AF%87%E6%96%87%E7%AB%A0-%E5%BB%BA%E7%AB%8B%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/"/>
     <id>http://example.com/2021/08/08/%E7%AC%AC%E4%B8%80%E7%AF%87%E6%96%87%E7%AB%A0-%E5%BB%BA%E7%AB%8B%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/</id>
     <published>2021-08-08T07:43:54.000Z</published>
-    <updated>2021-08-08T10:17:00.216Z</updated>
+    <updated>2021-08-08T15:04:51.691Z</updated>
     
-    <content type="html"><![CDATA[<h1 id="关于网站"><a href="#关于网站" class="headerlink" title="关于网站"></a>关于网站</h1><ul><li><p>这是KHLFYY的第一个网站，也是个人博客。</p></li><li><p>项目的GitHub地址：<a href="https://github.com/KHLFYY/KHLFYY.github.io">KHLFYY.github.io项目</a></p></li></ul><h1 id="一些教程"><a href="#一些教程" class="headerlink" title="一些教程"></a>一些教程</h1><ul><li><p>建立博客教程：<a href="https://blog.csdn.net/qq_36759224/article/details/82121420">CSDN-使用 Github Pages 和 Hexo 搭建自己的独立博客</a></p></li><li><p>Markdown教程：<a href="https://www.jianshu.com/p/q81RER/">献给写作者的 Markdown 新手指南</a></p></li><li><p>Hexo配置：<a href="https://hexo.io/zh-cn/docs/configuration.html">config.yml配置教程</a></p></li></ul><h1 id="基础设施"><a href="#基础设施" class="headerlink" title="基础设施"></a>基础设施</h1><ul><li><p>Hexo：<a href="https://hexo.io/">官网</a></p></li><li><p>Valine：<a href="https://valine.js.org/quickstart.html">官网</a></p></li><li><p>LeanCloud：<a href="https://console.leancloud.cn/">官网</a></p></li><li><p>聚合图床：<a href="https://www.superbed.cn/">官网</a></p></li></ul><h1 id="蛮大的头像"><a href="#蛮大的头像" class="headerlink" title="蛮大的头像"></a>蛮大的头像</h1><p> <img src="https://pic.imgdb.cn/item/610faeba5132923bf88a2bde.png"></p>]]></content>
+    <content type="html"><![CDATA[<h1 id="关于网站"><a href="#关于网站" class="headerlink" title="关于网站"></a>关于网站</h1><ul><li><p>这是KHLFYY的第一个网站，也是个人博客。</p></li><li><p>项目的GitHub地址：<a href="https://github.com/KHLFYY/KHLFYY.github.io">KHLFYY.github.io项目</a></p></li></ul><h1 id="一些教程"><a href="#一些教程" class="headerlink" title="一些教程"></a>一些教程</h1><ul><li><p>建立博客教程：<a href="https://blog.csdn.net/qq_36759224/article/details/82121420">CSDN-使用 Github Pages 和 Hexo 搭建自己的独立博客</a></p></li><li><p>Markdown教程：<a href="https://www.jianshu.com/p/q81RER/">献给写作者的 Markdown 新手指南</a></p></li><li><p>Hexo配置：<a href="https://hexo.io/zh-cn/docs/configuration.html">config.yml配置教程</a></p></li></ul><h1 id="基础设施"><a href="#基础设施" class="headerlink" title="基础设施"></a>基础设施</h1><ul><li><p>Hexo：<a href="https://hexo.io/">官网</a></p></li><li><p>Valine：<a href="https://valine.js.org/quickstart.html">官网</a></p></li><li><p>LeanCloud：<a href="https://console.leancloud.cn/">官网</a></p></li><li><p>聚合图床：<a href="https://www.superbed.cn/">官网</a></p></li><li><p>Gravatar：<a href="http://cn.gravatar.com/">官网</a></p></li></ul><h1 id="蛮大的头像"><a href="#蛮大的头像" class="headerlink" title="蛮大的头像"></a>蛮大的头像</h1><p> <img src="https://pic.imgdb.cn/item/610faeba5132923bf88a2bde.png"></p>]]></content>
     
     
       
