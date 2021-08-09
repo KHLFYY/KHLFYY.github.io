@@ -1,99 +1,82 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom">
-  <title>KHLFYY&#39;s Blog</title>
+<search>
   
-  <subtitle>KHLFYY的第一个网站</subtitle>
-  <link href="http://example.com/atom.xml" rel="self"/>
   
-  <link href="http://example.com/"/>
-  <updated>2021-08-08T15:05:00.532Z</updated>
-  <id>http://example.com/</id>
-  
-  <author>
-    <name>KHLFYY</name>
-    
-  </author>
-  
-  <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
     <title>欢迎光临KH的博客</title>
-    <link href="http://example.com/2021/08/08/%E6%AC%A2%E8%BF%8E%E5%85%89%E4%B8%B4KH%E7%9A%84%E5%8D%9A%E5%AE%A2/"/>
-    <id>http://example.com/2021/08/08/%E6%AC%A2%E8%BF%8E%E5%85%89%E4%B8%B4KH%E7%9A%84%E5%8D%9A%E5%AE%A2/</id>
-    <published>2021-08-08T10:19:50.000Z</published>
-    <updated>2021-08-08T15:05:00.532Z</updated>
+    <link href="/2021/08/08/%E6%AC%A2%E8%BF%8E%E5%85%89%E4%B8%B4KH%E7%9A%84%E5%8D%9A%E5%AE%A2/"/>
+    <url>/2021/08/08/%E6%AC%A2%E8%BF%8E%E5%85%89%E4%B8%B4KH%E7%9A%84%E5%8D%9A%E5%AE%A2/</url>
     
     <content type="html"><![CDATA[<h1 id="欢迎光临！"><a href="#欢迎光临！" class="headerlink" title="欢迎光临！"></a>欢迎光临！</h1><p>这篇文章应该就是评论用的</p><p><img src="https://pic.imgdb.cn/item/610f653e5132923bf8eb598c.png"></p><p>评论！下面！来玩！</p>]]></content>
     
     
+    <categories>
       
+      <category>日常</category>
       
-    <summary type="html">&lt;h1 id=&quot;欢迎光临！&quot;&gt;&lt;a href=&quot;#欢迎光临！&quot; class=&quot;headerlink&quot; title=&quot;欢迎光临！&quot;&gt;&lt;/a&gt;欢迎光临！&lt;/h1&gt;&lt;p&gt;这篇文章应该就是评论用的&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;https://pic.imgdb.cn/item/61</summary>
+    </categories>
+    
+    
+    <tags>
       
-    
-    
-    
-    <category term="日常" scheme="http://example.com/categories/%E6%97%A5%E5%B8%B8/"/>
-    
-    
-    <category term="日常" scheme="http://example.com/tags/%E6%97%A5%E5%B8%B8/"/>
+      <tag>日常</tag>
+      
+    </tags>
     
   </entry>
   
+  
+  
   <entry>
     <title>我的第一篇文章——建立个人博客</title>
-    <link href="http://example.com/2021/08/08/%E7%AC%AC%E4%B8%80%E7%AF%87%E6%96%87%E7%AB%A0-%E5%BB%BA%E7%AB%8B%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/"/>
-    <id>http://example.com/2021/08/08/%E7%AC%AC%E4%B8%80%E7%AF%87%E6%96%87%E7%AB%A0-%E5%BB%BA%E7%AB%8B%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/</id>
-    <published>2021-08-08T07:43:54.000Z</published>
-    <updated>2021-08-09T06:34:15.054Z</updated>
+    <link href="/2021/08/08/%E7%AC%AC%E4%B8%80%E7%AF%87%E6%96%87%E7%AB%A0-%E5%BB%BA%E7%AB%8B%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/"/>
+    <url>/2021/08/08/%E7%AC%AC%E4%B8%80%E7%AF%87%E6%96%87%E7%AB%A0-%E5%BB%BA%E7%AB%8B%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/</url>
     
     <content type="html"><![CDATA[<h1 id="关于网站"><a href="#关于网站" class="headerlink" title="关于网站"></a>关于网站</h1><ul><li><p>这是KHLFYY的第一个网站，也是个人博客。</p></li><li><p>项目的GitHub地址：<a href="https://github.com/KHLFYY/KHLFYY.github.io">KHLFYY.github.io项目</a></p></li></ul><h1 id="一些教程"><a href="#一些教程" class="headerlink" title="一些教程"></a>一些教程</h1><ul><li><p>建立博客教程：<a href="https://blog.csdn.net/qq_36759224/article/details/82121420">CSDN-使用 Github Pages 和 Hexo 搭建自己的独立博客</a></p></li><li><p>Markdown教程：<a href="https://www.jianshu.com/p/q81RER/">献给写作者的 Markdown 新手指南</a></p></li><li><p>Hexo配置：<a href="https://hexo.io/zh-cn/docs/configuration.html">config.yml配置教程</a></p></li></ul><h1 id="基础设施"><a href="#基础设施" class="headerlink" title="基础设施"></a>基础设施</h1><ul><li><p>网站框架–Hexo：<a href="https://hexo.io/">官网</a></p></li><li><p>评论模块–Valine：<a href="https://valine.js.org/quickstart.html">官网</a></p></li><li><p>数据统计–LeanCloud：<a href="https://console.leancloud.cn/">官网</a></p></li><li><p>头像支持–Gravatar：<a href="http://cn.gravatar.com/">官网</a></p></li><li><p>网站图床–聚合图床：<a href="https://www.superbed.cn/">官网</a></p></li></ul><h1 id="蛮大的头像"><a href="#蛮大的头像" class="headerlink" title="蛮大的头像"></a>蛮大的头像</h1><p> <img src="https://pic.imgdb.cn/item/610faeba5132923bf88a2bde.png"></p>]]></content>
     
     
+    <categories>
       
+      <category>helloworld</category>
       
-    <summary type="html">&lt;h1 id=&quot;关于网站&quot;&gt;&lt;a href=&quot;#关于网站&quot; class=&quot;headerlink&quot; title=&quot;关于网站&quot;&gt;&lt;/a&gt;关于网站&lt;/h1&gt;&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;这是KHLFYY的第一个网站，也是个人博客。&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;项目的GitHub地址：&lt;</summary>
+    </categories>
+    
+    
+    <tags>
       
-    
-    
-    
-    <category term="helloworld" scheme="http://example.com/categories/helloworld/"/>
-    
-    
-    <category term="helloworld" scheme="http://example.com/tags/helloworld/"/>
-    
-    <category term="备忘" scheme="http://example.com/tags/%E5%A4%87%E5%BF%98/"/>
-    
-    <category term="教程" scheme="http://example.com/tags/%E6%95%99%E7%A8%8B/"/>
-    
-    <category term="地址" scheme="http://example.com/tags/%E5%9C%B0%E5%9D%80/"/>
+      <tag>helloworld</tag>
+      
+      <tag>备忘</tag>
+      
+      <tag>教程</tag>
+      
+      <tag>地址</tag>
+      
+    </tags>
     
   </entry>
   
+  
+  
   <entry>
     <title>Hello World</title>
-    <link href="http://example.com/2021/08/08/hello-world/"/>
-    <id>http://example.com/2021/08/08/hello-world/</id>
-    <published>2021-08-08T00:24:17.785Z</published>
-    <updated>2021-08-08T10:05:37.404Z</updated>
+    <link href="/2021/08/08/hello-world/"/>
+    <url>/2021/08/08/hello-world/</url>
     
     <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p><h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">$ hexo new <span class="hljs-string">&quot;My New Post&quot;</span><br></code></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p><h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">$ hexo server<br></code></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p><h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">$ hexo generate<br></code></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p><h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">$ hexo deploy<br></code></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>]]></content>
     
     
+    <categories>
       
+      <category>helloworld</category>
       
-    <summary type="html">&lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a href=&quot;https://hexo.io/docs/&quot;&gt;documentation&lt;/a&gt; for</summary>
-      
-    
-    
-    
-    <category term="helloworld" scheme="http://example.com/categories/helloworld/"/>
+    </categories>
     
     
   </entry>
   
-</feed>
+  
+  
+  
+</search>
