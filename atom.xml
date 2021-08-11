@@ -37,9 +37,9 @@
     <category term="教程" scheme="http://example.com/categories/%E6%95%99%E7%A8%8B/"/>
     
     
-    <category term="教程" scheme="http://example.com/tags/%E6%95%99%E7%A8%8B/"/>
-    
     <category term="备忘" scheme="http://example.com/tags/%E5%A4%87%E5%BF%98/"/>
+    
+    <category term="教程" scheme="http://example.com/tags/%E6%95%99%E7%A8%8B/"/>
     
     <category term="Markdown" scheme="http://example.com/tags/Markdown/"/>
     
@@ -68,9 +68,9 @@
     <category term="教程" scheme="http://example.com/categories/%E6%95%99%E7%A8%8B/"/>
     
     
-    <category term="教程" scheme="http://example.com/tags/%E6%95%99%E7%A8%8B/"/>
-    
     <category term="备忘" scheme="http://example.com/tags/%E5%A4%87%E5%BF%98/"/>
+    
+    <category term="教程" scheme="http://example.com/tags/%E6%95%99%E7%A8%8B/"/>
     
     <category term="helloworld" scheme="http://example.com/tags/helloworld/"/>
     
@@ -128,9 +128,9 @@
     <category term="helloworld" scheme="http://example.com/categories/helloworld/"/>
     
     
-    <category term="教程" scheme="http://example.com/tags/%E6%95%99%E7%A8%8B/"/>
-    
     <category term="备忘" scheme="http://example.com/tags/%E5%A4%87%E5%BF%98/"/>
+    
+    <category term="教程" scheme="http://example.com/tags/%E6%95%99%E7%A8%8B/"/>
     
     <category term="helloworld" scheme="http://example.com/tags/helloworld/"/>
     

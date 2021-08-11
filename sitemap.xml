@@ -46,13 +46,6 @@
 
   
   <url>
-    <loc>http://example.com/tags/%E6%95%99%E7%A8%8B/</loc>
-    <lastmod>2021-08-11</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>http://example.com/tags/%E5%A4%87%E5%BF%98/</loc>
     <lastmod>2021-08-11</lastmod>
     <changefreq>daily</changefreq>
@@ -60,14 +53,7 @@
   </url>
   
   <url>
-    <loc>http://example.com/tags/Markdown/</loc>
-    <lastmod>2021-08-11</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>http://example.com/tags/%E7%BC%96%E8%BE%91/</loc>
+    <loc>http://example.com/tags/%E6%95%99%E7%A8%8B/</loc>
     <lastmod>2021-08-11</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -89,6 +75,20 @@
   
   <url>
     <loc>http://example.com/tags/hexo/</loc>
+    <lastmod>2021-08-11</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>http://example.com/tags/Markdown/</loc>
+    <lastmod>2021-08-11</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>http://example.com/tags/%E7%BC%96%E8%BE%91/</loc>
     <lastmod>2021-08-11</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
