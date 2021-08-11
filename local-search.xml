@@ -8,7 +8,7 @@
     <link href="/2021/08/10/Markdown%E8%AF%AD%E6%B3%95%E6%8C%87%E5%8D%97/"/>
     <url>/2021/08/10/Markdown%E8%AF%AD%E6%B3%95%E6%8C%87%E5%8D%97/</url>
     
-    <content type="html"><![CDATA[<h3 id="写在前面"><a href="#写在前面" class="headerlink" title="写在前面"></a>写在前面</h3><ul><li><p>本篇文章目的是让各位以及KH自己【简略】学习掌握关于Markdown文章的语法和写法，并作为各位和KH的备忘以供翻阅，所以本文仅提供语法代码。</p></li><li><p>个人推荐使用的编辑器：<a href="https://code.visualstudio.com/">Visual Studio Code(vs code)</a>。</p></li></ul><h2 id="标题"><a href="#标题" class="headerlink" title="标题"></a>标题</h2><figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><code class="hljs markdown"><span class="hljs-section"># 一级标题</span><br><br><span class="hljs-section">## 二级标题</span><br><br><span class="hljs-section">### 三级标题</span><br><br><span class="hljs-section">#### 四级标题</span><br><br><span class="hljs-section">##### 五级标题</span><br><br><span class="hljs-section">###### 六级标题 </span><br></code></pre></td></tr></table></figure><h2 id="列表"><a href="#列表" class="headerlink" title="列表"></a>列表</h2><figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><code class="hljs markdown"><span class="hljs-bullet">-</span> 文本1<br><span class="hljs-bullet">-</span> 文本2<br><span class="hljs-bullet">-</span> 文本3<br><br><span class="hljs-bullet">1.</span> 文本1<br><span class="hljs-bullet">2.</span> 文本2<br><span class="hljs-bullet">3.</span> 文本3<br></code></pre></td></tr></table></figure><h2 id="链接"><a href="#链接" class="headerlink" title="链接"></a>链接</h2><figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><code class="hljs markdown">[<span class="hljs-string">显示文本</span>](<span class="hljs-link">链接地址</span>)<br><br><br>![<span class="hljs-string">图片下方提示文字</span>](<span class="hljs-link">图片地址</span>)<br></code></pre></td></tr></table></figure><h2 id="粗体斜体"><a href="#粗体斜体" class="headerlink" title="粗体斜体"></a>粗体斜体</h2><figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs markdown"><span class="hljs-emphasis">*斜体*</span><br><span class="hljs-strong">**粗体**</span><br></code></pre></td></tr></table></figure><h2 id="引用"><a href="#引用" class="headerlink" title="引用"></a>引用</h2><figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs markdown"><span class="hljs-quote">&gt; 引用文本</span><br></code></pre></td></tr></table></figure><h2 id="代码"><a href="#代码" class="headerlink" title="代码"></a>代码</h2><figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><code class="hljs markdown"><span class="hljs-bullet">-</span> <span class="hljs-code">```代码语言</span><br><span class="hljs-code">- 代码</span><br><span class="hljs-code">- ```</span><br>（不含句首的“- ”）<br></code></pre></td></tr></table></figure><h2 id="表格"><a href="#表格" class="headerlink" title="表格"></a>表格</h2><figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><code class="hljs markdown">| 显卡型号     | 公版原价（元） |<br>| ----------- |:-------------:|<br>| RTX3060     | 2499          |<br>| RTX3060Ti   | 2999          |<br>| RTX3070     | 3899          |<br>| RTX3080     | 5499          |<br>| RTX3090     | 11999         |<br><br>设置单元格对齐方式，语法如下：<br>-: 设置表格内容和标题栏右对齐<br>:- 设置表格内容和标题栏左对齐<br>:-: 设置表格内容和标题栏居中对齐<br></code></pre></td></tr></table></figure><h3 id="相关链接"><a href="#相关链接" class="headerlink" title="相关链接"></a>相关链接</h3><ul><li><a href="https://www.jianshu.com/p/q81RER/">【献给写作者的 Markdown 新手指南——简书】</a></li><li><a href="https://www.appinn.com/markdown/">【Markdown 语法说明 (简体中文版)】</a></li><li><a href="https://github.com/DavidAnson/markdownlint/blob/v0.23.1/doc/Rules.md">【markdownlint-rules】</a></li></ul>]]></content>
+    <content type="html"><![CDATA[<h3 id="写在前面"><a href="#写在前面" class="headerlink" title="写在前面"></a>写在前面</h3><ul><li><p>本篇文章目的是让各位以及KH自己【简略】学习掌握关于Markdown文章的语法和写法，并作为各位和KH的备忘以供翻阅，所以本文仅提供语法代码。</p></li><li><p>个人推荐使用的编辑器：<a href="https://code.visualstudio.com/">Visual Studio Code(vs code)</a>。</p></li></ul><h2 id="标题"><a href="#标题" class="headerlink" title="标题"></a>标题</h2><div class="code-wrapper"><pre><code class="hljs markdown"><span class="hljs-section"># 一级标题</span><span class="hljs-section">## 二级标题</span><span class="hljs-section">### 三级标题</span><span class="hljs-section">#### 四级标题</span><span class="hljs-section">##### 五级标题</span><span class="hljs-section">###### 六级标题 </span></code></pre></div><h2 id="列表"><a href="#列表" class="headerlink" title="列表"></a>列表</h2><div class="code-wrapper"><pre><code class="hljs markdown"><span class="hljs-bullet">-</span> 文本1<span class="hljs-bullet">-</span> 文本2<span class="hljs-bullet">-</span> 文本3<span class="hljs-bullet">1.</span> 文本1<span class="hljs-bullet">2.</span> 文本2<span class="hljs-bullet">3.</span> 文本3</code></pre></div><h2 id="链接"><a href="#链接" class="headerlink" title="链接"></a>链接</h2><div class="code-wrapper"><pre><code class="hljs markdown">[<span class="hljs-string">显示文本</span>](<span class="hljs-link">链接地址</span>)![<span class="hljs-string">图片下方提示文字</span>](<span class="hljs-link">图片地址</span>)</code></pre></div><h2 id="粗体斜体"><a href="#粗体斜体" class="headerlink" title="粗体斜体"></a>粗体斜体</h2><div class="code-wrapper"><pre><code class="hljs markdown"><span class="hljs-emphasis">*斜体*</span><span class="hljs-strong">**粗体**</span></code></pre></div><h2 id="引用"><a href="#引用" class="headerlink" title="引用"></a>引用</h2><div class="code-wrapper"><pre><code class="hljs markdown"><span class="hljs-quote">&gt; 引用文本</span></code></pre></div><h2 id="代码"><a href="#代码" class="headerlink" title="代码"></a>代码</h2><div class="code-wrapper"><pre><code class="hljs markdown"><span class="hljs-bullet">-</span> <span class="hljs-code">```代码语言</span><span class="hljs-code">- 代码</span><span class="hljs-code">- ```</span>（不含句首的“- ”）</code></pre></div><h2 id="表格"><a href="#表格" class="headerlink" title="表格"></a>表格</h2><div class="code-wrapper"><pre><code class="hljs markdown">| 显卡型号     | 公版原价（元） || ----------- |:-------------:|| RTX3060     | 2499          || RTX3060Ti   | 2999          || RTX3070     | 3899          || RTX3080     | 5499          || RTX3090     | 11999         |设置单元格对齐方式，语法如下：-: 设置表格内容和标题栏右对齐:- 设置表格内容和标题栏左对齐:-: 设置表格内容和标题栏居中对齐</code></pre></div><h3 id="相关链接"><a href="#相关链接" class="headerlink" title="相关链接"></a>相关链接</h3><ul><li><a href="https://www.jianshu.com/p/q81RER/">【献给写作者的 Markdown 新手指南——简书】</a></li><li><a href="https://www.appinn.com/markdown/">【Markdown 语法说明 (简体中文版)】</a></li><li><a href="https://github.com/DavidAnson/markdownlint/blob/v0.23.1/doc/Rules.md">【markdownlint-rules】</a></li></ul>]]></content>
     
     
     <categories>
@@ -20,9 +20,9 @@
     
     <tags>
       
-      <tag>备忘</tag>
-      
       <tag>教程</tag>
+      
+      <tag>备忘</tag>
       
       <tag>Markdown</tag>
       
@@ -51,9 +51,9 @@
     
     <tags>
       
-      <tag>备忘</tag>
-      
       <tag>教程</tag>
+      
+      <tag>备忘</tag>
       
       <tag>helloworld</tag>
       
@@ -109,9 +109,9 @@
     
     <tags>
       
-      <tag>备忘</tag>
-      
       <tag>教程</tag>
+      
+      <tag>备忘</tag>
       
       <tag>helloworld</tag>
       
