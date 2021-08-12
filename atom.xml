@@ -68,11 +68,11 @@
     <category term="教程" scheme="http://example.com/categories/%E6%95%99%E7%A8%8B/"/>
     
     
+    <category term="helloworld" scheme="http://example.com/tags/helloworld/"/>
+    
     <category term="备忘" scheme="http://example.com/tags/%E5%A4%87%E5%BF%98/"/>
     
     <category term="教程" scheme="http://example.com/tags/%E6%95%99%E7%A8%8B/"/>
-    
-    <category term="helloworld" scheme="http://example.com/tags/helloworld/"/>
     
     <category term="建立博客" scheme="http://example.com/tags/%E5%BB%BA%E7%AB%8B%E5%8D%9A%E5%AE%A2/"/>
     
@@ -128,11 +128,11 @@
     <category term="helloworld" scheme="http://example.com/categories/helloworld/"/>
     
     
+    <category term="helloworld" scheme="http://example.com/tags/helloworld/"/>
+    
     <category term="备忘" scheme="http://example.com/tags/%E5%A4%87%E5%BF%98/"/>
     
     <category term="教程" scheme="http://example.com/tags/%E6%95%99%E7%A8%8B/"/>
-    
-    <category term="helloworld" scheme="http://example.com/tags/helloworld/"/>
     
     <category term="地址" scheme="http://example.com/tags/%E5%9C%B0%E5%9D%80/"/>
     
