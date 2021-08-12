@@ -231,42 +231,6 @@
     <div class="category row">
       <a
         class="category-item collapsed list-group-item category-item-action col-10 col-md-11"
-        id="heading-fc5e038d38a57032085441e7fe7010b0" role="tab" data-toggle="collapse" href="#collapse-fc5e038d38a57032085441e7fe7010b0"
-        aria-expanded="false"
-      >
-        helloworld
-        <i class="iconfont icon-arrowright"></i>
-      </a>
-      <a href="/categories/helloworld/" class="category-count col-2 col-md-1">
-        <i class="iconfont icon-articles"></i>
-        <span>1</span>
-      </a>
-      <div class="category-collapse">
-        
-        
-          
-  <div id="collapse-fc5e038d38a57032085441e7fe7010b0" class="collapse in" role="tabpanel"
-       aria-labelledby="heading-fc5e038d38a57032085441e7fe7010b0">
-    
-    
-      
-      
-        <a href="/2021/08/08/%E7%AC%AC%E4%B8%80%E7%AF%87%E6%96%87%E7%AB%A0-%E5%BB%BA%E7%AB%8B%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/" class="list-group-item list-group-item-action">
-          <span class="category-post">我的第一篇文章——建立个人博客</span>
-        </a>
-      
-    
-  </div>
-
-        
-      </div>
-    </div>
-  
-    
-    
-    <div class="category row">
-      <a
-        class="category-item collapsed list-group-item category-item-action col-10 col-md-11"
         id="heading-943e6d3324693188a3f1955a7f921a69" role="tab" data-toggle="collapse" href="#collapse-943e6d3324693188a3f1955a7f921a69"
         aria-expanded="false"
       >
@@ -289,6 +253,42 @@
       
         <a href="/2021/08/08/%E6%AC%A2%E8%BF%8E%E5%85%89%E4%B8%B4KH%E7%9A%84%E5%8D%9A%E5%AE%A2/" class="list-group-item list-group-item-action">
           <span class="category-post">欢迎光临KH的博客</span>
+        </a>
+      
+    
+  </div>
+
+        
+      </div>
+    </div>
+  
+    
+    
+    <div class="category row">
+      <a
+        class="category-item collapsed list-group-item category-item-action col-10 col-md-11"
+        id="heading-fc5e038d38a57032085441e7fe7010b0" role="tab" data-toggle="collapse" href="#collapse-fc5e038d38a57032085441e7fe7010b0"
+        aria-expanded="false"
+      >
+        helloworld
+        <i class="iconfont icon-arrowright"></i>
+      </a>
+      <a href="/categories/helloworld/" class="category-count col-2 col-md-1">
+        <i class="iconfont icon-articles"></i>
+        <span>1</span>
+      </a>
+      <div class="category-collapse">
+        
+        
+          
+  <div id="collapse-fc5e038d38a57032085441e7fe7010b0" class="collapse in" role="tabpanel"
+       aria-labelledby="heading-fc5e038d38a57032085441e7fe7010b0">
+    
+    
+      
+      
+        <a href="/2021/08/08/%E7%AC%AC%E4%B8%80%E7%AF%87%E6%96%87%E7%AB%A0-%E5%BB%BA%E7%AB%8B%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/" class="list-group-item list-group-item-action">
+          <span class="category-post">我的第一篇文章——建立个人博客</span>
         </a>
       
     
@@ -344,6 +344,38 @@
   <div class="footer-content">
      <a href="https://khlfyy.top" target="_blank" rel="nofollow noopener"><span>KHLFYY</span></a> <i class="iconfont icon-love"></i> <a href="https://github.com/fluid-dev/hexo-theme-fluid" target="_blank" rel="nofollow noopener"><span>Fluid</span></a> 
   </div>
+  <!--《添加网站运行时间 -->
+<!--<br/>-->
+<span id="timeDate">载入天数...</span><span id="times">载入时分秒...</span>
+<script>
+    var now = new Date();
+
+    function createtime() {
+        var grt = new Date("08/08/2021 08:38:47"); //此处修改你的建站时间或者网站上线时间 2021-08-0808:38:47
+        now.setTime(now.getTime() + 250);
+        days = (now - grt) / 1000 / 60 / 60 / 24;
+        dnum = Math.floor(days);
+        hours = (now - grt) / 1000 / 60 / 60 - (24 * dnum);
+        hnum = Math.floor(hours);
+        if (String(hnum).length == 1) {
+            hnum = "0" + hnum;
+        }
+        minutes = (now - grt) / 1000 / 60 - (24 * 60 * dnum) - (60 * hnum);
+        mnum = Math.floor(minutes);
+        if (String(mnum).length == 1) {
+            mnum = "0" + mnum;
+        }
+        seconds = (now - grt) / 1000 - (24 * 60 * 60 * dnum) - (60 * 60 * hnum) - (60 * mnum);
+        snum = Math.round(seconds);
+        if (String(snum).length == 1) {
+            snum = "0" + snum;
+        }
+        document.getElementById("timeDate").innerHTML = "本站已存活 " + dnum + " 天 ";
+        document.getElementById("times").innerHTML = hnum + " 小时 " + mnum + " 分 " + snum + " 秒";
+    }
+    setInterval("createtime()", 250);
+</script>
+<!-- 添加网站运行时间》 -->
   
   <div class="statistics">
     
