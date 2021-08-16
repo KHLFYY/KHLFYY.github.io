@@ -2,7 +2,7 @@ var a_idx = 0;
 jQuery(document).ready(function($) {
     $("body").click(function(e) {
         var a = new Array
-        ("富强", "民主", "文明", "和谐", "自由", "平等", "公正", "法治", "爱国", "敬业", "诚信", "友善");
+        ("(*^▽^*)", "!!!∑(ﾟДﾟノ)ノ", "ヾ(ﾟ∀ﾟゞ)", "(ﾉ´▽｀)ﾉ♪", "ヾ(✿ﾟ▽ﾟ)ノ", "٩(๑>◡<๑)۶ ", "(*･ω-q) ", "〒▽〒", "(￣ェ￣;)", "─=≡Σ(((つ•̀ω•́)つ", "∑(っ°Д°;)っ", "(。-ω-)zzz", "(｡◕ˇ∀ˇ◕)", "(๑¯∀¯๑)", "(≧ω≦)/", "●ヽ(ﾟ∀ﾟ)ﾉ● ", "(*≧∪≦)", "Ｏ(≧▽≦)Ｏ");
         var $i = $("<span/>").text(a[a_idx]);
         a_idx = (a_idx + 1) % a.length;
         var x = e.pageX,
@@ -13,7 +13,7 @@ jQuery(document).ready(function($) {
             "left": x,
             "position": "absolute",
             "font-weight": "bold",
-            "color": "#FF0000"
+            "color": "#CC33FF"
         });
         $("body").append($i);
         $i.animate({
