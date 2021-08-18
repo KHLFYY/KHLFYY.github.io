@@ -186,7 +186,7 @@
     
     <span class="post-meta mr-2">
       <i class="iconfont icon-chart"></i>
-      1.5k 字
+      2.1k 字
     </span>
   
 
@@ -196,7 +196,7 @@
       <i class="iconfont icon-clock-fill"></i>
       
       
-      16
+      24
        分钟
     </span>
   
@@ -233,7 +233,7 @@
             
               <p class="note note-info">
                 
-                  本文最后更新于：23 分钟前
+                  本文最后更新于：几秒前
                 
               </p>
             
@@ -295,18 +295,64 @@
 <p><img src="https://imgconvert.csdnimg.cn/aHR0cHM6Ly9pLmxvbGkubmV0LzIwMTkvMDMvMjUvNWM5OGY1NjZiNGI2Yi5wbmc" alt="还是借的图片"></p>
 <p>Hexo 安装完成后，将会在指定文件夹中新建所需要的文件，Hexo 文件夹下的目录如下：<br><img src="https://pic.imgdb.cn/item/611b8d104907e2d39c16ba16.png" alt="Hexo文件目录"></p>
 <h3 id="本地查看效果"><a href="#本地查看效果" class="headerlink" title="本地查看效果"></a>本地查看效果</h3><p>按照上述配置完成之后，我们可以查看一下hexo是否正确配置完成，<strong>依次</strong>输入下列指令：</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><code class="hljs bash">hexo generate  <br>hexo server<br><br>或者简写为<br><br>hexo g<br>hexo s<br></code></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><code class="hljs bash">hexo generate  <br>hexo server<br><span class="hljs-comment"># 或者简写为</span><br>hexo g<br>hexo s<br></code></pre></td></tr></table></figure>
 
 <p>这时候会返回消息：</p>
-<pre><code>INFO Hexo is running at http://0.0.0.0:4000/. Press Ctrl+C to stop.
-</code></pre>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">INFO Hexo is running at http://0.0.0.0:4000/. Press Ctrl+C to stop.<br></code></pre></td></tr></table></figure>
+
 <p>此时你的博客已经在本地IP的4000端口运行。如果你不知道什么是IP，可以看看这个科普视频：<a target="_blank" rel="noopener" href="https://www.bilibili.com/video/BV1DD4y127r4?share_source=copy_web">【硬件科普】IP地址是什么东西？</a></p>
-<p>此外，我们也可以指定端口运行，使用指令（例：在23333端口运行）：</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">hexo s -p 23333<br></code></pre></td></tr></table></figure>
+<p>此外，我们也可以指定端口运行，使用指令：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs bash">hexo s -p 23333<br><span class="hljs-comment"># 在23333端口运行</span><br></code></pre></td></tr></table></figure>
 
 <p>然后我们就可以打开浏览器，进入 <a target="_blank" rel="noopener" href="http://localhost:4000/">http://localhost:4000/</a> 查看博客效果，如图。<img src="https://imgconvert.csdnimg.cn/aHR0cHM6Ly9pLmxvbGkubmV0LzIwMTkvMDMvMjUvNWM5OGY1YjdjNzRkMi5wbmc" alt="本地查看博客效果"><br>这时候就说明我们以上的操作全部成功完成了。</p>
 <h2 id="部署Github-Pages"><a href="#部署Github-Pages" class="headerlink" title="部署Github Pages"></a>部署Github Pages</h2><p>现在我们只能通过本地连接查看博客，我们要做的是让其他人也能够访问我们的博客，这就需要我们将博客部署到Github Pages上。</p>
-<p>先写到这儿吧，没想到写这个这么麻烦，等有时间继续写。</p>
+<h3 id="注册Github"><a href="#注册Github" class="headerlink" title="注册Github"></a>注册Github</h3><p>访问<a target="_blank" rel="noopener" href="https://github.com/">Github官网</a>，注册一个账号。</p>
+<h3 id="新建项目"><a href="#新建项目" class="headerlink" title="新建项目"></a>新建项目</h3><p>点击 New repository 新建一个项目仓库，步骤及注意事项见下图：</p>
+<p><img src="https://imgconvert.csdnimg.cn/aHR0cHM6Ly9pLmxvbGkubmV0LzIwMTkvMDMvMjUvNWM5OGY1ZTA5MzBjMi5wbmc" alt="借用图片-新建注意事项"></p>
+<h3 id="配置SSH密钥"><a href="#配置SSH密钥" class="headerlink" title="配置SSH密钥"></a>配置<a target="_blank" rel="noopener" href="https://baike.baidu.com/item/ssh/10407">SSH密钥</a></h3><blockquote>
+<p>SSH是一种网络协议，用于计算机之间的加密登录。以公钥进行的数据加密，只能与之对应的私钥才可以解密，反之亦然。——摘自<a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/217950357">知乎文章</a></p>
+<p>我们的公钥（后缀 .pub )是下文需要提交到github的，私钥需要保存好。</p>
+</blockquote>
+<p>要想通过 git 操作实现本地代码库与 Github 代码库同步，我们需要一个SSH密钥来确保远程操作人是该仓库的所有者。在我们第一次新建的博客文件夹里面（如：C:/KHLFYY_Blog）右键 Git Bash Here 输入以下命令：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs bash">ssh-keygen -t rsa -C <span class="hljs-string">&quot;your email@example.com&quot;</span> <br><span class="hljs-comment"># 注意把邮箱换成你自己的邮箱 如khlfyy@outlook.com</span><br></code></pre></td></tr></table></figure>
+
+<p>返回信息如下：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs bash">Generating public/private rsa key pair.  <br>Enter file <span class="hljs-keyword">in</span> <span class="hljs-built_in">which</span> to save the key (/c/Users/you/.ssh/id_rsa):  <br><span class="hljs-comment"># 回车按默认目录保存SSH密钥即可</span><br></code></pre></td></tr></table></figure>
+
+<p>返回信息如下：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs bash">Enter passphrase (empty <span class="hljs-keyword">for</span> no passphrase):  <br>Enter same passphrase again:  <br><span class="hljs-comment"># 无需设置密码，直接按两次回车即可</span><br></code></pre></td></tr></table></figure>
+
+<p>最后得到返回信息：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><code class="hljs bash">Your identification has been saved <span class="hljs-keyword">in</span> /c/Users/you/.ssh/id_rsa.  <br>Your public key has been saved <span class="hljs-keyword">in</span> /c/Users/you/.ssh/id_rsa.pub.  <br>The key fingerprint is:  <br><span class="hljs-comment"># 这里是各种字母数字组成的字符串，结尾是你的邮箱  </span><br>The key s randomart image is<br><span class="hljs-comment"># 这里也是各种字母数字符号组成的字符串  </span><br></code></pre></td></tr></table></figure>
+
+<p>这时候你的公钥就保存在了 /c/Users/you/.ssh/id_rsa.pub</p>
+<p>输入以下指令将公钥复制到剪切板：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs bash">clip &lt; ~/.ssh/id_rsa.pub<br><span class="hljs-comment"># 当然你也可以打开保存目录，右键记事本打开公钥文件 全选 复制</span><br></code></pre></td></tr></table></figure>
+
+<h3 id="将SSH公钥添加到Github账户"><a href="#将SSH公钥添加到Github账户" class="headerlink" title="将SSH公钥添加到Github账户"></a>将SSH公钥添加到Github账户</h3><p>① 登陆 GitHub，右上角点击头像-Settings；</p>
+<p>② 点击左侧列表 SSH and GPG Keys；</p>
+<p>③ 点击 New SSH key；</p>
+<p>④ 粘贴刚刚复制的SSH公钥。</p>
+<p><img src="https://imgconvert.csdnimg.cn/aHR0cHM6Ly9pLmxvbGkubmV0LzIwMTkvMDMvMjUvNWM5OGY2MDZlNzU1OC5wbmc" alt="步骤1"></p>
+<p><img src="https://imgconvert.csdnimg.cn/aHR0cHM6Ly9pLmxvbGkubmV0LzIwMTkvMDMvMjUvNWM5OGY2MjJiNDU4OC5wbmc" alt="步骤2"></p>
+<p><img src="https://imgconvert.csdnimg.cn/aHR0cHM6Ly9pLmxvbGkubmV0LzIwMTkvMDMvMjUvNWM5OGY2M2ViMWFiMi5wbmc" alt="步骤3"></p>
+<p><img src="https://imgconvert.csdnimg.cn/aHR0cHM6Ly9pLmxvbGkubmV0LzIwMTkvMDMvMjUvNWM5OGY2YmMxZmM4Ny5wbmc" alt="步骤4"></p>
+<h3 id="测试SSH配置"><a href="#测试SSH配置" class="headerlink" title="测试SSH配置"></a>测试SSH配置</h3><p>在Git Bash Here中，输入以下命令</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs bash">ssh -T git@github.com<br><span class="hljs-comment"># 无需改动git@github.com</span><br></code></pre></td></tr></table></figure>
+
+<p>返回信息如图：</p>
+<p><img src="https://imgconvert.csdnimg.cn/aHR0cHM6Ly9pLmxvbGkubmV0LzIwMTkvMDMvMjUvNWM5OGY2ZTNiNDgwMy5wbmc" alt="返回信息"></p>
+<p>输入</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">yes<br></code></pre></td></tr></table></figure>
+
+<p>返回信息：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">Hi yourname! You’ve successfully authenticated, but GitHub does not provide shell access.<br></code></pre></td></tr></table></figure>
+
+<p>则配置成功。</p>
+<h3 id="配置Git"><a href="#配置Git" class="headerlink" title="配置Git"></a>配置Git</h3><p>Git 会根据用户的名字和邮箱来记录提交，GitHub 也是用这些信息来做权限的处理，输入以下命令进行个人信息的设置：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs bash">git config --global user.name KHLFYY  <br>git config --global user.email  khlfyy@outlook.com<br><span class="hljs-comment">#替换成你自己的名字和邮箱，为方便记忆，建议与 GitHub 信息一致。</span><br></code></pre></td></tr></table></figure>
+
+<p>先写到这儿。。。</p>
 
             </div>
             <hr>
