@@ -30,7 +30,7 @@
     
     
       
-      <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/highlight.js@10.7.2/styles/github-gist.min.css" />
+      <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/highlight.js@10.7.2/styles/vs.min.css" />
     
   
 
@@ -243,7 +243,7 @@
 </li>
 <li><p>由于KH自己在建立这个博客之前，对此方面知识几乎是白纸一张，所以这篇文章一定会写的很通俗易懂，其中也加上了我自己建立过程中的一些经验，和我一样的小白完全可以放心食用。</p>
 </li>
-<li><p>本文图文密度很高，请仔细阅读以免漏掉重要信息。</p>
+<li><p><strong>本文图文密度很高，请<em>仔细阅读</em>以免漏掉重要信息。</strong></p>
 </li>
 <li><p>如果你对本文有任何建议或者认为有可改进之处，请各位斧正。</p>
 </li>
@@ -275,7 +275,7 @@
 <h3 id="安装-node-js"><a href="#安装-node-js" class="headerlink" title="安装  node.js"></a>安装  node.js</h3><p><a target="_blank" rel="noopener" href="https://nodejs.org/zh-cn/download/">点击此处</a>访问node.js的官网，下载你的系统的长期维护版本（稳定版 LTS）。并进行安装。（若无特殊需求，一直下一步即可。）</p>
 <h3 id="安装-Git"><a href="#安装-Git" class="headerlink" title="安装 Git"></a>安装 Git</h3><p><a target="_blank" rel="noopener" href="https://git-scm.com/download/win">点击此处</a>访问Git的官网，下载你系统所需要的版本，或者直接点击“Click here to download manually”。并进行安装（若无特殊需求，一直下一步即可。）</p>
 <h3 id="检查环境配置"><a href="#检查环境配置" class="headerlink" title="检查环境配置"></a>检查环境配置</h3><p>同时按下键盘左下角的windows键+R，输入cmd，回车。<strong>逐条</strong>输入以下命令，有相应版本信息（数字）显示则安装成功，若不正确可以卸载软件重新安装。</p>
-<figure class="highlight cmd"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs cmd">git --version  <br>node -v  <br>npm -v<br></code></pre></td></tr></table></figure>
+<figure class="highlight cmd"><table><tr><td class="gutter hljs"><div class="hljs code-wrapper"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></div></td><td class="code"><div class="hljs code-wrapper"><pre><code class="hljs cmd">git --version  <br>node -v  <br>npm -v<br></code></pre></div></td></tr></table></figure>
 
 <p>检验git的另一个简单方法是：在任意地方右键，如果看到菜单里多了 Git GUI Here 和 Git Bash Here两个选项（第一个是图形界面的Git操作，第二个是<strong>常用的</strong>命令行），即安装成功。</p>
 <h2 id="安装-Hexo"><a href="#安装-Hexo" class="headerlink" title="安装 Hexo"></a>安装 Hexo</h2><p>首先，我们要选择一个文件夹来存放你的博客网站文件。</p>
@@ -286,26 +286,26 @@
 <h3 id="换源"><a href="#换源" class="headerlink" title="换源"></a>换源</h3><p>由于某些原因，npm的下载速度可能会和某盘速度一样感人，</p>
 <p><img src="https://pic.imgdb.cn/item/611b880c4907e2d39c09b2b8.jpg" alt="懂的都懂"></p>
 <p>所以，建议把 npm 和 yarn 的下载源换成淘宝源,在刚刚打开的命令行中依次输入下列两条命令。如果你自己有一些<strong>神奇</strong>的手段，也可以不更换下载源。</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs bash">npm config <span class="hljs-built_in">set</span> registry http://registry.npm.taobao.org/<br>yarn config <span class="hljs-built_in">set</span> registry http://registry.npm.taobao.org/<br></code></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="gutter hljs"><div class="hljs code-wrapper"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></div></td><td class="code"><div class="hljs code-wrapper"><pre><code class="hljs bash">npm config <span class="hljs-built_in">set</span> registry http://registry.npm.taobao.org/<br>yarn config <span class="hljs-built_in">set</span> registry http://registry.npm.taobao.org/<br></code></pre></div></td></tr></table></figure>
 
 <h3 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h3><p>换源之后，在指令行中输入指令进行安装，大致如图所示即为安装成功。</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><code class="hljs bash">npm install hexo-cli -g  <br>npm install hexo-deployer-git --save  <br><span class="hljs-comment"># 第一个命令表示安装 hexo </span><br><span class="hljs-comment"># 第二个命令表示安装 hexo 部署到 git page 的 deployer</span><br></code></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="gutter hljs"><div class="hljs code-wrapper"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></div></td><td class="code"><div class="hljs code-wrapper"><pre><code class="hljs bash">npm install hexo-cli -g  <br>npm install hexo-deployer-git --save  <br><span class="hljs-comment"># 第一个命令表示安装 hexo </span><br><span class="hljs-comment"># 第二个命令表示安装 hexo 部署到 git page 的 deployer</span><br></code></pre></div></td></tr></table></figure>
 
 <p><img src="https://imgconvert.csdnimg.cn/aHR0cHM6Ly9pLmxvbGkubmV0LzIwMTkvMDMvMjUvNWM5OGY1M2Q0YjAxOS5wbmc" alt="借用的图片"></p>
 <h3 id="Hexo-初始化"><a href="#Hexo-初始化" class="headerlink" title="Hexo 初始化"></a>Hexo 初始化</h3><p>在刚才新建的文件夹里面再次新建一个 Hexo 文件夹（如C:\KHLFYY_Blog\Hexo），进入该 Hexo 文件夹右键鼠标，点击 Git Bash Here ，输入以下命令，如图所示则安装成功。</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">hexo init<br></code></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="gutter hljs"><div class="hljs code-wrapper"><pre><span class="line">1</span><br></pre></div></td><td class="code"><div class="hljs code-wrapper"><pre><code class="hljs bash">hexo init<br></code></pre></div></td></tr></table></figure>
 
 <p><img src="https://imgconvert.csdnimg.cn/aHR0cHM6Ly9pLmxvbGkubmV0LzIwMTkvMDMvMjUvNWM5OGY1NjZiNGI2Yi5wbmc" alt="还是借的图片"></p>
 <p>Hexo 安装完成后，将会在指定文件夹中新建所需要的文件，Hexo 文件夹下的目录如下：<br><img src="https://pic.imgdb.cn/item/611b8d104907e2d39c16ba16.png" alt="Hexo文件目录"></p>
 <h3 id="本地查看效果"><a href="#本地查看效果" class="headerlink" title="本地查看效果"></a>本地查看效果</h3><p>按照上述配置完成之后，我们可以查看一下hexo是否正确配置完成，<strong>依次</strong>输入下列指令：</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><code class="hljs bash">hexo generate  <br>hexo server<br><span class="hljs-comment"># 或者简写为</span><br>hexo g<br>hexo s<br></code></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="gutter hljs"><div class="hljs code-wrapper"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></div></td><td class="code"><div class="hljs code-wrapper"><pre><code class="hljs bash">hexo generate  <br>hexo server<br><span class="hljs-comment"># 或者简写为</span><br>hexo g<br>hexo s<br></code></pre></div></td></tr></table></figure>
 
 <p>这时候会返回消息：</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">INFO Hexo is running at http://0.0.0.0:4000/. Press Ctrl+C to stop.<br></code></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="gutter hljs"><div class="hljs code-wrapper"><pre><span class="line">1</span><br></pre></div></td><td class="code"><div class="hljs code-wrapper"><pre><code class="hljs bash">INFO Hexo is running at http://0.0.0.0:4000/. Press Ctrl+C to stop.<br></code></pre></div></td></tr></table></figure>
 
 <p>此时你的博客已经在本地IP的4000端口运行。如果你不知道什么是IP，可以看看这个科普视频：<a target="_blank" rel="noopener" href="https://www.bilibili.com/video/BV1DD4y127r4?share_source=copy_web">【硬件科普】IP地址是什么东西？</a></p>
 <p>此外，我们也可以指定端口运行，使用指令：</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs bash">hexo s -p 23333<br><span class="hljs-comment"># 在23333端口运行</span><br></code></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="gutter hljs"><div class="hljs code-wrapper"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></div></td><td class="code"><div class="hljs code-wrapper"><pre><code class="hljs bash">hexo s -p 23333<br><span class="hljs-comment"># 在23333端口运行</span><br></code></pre></div></td></tr></table></figure>
 
 <p>然后我们就可以打开浏览器，进入 <a target="_blank" rel="noopener" href="http://localhost:4000/">http://localhost:4000/</a> 查看博客效果，如图。<img src="https://imgconvert.csdnimg.cn/aHR0cHM6Ly9pLmxvbGkubmV0LzIwMTkvMDMvMjUvNWM5OGY1YjdjNzRkMi5wbmc" alt="本地查看博客效果"><br>这时候就说明我们以上的操作全部成功完成了。</p>
 <h2 id="部署Github-Pages"><a href="#部署Github-Pages" class="headerlink" title="部署Github Pages"></a>部署Github Pages</h2><p>现在我们只能通过本地连接查看博客，我们要做的是让其他人也能够访问我们的博客，这就需要我们将博客部署到Github Pages上。</p>
@@ -317,20 +317,20 @@
 <p>我们的公钥（后缀 .pub )是下文需要提交到github的，私钥需要保存好。</p>
 </blockquote>
 <p>要想通过 git 操作实现本地代码库与 Github 代码库同步，我们需要一个SSH密钥来确保远程操作人是该仓库的所有者。在我们第一次新建的博客文件夹里面（如：C:/KHLFYY_Blog）右键 Git Bash Here 输入以下命令：</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs bash">ssh-keygen -t rsa -C <span class="hljs-string">&quot;your email@example.com&quot;</span> <br><span class="hljs-comment"># 注意把邮箱换成你自己的邮箱 如khlfyy@outlook.com</span><br></code></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="gutter hljs"><div class="hljs code-wrapper"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></div></td><td class="code"><div class="hljs code-wrapper"><pre><code class="hljs bash">ssh-keygen -t rsa -C <span class="hljs-string">&quot;your email@example.com&quot;</span> <br><span class="hljs-comment"># 注意把邮箱换成你自己的邮箱 如khlfyy@outlook.com</span><br></code></pre></div></td></tr></table></figure>
 
 <p>返回信息如下：</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs bash">Generating public/private rsa key pair.  <br>Enter file <span class="hljs-keyword">in</span> <span class="hljs-built_in">which</span> to save the key (/c/Users/you/.ssh/id_rsa):  <br><span class="hljs-comment"># 回车按默认目录保存SSH密钥即可</span><br></code></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="gutter hljs"><div class="hljs code-wrapper"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></div></td><td class="code"><div class="hljs code-wrapper"><pre><code class="hljs bash">Generating public/private rsa key pair.  <br>Enter file <span class="hljs-keyword">in</span> <span class="hljs-built_in">which</span> to save the key (/c/Users/you/.ssh/id_rsa):  <br><span class="hljs-comment"># 回车按默认目录保存SSH密钥即可</span><br></code></pre></div></td></tr></table></figure>
 
 <p>返回信息如下：</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs bash">Enter passphrase (empty <span class="hljs-keyword">for</span> no passphrase):  <br>Enter same passphrase again:  <br><span class="hljs-comment"># 无需设置密码，直接按两次回车即可</span><br></code></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="gutter hljs"><div class="hljs code-wrapper"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></div></td><td class="code"><div class="hljs code-wrapper"><pre><code class="hljs bash">Enter passphrase (empty <span class="hljs-keyword">for</span> no passphrase):  <br>Enter same passphrase again:  <br><span class="hljs-comment"># 无需设置密码，直接按两次回车即可</span><br></code></pre></div></td></tr></table></figure>
 
 <p>最后得到返回信息：</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><code class="hljs bash">Your identification has been saved <span class="hljs-keyword">in</span> /c/Users/you/.ssh/id_rsa.  <br>Your public key has been saved <span class="hljs-keyword">in</span> /c/Users/you/.ssh/id_rsa.pub.  <br>The key fingerprint is:  <br><span class="hljs-comment"># 这里是各种字母数字组成的字符串，结尾是你的邮箱  </span><br>The key s randomart image is<br><span class="hljs-comment"># 这里也是各种字母数字符号组成的字符串  </span><br></code></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="gutter hljs"><div class="hljs code-wrapper"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></div></td><td class="code"><div class="hljs code-wrapper"><pre><code class="hljs bash">Your identification has been saved <span class="hljs-keyword">in</span> /c/Users/you/.ssh/id_rsa.  <br>Your public key has been saved <span class="hljs-keyword">in</span> /c/Users/you/.ssh/id_rsa.pub.  <br>The key fingerprint is:  <br><span class="hljs-comment"># 这里是各种字母数字组成的字符串，结尾是你的邮箱  </span><br>The key s randomart image is<br><span class="hljs-comment"># 这里也是各种字母数字符号组成的字符串  </span><br></code></pre></div></td></tr></table></figure>
 
 <p>这时候你的公钥就保存在了 /c/Users/you/.ssh/id_rsa.pub</p>
 <p>输入以下指令将公钥复制到剪切板：</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs bash">clip &lt; ~/.ssh/id_rsa.pub<br><span class="hljs-comment"># 当然你也可以打开保存目录，右键记事本打开公钥文件 全选 复制</span><br></code></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="gutter hljs"><div class="hljs code-wrapper"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></div></td><td class="code"><div class="hljs code-wrapper"><pre><code class="hljs bash">clip &lt; ~/.ssh/id_rsa.pub<br><span class="hljs-comment"># 当然你也可以打开保存目录，右键记事本打开公钥文件 全选 复制</span><br></code></pre></div></td></tr></table></figure>
 
 <h3 id="将SSH公钥添加到Github账户"><a href="#将SSH公钥添加到Github账户" class="headerlink" title="将SSH公钥添加到Github账户"></a>将SSH公钥添加到Github账户</h3><p>① 登陆 GitHub，右上角点击头像-Settings；</p>
 <p>② 点击左侧列表 SSH and GPG Keys；</p>
@@ -341,19 +341,19 @@
 <p><img src="https://imgconvert.csdnimg.cn/aHR0cHM6Ly9pLmxvbGkubmV0LzIwMTkvMDMvMjUvNWM5OGY2M2ViMWFiMi5wbmc" alt="步骤3"></p>
 <p><img src="https://imgconvert.csdnimg.cn/aHR0cHM6Ly9pLmxvbGkubmV0LzIwMTkvMDMvMjUvNWM5OGY2YmMxZmM4Ny5wbmc" alt="步骤4"></p>
 <h3 id="测试SSH配置"><a href="#测试SSH配置" class="headerlink" title="测试SSH配置"></a>测试SSH配置</h3><p>在Git Bash Here中，输入以下命令</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs bash">ssh -T git@github.com<br><span class="hljs-comment"># 无需改动git@github.com</span><br></code></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="gutter hljs"><div class="hljs code-wrapper"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></div></td><td class="code"><div class="hljs code-wrapper"><pre><code class="hljs bash">ssh -T git@github.com<br><span class="hljs-comment"># 无需改动git@github.com</span><br></code></pre></div></td></tr></table></figure>
 
 <p>返回信息如图：</p>
 <p><img src="https://imgconvert.csdnimg.cn/aHR0cHM6Ly9pLmxvbGkubmV0LzIwMTkvMDMvMjUvNWM5OGY2ZTNiNDgwMy5wbmc" alt="返回信息"></p>
 <p>输入</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">yes<br></code></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="gutter hljs"><div class="hljs code-wrapper"><pre><span class="line">1</span><br></pre></div></td><td class="code"><div class="hljs code-wrapper"><pre><code class="hljs bash">yes<br></code></pre></div></td></tr></table></figure>
 
 <p>返回信息：</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">Hi yourname! You’ve successfully authenticated, but GitHub does not provide shell access.<br></code></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="gutter hljs"><div class="hljs code-wrapper"><pre><span class="line">1</span><br></pre></div></td><td class="code"><div class="hljs code-wrapper"><pre><code class="hljs bash">Hi yourname! You’ve successfully authenticated, but GitHub does not provide shell access.<br></code></pre></div></td></tr></table></figure>
 
 <p>则配置成功。</p>
 <h3 id="配置Git"><a href="#配置Git" class="headerlink" title="配置Git"></a>配置Git</h3><p>Git 会根据用户的名字和邮箱来记录提交，GitHub 也是用这些信息来做权限的处理，输入以下命令进行个人信息的设置：</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs bash">git config --global user.name KHLFYY  <br>git config --global user.email  khlfyy@outlook.com<br><span class="hljs-comment">#替换成你自己的名字和邮箱，为方便记忆，建议与 GitHub 信息一致。</span><br></code></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="gutter hljs"><div class="hljs code-wrapper"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></div></td><td class="code"><div class="hljs code-wrapper"><pre><code class="hljs bash">git config --global user.name KHLFYY  <br>git config --global user.email  khlfyy@outlook.com<br><span class="hljs-comment">#替换成你自己的名字和邮箱，为方便记忆，建议与 GitHub 信息一致。</span><br></code></pre></div></td></tr></table></figure>
 
 <h2 id="将Hexo文件更新到Github的repo中"><a href="#将Hexo文件更新到Github的repo中" class="headerlink" title="将Hexo文件更新到Github的repo中"></a>将Hexo文件更新到Github的repo中</h2><blockquote>
 <p>repo=repository github项目仓库</p>
@@ -367,20 +367,20 @@
 <p><em>注意：上图branch（分支）默认值，现在已经由master改为main。<br>你也可以像我的那样，不写branch，直接在github后加个”,main”就可以</em>。</p>
 <p>ctrl+s保存</p>
 <p>在Bash中 分别 执行：</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><code class="hljs bash">hexo g  <br>hexo d<br><br><span class="hljs-comment"># 即：hexo generate 和 hexo deploy</span><br></code></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="gutter hljs"><div class="hljs code-wrapper"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></div></td><td class="code"><div class="hljs code-wrapper"><pre><code class="hljs bash">hexo g  <br>hexo d<br><br><span class="hljs-comment"># 即：hexo generate 和 hexo deploy</span><br></code></pre></div></td></tr></table></figure>
 
 <p>当然 你也可以简略成：</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">hexo g -d<br></code></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="gutter hljs"><div class="hljs code-wrapper"><pre><span class="line">1</span><br></pre></div></td><td class="code"><div class="hljs code-wrapper"><pre><code class="hljs bash">hexo g -d<br></code></pre></div></td></tr></table></figure>
 
 <p>执行完之后会让你输入你的 Github 的账号和密码。</p>
 <p>这时候 如果出现报错：</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs bash">ERROR Deployer not found: git<br><span class="hljs-comment"># 原因是 deployer 没有安装成功</span><br></code></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="gutter hljs"><div class="hljs code-wrapper"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></div></td><td class="code"><div class="hljs code-wrapper"><pre><code class="hljs bash">ERROR Deployer not found: git<br><span class="hljs-comment"># 原因是 deployer 没有安装成功</span><br></code></pre></div></td></tr></table></figure>
 
 <p>重新安装deployer：</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">npm install hexo-deployer-git --save<br></code></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="gutter hljs"><div class="hljs code-wrapper"><pre><span class="line">1</span><br></pre></div></td><td class="code"><div class="hljs code-wrapper"><pre><code class="hljs bash">npm install hexo-deployer-git --save<br></code></pre></div></td></tr></table></figure>
 
 <p>之后再执行：</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">hexo g -d<br></code></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="gutter hljs"><div class="hljs code-wrapper"><pre><span class="line">1</span><br></pre></div></td><td class="code"><div class="hljs code-wrapper"><pre><code class="hljs bash">hexo g -d<br></code></pre></div></td></tr></table></figure>
 
 <p>这时候就你的本地博客文件就上传到github的repo中了</p>
 <p>访问你的博客网址：<a target="_blank" rel="noopener" href="https://你的用户名.github.io/">https://你的用户名.github.io</a>（如：<a target="_blank" rel="noopener" href="https://khlfyy.github.io/">https://khlfyy.github.io</a>）就可以看到你的博客已经基本部署成功了。</p>
