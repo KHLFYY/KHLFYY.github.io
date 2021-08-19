@@ -14,7 +14,7 @@
   <meta http-equiv="x-ua-compatible" content="ie=edge">
   
   <meta name="theme-color" content="#2f4154">
-  <meta name="description" content="KHLFYY的个人博客">
+  <meta name="description" content="超详细教程：用hexo和github搭建个人博客">
   <meta name="author" content="KHLFYY">
   <meta name="keywords" content="">
   
@@ -186,7 +186,7 @@
     
     <span class="post-meta mr-2">
       <i class="iconfont icon-chart"></i>
-      2.5k 字
+      2.6k 字
     </span>
   
 
@@ -196,7 +196,7 @@
       <i class="iconfont icon-clock-fill"></i>
       
       
-      28
+      29
        分钟
     </span>
   
@@ -233,7 +233,7 @@
             
               <p class="note note-info">
                 
-                  本文最后更新于：几秒前
+                  本文最后更新于：8 分钟前
                 
               </p>
             
@@ -283,6 +283,9 @@
 <p>由于最后你的博客文件夹内将会有许许多多小文件，数万个文件数千个文件夹。如果你对其整体压缩打包作为备份的话，对于硬盘的读取速度就会有要求（主要是4k随机），所以我们可以把这个文件夹放在 SSD 里（如果你并不是非常介意你的 SSD 写入量）。——KH注</p>
 </blockquote>
 <p>比如，我在我电脑唯一是 SSD 的C盘（C:\）新建了一个文件夹，重命名为 KHLFYY_Blog 。打开这个空文件夹，右键 Git Bash Here ，</p>
+<blockquote>
+<p><strong>注意：所有关于博客的指令操作，都需要在这个文件夹下进行。</strong></p>
+</blockquote>
 <h3 id="换源"><a href="#换源" class="headerlink" title="换源"></a>换源</h3><p>由于某些原因，npm的下载速度可能会和某盘速度一样感人，</p>
 <p><img src="https://pic.imgdb.cn/item/611b880c4907e2d39c09b2b8.jpg" alt="懂的都懂"></p>
 <p>所以，建议把 npm 和 yarn 的下载源换成淘宝源,在刚刚打开的命令行中依次输入下列两条命令。如果你自己有一些<strong>神奇</strong>的手段，也可以不更换下载源。</p>
@@ -364,9 +367,11 @@
 <p>打开我们的 Hexo 文件夹（如：C:\KHLFYY_Blog\Hexo），右键用记事本（推荐<a target="_blank" rel="noopener" href="https://code.visualstudio.com/">VS Code</a>）打开该文件夹下的_config.yml 文件，找到 <strong>deploy</strong>（可以使用ctrl+F进行搜索）</p>
 <p><strong>大致</strong>如图，，将 repository 后的链接改为你刚刚复制的链接，<strong>注意空格</strong>。<br><img src="https://pic.imgdb.cn/item/611dd06c4907e2d39c029130.png" alt="config"></p>
 <p>（你可以像我这样写，也可以用默认的，大概是这样）<br><img src="https://imgconvert.csdnimg.cn/aHR0cHM6Ly9pLmxvbGkubmV0LzIwMTkvMDMvMjUvNWM5OGY3ZTExZWVkNy5wbmc" alt="借图"></p>
-<p><em>注意：上图branch（分支）默认值，现在已经由master改为main。<br>你也可以像我的那样，不写branch，直接在github后加个”,main”就可以</em>。</p>
-<p>ctrl+s保存</p>
-<p>在Bash中 分别 执行：</p>
+<blockquote>
+<p>注意：图二中 branch（分支）的默认值，现在已经由 master 改为 main 。<br>如果按图二方式，你需要将 master 改为 main ；你也可以像我的那样，不写 branch 那一行，直接在 github 后加个” ,main “就可以。</p>
+</blockquote>
+<p>ctrl+s 保存</p>
+<p>在 Bash 中 分别 执行：</p>
 <figure class="highlight bash"><table><tr><td class="gutter hljs"><div class="hljs code-wrapper"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></div></td><td class="code"><div class="hljs code-wrapper"><pre><code class="hljs bash">hexo g  <br>hexo d<br><br><span class="hljs-comment"># 即：hexo generate 和 hexo deploy</span><br></code></pre></div></td></tr></table></figure>
 
 <p>当然 你也可以简略成：</p>
@@ -376,14 +381,18 @@
 <p>这时候 如果出现报错：</p>
 <figure class="highlight bash"><table><tr><td class="gutter hljs"><div class="hljs code-wrapper"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></div></td><td class="code"><div class="hljs code-wrapper"><pre><code class="hljs bash">ERROR Deployer not found: git<br><span class="hljs-comment"># 原因是 deployer 没有安装成功</span><br></code></pre></div></td></tr></table></figure>
 
-<p>重新安装deployer：</p>
+<p>重新安装 deployer ：</p>
 <figure class="highlight bash"><table><tr><td class="gutter hljs"><div class="hljs code-wrapper"><pre><span class="line">1</span><br></pre></div></td><td class="code"><div class="hljs code-wrapper"><pre><code class="hljs bash">npm install hexo-deployer-git --save<br></code></pre></div></td></tr></table></figure>
 
 <p>之后再执行：</p>
 <figure class="highlight bash"><table><tr><td class="gutter hljs"><div class="hljs code-wrapper"><pre><span class="line">1</span><br></pre></div></td><td class="code"><div class="hljs code-wrapper"><pre><code class="hljs bash">hexo g -d<br></code></pre></div></td></tr></table></figure>
 
-<p>这时候就你的本地博客文件就上传到github的repo中了</p>
+<p>这时候就你的本地博客文件就上传到 github 的 repo 中了</p>
 <p>访问你的博客网址：<a target="_blank" rel="noopener" href="https://你的用户名.github.io/">https://你的用户名.github.io</a>（如：<a target="_blank" rel="noopener" href="https://khlfyy.github.io/">https://khlfyy.github.io</a>）就可以看到你的博客已经基本部署成功了。</p>
+<h2 id="发表文章"><a href="#发表文章" class="headerlink" title="发表文章"></a>发表文章</h2><h3 id="新建文章"><a href="#新建文章" class="headerlink" title="新建文章"></a>新建文章</h3><p>在bash中，输入指令新建文章：</p>
+<figure class="highlight bash"><table><tr><td class="gutter hljs"><div class="hljs code-wrapper"><pre><span class="line">1</span><br></pre></div></td><td class="code"><div class="hljs code-wrapper"><pre><code class="hljs bash">hexo new page 你的文章标题<br></code></pre></div></td></tr></table></figure>
+
+<p>然后在 \Hexo\source_posts 中找到 你的文章标题.md</p>
 
             </div>
             <hr>
