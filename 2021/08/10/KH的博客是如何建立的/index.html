@@ -186,7 +186,7 @@
     
     <span class="post-meta mr-2">
       <i class="iconfont icon-chart"></i>
-      2.6k 字
+      3.7k 字
     </span>
   
 
@@ -196,7 +196,7 @@
       <i class="iconfont icon-clock-fill"></i>
       
       
-      30
+      42
        分钟
     </span>
   
@@ -233,7 +233,7 @@
             
               <p class="note note-info">
                 
-                  本文最后更新于：42 分钟前
+                  本文最后更新于：7 分钟前
                 
               </p>
             
@@ -247,7 +247,7 @@
 </li>
 <li><p>如果你对本文有任何建议或者认为有可改进之处，请各位斧正。</p>
 </li>
-<li><p>本文参考连接和部分图片出处：<a target="_blank" rel="noopener" href="https://itrhx.blog.csdn.net/article/details/82121420">使用 Github Pages 和 Hexo 搭建自己的独立博客——作者：TRHX</a></p>
+<li><p>本文参考连接和部分文字、图片出处：<a target="_blank" rel="noopener" href="https://itrhx.blog.csdn.net/article/details/82121420">使用 Github Pages 和 Hexo 搭建自己的独立博客——作者：TRHX</a></p>
 </li>
 </ul>
 <h2 id="基础知识"><a href="#基础知识" class="headerlink" title="基础知识"></a>基础知识</h2><ol>
@@ -284,14 +284,14 @@
 </blockquote>
 <p>比如，我在我电脑唯一是 SSD 的C盘（C:\）新建了一个文件夹，重命名为 KHLFYY_Blog 。打开这个空文件夹，右键 Git Bash Here ，</p>
 <blockquote>
-<p><strong>注意：所有关于博客的指令操作，都需要在这个文件夹下进行。</strong></p>
+<p><strong>注意：所有关于博客的命令操作，都需要在这个文件夹下进行。</strong></p>
 </blockquote>
 <h3 id="换源"><a href="#换源" class="headerlink" title="换源"></a>换源</h3><p>由于某些原因，npm的下载速度可能会和某盘速度一样感人，</p>
 <p><img src="https://pic.imgdb.cn/item/611b880c4907e2d39c09b2b8.jpg" alt="懂的都懂"></p>
 <p>所以，建议把 npm 和 yarn 的下载源换成淘宝源,在刚刚打开的命令行中依次输入下列两条命令。如果你自己有一些<strong>神奇</strong>的手段，也可以不更换下载源。</p>
 <figure class="highlight bash"><table><tr><td class="gutter hljs"><div class="hljs code-wrapper"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></div></td><td class="code"><div class="hljs code-wrapper"><pre><code class="hljs bash">npm config <span class="hljs-built_in">set</span> registry http://registry.npm.taobao.org/<br>yarn config <span class="hljs-built_in">set</span> registry http://registry.npm.taobao.org/<br></code></pre></div></td></tr></table></figure>
 
-<h3 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h3><p>换源之后，在指令行中输入指令进行安装，大致如图所示即为安装成功。</p>
+<h3 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h3><p>换源之后，在命令行中输入命令进行安装，大致如图所示即为安装成功。</p>
 <figure class="highlight bash"><table><tr><td class="gutter hljs"><div class="hljs code-wrapper"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></div></td><td class="code"><div class="hljs code-wrapper"><pre><code class="hljs bash">npm install hexo-cli -g  <br>npm install hexo-deployer-git --save  <br><span class="hljs-comment"># 第一个命令表示安装 hexo </span><br><span class="hljs-comment"># 第二个命令表示安装 hexo 部署到 git page 的 deployer</span><br></code></pre></div></td></tr></table></figure>
 
 <p><img src="https://imgconvert.csdnimg.cn/aHR0cHM6Ly9pLmxvbGkubmV0LzIwMTkvMDMvMjUvNWM5OGY1M2Q0YjAxOS5wbmc" alt="借用的图片"></p>
@@ -300,14 +300,14 @@
 
 <p><img src="https://imgconvert.csdnimg.cn/aHR0cHM6Ly9pLmxvbGkubmV0LzIwMTkvMDMvMjUvNWM5OGY1NjZiNGI2Yi5wbmc" alt="还是借的图片"></p>
 <p>Hexo 安装完成后，将会在指定文件夹中新建所需要的文件，Hexo 文件夹下的目录如下：<br><img src="https://pic.imgdb.cn/item/611b8d104907e2d39c16ba16.png" alt="Hexo文件目录"></p>
-<h3 id="本地查看效果"><a href="#本地查看效果" class="headerlink" title="本地查看效果"></a>本地查看效果</h3><p>按照上述配置完成之后，我们可以查看一下hexo是否正确配置完成，<strong>依次</strong>输入下列指令：</p>
+<h3 id="本地查看效果"><a href="#本地查看效果" class="headerlink" title="本地查看效果"></a>本地查看效果</h3><p>按照上述配置完成之后，我们可以查看一下hexo是否正确配置完成，<strong>依次</strong>输入下列命令：</p>
 <figure class="highlight bash"><table><tr><td class="gutter hljs"><div class="hljs code-wrapper"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></div></td><td class="code"><div class="hljs code-wrapper"><pre><code class="hljs bash">hexo generate  <br>hexo server<br><span class="hljs-comment"># 或者简写为</span><br>hexo g<br>hexo s<br></code></pre></div></td></tr></table></figure>
 
 <p>这时候会返回消息：</p>
 <figure class="highlight bash"><table><tr><td class="gutter hljs"><div class="hljs code-wrapper"><pre><span class="line">1</span><br></pre></div></td><td class="code"><div class="hljs code-wrapper"><pre><code class="hljs bash">INFO Hexo is running at http://0.0.0.0:4000/. Press Ctrl+C to stop.<br></code></pre></div></td></tr></table></figure>
 
 <p>此时你的博客已经在本地IP的4000端口运行。如果你不知道什么是IP，可以看看这个科普视频：<a target="_blank" rel="noopener" href="https://www.bilibili.com/video/BV1DD4y127r4?share_source=copy_web">【硬件科普】IP地址是什么东西？</a></p>
-<p>此外，我们也可以指定端口运行，使用指令：</p>
+<p>此外，我们也可以指定端口运行，使用命令：</p>
 <figure class="highlight bash"><table><tr><td class="gutter hljs"><div class="hljs code-wrapper"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></div></td><td class="code"><div class="hljs code-wrapper"><pre><code class="hljs bash">hexo s -p 23333<br><span class="hljs-comment"># 在23333端口运行</span><br></code></pre></div></td></tr></table></figure>
 
 <p>然后我们就可以打开浏览器，进入 <a target="_blank" rel="noopener" href="http://localhost:4000/">http://localhost:4000/</a> 查看博客效果，如图。<img src="https://imgconvert.csdnimg.cn/aHR0cHM6Ly9pLmxvbGkubmV0LzIwMTkvMDMvMjUvNWM5OGY1YjdjNzRkMi5wbmc" alt="本地查看博客效果"><br>这时候就说明我们以上的操作全部成功完成了。</p>
@@ -332,7 +332,7 @@
 <figure class="highlight bash"><table><tr><td class="gutter hljs"><div class="hljs code-wrapper"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></div></td><td class="code"><div class="hljs code-wrapper"><pre><code class="hljs bash">Your identification has been saved <span class="hljs-keyword">in</span> /c/Users/you/.ssh/id_rsa.  <br>Your public key has been saved <span class="hljs-keyword">in</span> /c/Users/you/.ssh/id_rsa.pub.  <br>The key fingerprint is:  <br><span class="hljs-comment"># 这里是各种字母数字组成的字符串，结尾是你的邮箱  </span><br>The key s randomart image is<br><span class="hljs-comment"># 这里也是各种字母数字符号组成的字符串  </span><br></code></pre></div></td></tr></table></figure>
 
 <p>这时候你的公钥就保存在了 /c/Users/you/.ssh/id_rsa.pub</p>
-<p>输入以下指令将公钥复制到剪切板：</p>
+<p>输入以下命令将公钥复制到剪切板：</p>
 <figure class="highlight bash"><table><tr><td class="gutter hljs"><div class="hljs code-wrapper"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></div></td><td class="code"><div class="hljs code-wrapper"><pre><code class="hljs bash">clip &lt; ~/.ssh/id_rsa.pub<br><span class="hljs-comment"># 当然你也可以打开保存目录，右键记事本打开公钥文件 全选 复制</span><br></code></pre></div></td></tr></table></figure>
 
 <h3 id="将SSH公钥添加到Github账户"><a href="#将SSH公钥添加到Github账户" class="headerlink" title="将SSH公钥添加到Github账户"></a>将SSH公钥添加到Github账户</h3><p>① 登陆 GitHub，右上角点击头像-Settings；</p>
@@ -366,13 +366,16 @@
 <p><img src="https://pic.imgdb.cn/item/611dcfa14907e2d39c00b5ce.png" alt="复制SSH地址"></p>
 <p>打开我们的 Hexo 文件夹（如：C:\KHLFYY_Blog\Hexo），右键用记事本（推荐<a target="_blank" rel="noopener" href="https://code.visualstudio.com/">VS Code</a>）打开该文件夹下的_config.yml 文件，找到 <strong>deploy</strong>（可以使用ctrl+F进行搜索）</p>
 <p><strong>大致</strong>如图，，将 repository 后的链接改为你刚刚复制的链接，<strong>注意空格</strong>。<br><img src="https://pic.imgdb.cn/item/611dd06c4907e2d39c029130.png" alt="config"></p>
-<p>（你可以像我这样写，也可以用默认的，大概是这样）<br><img src="https://imgconvert.csdnimg.cn/aHR0cHM6Ly9pLmxvbGkubmV0LzIwMTkvMDMvMjUvNWM5OGY3ZTExZWVkNy5wbmc" alt="借图"></p>
+<p>为了方便，我把代码打在这里：</p>
+<figure class="highlight yml"><table><tr><td class="gutter hljs"><div class="hljs code-wrapper"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></div></td><td class="code"><div class="hljs code-wrapper"><pre><code class="hljs yml"><span class="hljs-attr">deploy:</span><br>  <span class="hljs-bullet">-</span> <span class="hljs-attr">type:</span> <span class="hljs-string">&#x27;git&#x27;</span><br>    <span class="hljs-attr">repository:</span> <br>     <span class="hljs-attr">github:</span> <span class="hljs-string">git@github.com:KHLFYY/KHLFYY.github.io.git,main</span><br><span class="hljs-comment"># 记得替换自己的repo地址（SSH） 注意空格</span><br></code></pre></div></td></tr></table></figure>
+
 <blockquote>
-<p>注意：图二中 branch（分支）的默认值，现在已经由 master 改为 main 。<br>如果按图二方式，你需要将 master 改为 main ；你也可以像我的那样，不写 branch 那一行，直接在 github 后加个” ,main “就可以。</p>
+<p>注意：Github中 branch（分支）的默认值，现在已经由 master 改为 main 。</p>
+<p>一些教程中（如图）可能写的仍为master，你需要将 master 改为 main ；你也可以像我的那样，不写 branch 那一行，直接在 github 后加个” ,main “就可以。<br><img src="https://imgconvert.csdnimg.cn/aHR0cHM6Ly9pLmxvbGkubmV0LzIwMTkvMDMvMjUvNWM5OGY3ZTExZWVkNy5wbmc" alt="借图"></p>
 </blockquote>
 <p>ctrl+s 保存</p>
 <p>在 Bash 中 分别 执行：</p>
-<figure class="highlight bash"><table><tr><td class="gutter hljs"><div class="hljs code-wrapper"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></div></td><td class="code"><div class="hljs code-wrapper"><pre><code class="hljs bash">hexo g  <br>hexo d<br><br><span class="hljs-comment"># 即：hexo generate 和 hexo deploy</span><br></code></pre></div></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="gutter hljs"><div class="hljs code-wrapper"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></div></td><td class="code"><div class="hljs code-wrapper"><pre><code class="hljs bash">hexo g  <br>hexo d<br><span class="hljs-comment"># 即：hexo generate 和 hexo deploy</span><br></code></pre></div></td></tr></table></figure>
 
 <p>当然 你也可以简略成：</p>
 <figure class="highlight bash"><table><tr><td class="gutter hljs"><div class="hljs code-wrapper"><pre><span class="line">1</span><br></pre></div></td><td class="code"><div class="hljs code-wrapper"><pre><code class="hljs bash">hexo g -d<br></code></pre></div></td></tr></table></figure>
@@ -389,7 +392,7 @@
 
 <p>这时候就你的本地博客文件就上传到 github 的 repo 中了</p>
 <p>访问你的博客网址：<a target="_blank" rel="noopener" href="https://你的用户名.github.io/">https://你的用户名.github.io</a>（如：<a target="_blank" rel="noopener" href="https://khlfyy.github.io/">https://khlfyy.github.io</a>）就可以看到你的博客已经基本部署成功了。</p>
-<h2 id="发表文章"><a href="#发表文章" class="headerlink" title="发表文章"></a>发表文章</h2><h3 id="新建文章"><a href="#新建文章" class="headerlink" title="新建文章"></a>新建文章</h3><p>在bash中，输入指令新建文章：</p>
+<h2 id="发表文章"><a href="#发表文章" class="headerlink" title="发表文章"></a>发表文章</h2><h3 id="新建文章"><a href="#新建文章" class="headerlink" title="新建文章"></a>新建文章</h3><p>在bash中，输入命令新建文章：</p>
 <figure class="highlight bash"><table><tr><td class="gutter hljs"><div class="hljs code-wrapper"><pre><span class="line">1</span><br></pre></div></td><td class="code"><div class="hljs code-wrapper"><pre><code class="hljs bash">hexo new post 你的文章标题<br></code></pre></div></td></tr></table></figure>
 
 <p>或者简写为：</p>
@@ -397,6 +400,43 @@
 
 <p>然后在 \Hexo\source_posts 中找到 你的文章标题.md</p>
 <p>当然，你也可以在这个目录下直接新建一个txt，然后改为“文章标题.md”，不过这样有点不太方便，下文会提到。</p>
+<h3 id="写博客-编辑markdown文本"><a href="#写博客-编辑markdown文本" class="headerlink" title="写博客-编辑markdown文本"></a>写博客-编辑markdown文本</h3><blockquote>
+<p>Markdown是一种轻量级标记语言，创始人为约翰·格鲁伯（John Gruber）。 它允许人们使用易读易写的纯文本格式编写文档，然后转换成有效的XHTML（或者HTML）文档。这种语言吸收了很多在电子邮件中已有的纯文本标记的特性。——百度百科</p>
+</blockquote>
+<p>有很多编辑器都可以方便我们编辑markdown，但是我个人还是推荐使用<a target="_blank" rel="noopener" href="https://code.visualstudio.com/">VS Code</a>，这样你的很多工作都可以在VS code里一起完成。这一点会在以后的博客进阶里讲到。</p>
+<figure class="highlight markdown"><table><tr><td class="gutter hljs"><div class="hljs code-wrapper"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></div></td><td class="code"><div class="hljs code-wrapper"><pre><code class="hljs markdown">---<br>layout: 页面布局（配合主题文档使用，一般没有这一行）<br>title: 文章名称，一般自动写好了<br>date: 文章日期，一般自动写好了<br>tags: <br><span class="hljs-bullet">  -</span> 文章标签一<br><span class="hljs-bullet">  -</span> 文章标签二<br>categories: 文章分类<br>photos: 文章封面图（仅部分主题支持）<br>description: 文章描述，即要在首页显示的摘要（仅部分主题支持）<br><span class="hljs-bullet">-</span><br>这里是正文<br>使用markdown语法编辑<br>…………<br></code></pre></div></td></tr></table></figure>
+
+<blockquote>
+<p>注意：description、photos等设置，具体还是要看你的主题是否支持。很多设置还需要根据主题具体分析。善于搜索、求教、交流。</p>
+</blockquote>
+<p>写完文章之后，最好在本地预览一下，看看有没有什么问题，使用命令：</p>
+<figure class="highlight bash"><table><tr><td class="gutter hljs"><div class="hljs code-wrapper"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></div></td><td class="code"><div class="hljs code-wrapper"><pre><code class="hljs bash">hexo clean<br><span class="hljs-comment"># 清除缓存</span><br>hexo g<br><span class="hljs-comment"># 生成网页文件</span><br>hexo s<br><span class="hljs-comment"># 开启本地服务器</span><br></code></pre></div></td></tr></table></figure>
+
+<p>然后你就可以在 <a target="_blank" rel="noopener" href="http://localhost:4000/">http://localhost:4000/</a> 本地查看博客效果。</p>
+<p>如果有改动，修改后再次执行以上步骤；</p>
+<p>当改动完成，我们要把改动提交到github的仓库里，使用命令：</p>
+<figure class="highlight bash"><table><tr><td class="gutter hljs"><div class="hljs code-wrapper"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></div></td><td class="code"><div class="hljs code-wrapper"><pre><code class="hljs bash">hexo clean <br>hexo g<br>hexo d<br></code></pre></div></td></tr></table></figure>
+
+<p>当然，你也可以简写为</p>
+<figure class="highlight bash"><table><tr><td class="gutter hljs"><div class="hljs code-wrapper"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></div></td><td class="code"><div class="hljs code-wrapper"><pre><code class="hljs bash">hexo cl<br>hexo g -d<br></code></pre></div></td></tr></table></figure>
+
+<p>如果你正确提交到github仓库了，过几分钟就可以在你的博客网站看见更新了！</p>
+<h2 id="更改主题"><a href="#更改主题" class="headerlink" title="更改主题"></a>更改主题</h2><p>默认的主题毕竟没有特色，或者你喜欢其他样式的主题。下面讲解如何为自己的博客更改想要的主题。</p>
+<p>你可以在<a target="_blank" rel="noopener" href="https://hexo.io/themes/">Hexo 官网的主题专栏</a>寻找心仪的主题，点进去之后，找找作者的github中这个主题的repo（仓库）。一般都会在文章的最下面，大致如图：</p>
+<p><img src="https://imgconvert.csdnimg.cn/aHR0cHM6Ly9pLmxvbGkubmV0LzIwMTkvMDMvMjUvNWM5OGY4MjNmMTI3NS5wbmc" alt="借的图片"></p>
+<p><img src="https://imgconvert.csdnimg.cn/aHR0cHM6Ly9pLmxvbGkubmV0LzIwMTkvMDMvMjUvNWM5OGY4NWRiZGYyMy5wbmc" alt="借的图片"></p>
+<p>再打开 Hexo 文件夹下的 themes 目录（如：C:\KHLFYY_Blog\Hexo\themes），右键 Git Bash Here，输入以下命令：</p>
+<figure class="highlight bash"><table><tr><td class="gutter hljs"><div class="hljs code-wrapper"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></div></td><td class="code"><div class="hljs code-wrapper"><pre><code class="hljs bash">git <span class="hljs-built_in">clone</span> https://github.com/levblanc/hexo-theme-aero-dual<br><span class="hljs-comment"># 将地址换成你刚刚复制的主题的项目地址</span><br></code></pre></div></td></tr></table></figure>
+
+<p>等待clone完成之后，你的themes文件夹下就会有一个hexo-theme-aero-dual 文件夹了，为了方便期间，你可以将其重命名为 aero-dual。</p>
+<p>然后需要更改博客配置文件，让它来应用这个主题。打开hexo的配置config文件（比如C:\KHLFYY_Blog\Hexo_config.yml），ctrl+F搜索theme，然后改为刚刚的<strong>主题文件夹</strong>名称（图中名称是未修改的）：</p>
+<p><img src="https://imgconvert.csdnimg.cn/aHR0cHM6Ly9pLmxvbGkubmV0LzIwMTkvMDMvMjUvNWM5OGY4N2MwYTdlOS5wbmc" alt="借的图片"></p>
+<p>更改之后，提交到github仓库，在hexo文件夹下右键，Git Bash Here，输入以下命令：</p>
+<figure class="highlight bash"><table><tr><td class="gutter hljs"><div class="hljs code-wrapper"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></div></td><td class="code"><div class="hljs code-wrapper"><pre><code class="hljs bash">hexo cl<br>hexo g<br>hexo s<br><span class="hljs-comment"># 同上文提到的那样，本地预览没有问题后：</span><br>hexo d<br></code></pre></div></td></tr></table></figure>
+
+<p>此时访问自己的博客即可看见更换后的主题，但我们仍然需要对主题的相关配置进行修改，比如网站标题，图标等等。</p>
+<p>Hexo 中有两份主要的配置文件，名称都是 _config.yml ，它们均是用于站点配置使用的。其中，一份位于站点根目录下（比如我的：C:\KHLFYY_Blog\Hexo_config.yml），主要包含 Hexo 本身整站的配置；另一份位于主题目录下（比如我的：C:\KHLFYY_Blog\Hexo\themes\fluid_config.yml），这份配置由主题作者提供，主要用于配置主题相关的选项，一般_config.yml 文件里都有相关注释，或者也可以查看该主题repo里的readme.md说明，然后按需修改即可。</p>
+<h2 id="结语"><a href="#结语" class="headerlink" title="结语"></a>结语</h2><p>经过了这一番折腾，属于你自己的网站——你的个人博客，就搭建完成了！当然，个人博客还可以玩出很多花样。关于美化和进阶，将会另写一篇文章来讲解。在这次搭建过程中，你一定也学到了很多东西，快去写一篇博客和朋友们分享吧！</p>
 
             </div>
             <hr>
