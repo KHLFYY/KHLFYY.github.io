@@ -30,7 +30,7 @@
     
     
       
-      <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/highlight.js@10.7.2/styles/vs.min.css" />
+      <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/highlight.js@10.7.2/styles/vs2015.min.css" />
     
   
 
@@ -174,8 +174,8 @@
   
     <span class="post-meta">
       <i class="iconfont icon-date-fill" aria-hidden="true"></i>
-      <time datetime="2021-08-10 22:15" pubdate>
-        2021年8月10日 晚上
+      <time datetime="2021-08-19 20:00" pubdate>
+        2021年8月19日 晚上
       </time>
     </span>
   
@@ -186,7 +186,7 @@
     
     <span class="post-meta mr-2">
       <i class="iconfont icon-chart"></i>
-      3.7k 字
+      3.8k 字
     </span>
   
 
@@ -196,7 +196,7 @@
       <i class="iconfont icon-clock-fill"></i>
       
       
-      42
+      43
        分钟
     </span>
   
@@ -233,12 +233,13 @@
             
               <p class="note note-info">
                 
-                  本文最后更新于：7 分钟前
+                  本文最后更新于：几秒前
                 
               </p>
             
             <div class="markdown-body">
-              <h2 id="写在前面"><a href="#写在前面" class="headerlink" title="写在前面"></a>写在前面</h2><ul>
+              <p>本文写作时间：20210810 - 20210820</p>
+<h2 id="写在前面"><a href="#写在前面" class="headerlink" title="写在前面"></a>写在前面</h2><ul>
 <li><p>这篇文章主要是为了以后再次搭建服务器时给自己一个导航提醒，防止忘得一干二净。</p>
 </li>
 <li><p>由于KH自己在建立这个博客之前，对此方面知识几乎是白纸一张，所以这篇文章一定会写的很通俗易懂，其中也加上了我自己建立过程中的一些经验，和我一样的小白完全可以放心食用。</p>
@@ -404,12 +405,17 @@
 <p>Markdown是一种轻量级标记语言，创始人为约翰·格鲁伯（John Gruber）。 它允许人们使用易读易写的纯文本格式编写文档，然后转换成有效的XHTML（或者HTML）文档。这种语言吸收了很多在电子邮件中已有的纯文本标记的特性。——百度百科</p>
 </blockquote>
 <p>有很多编辑器都可以方便我们编辑markdown，但是我个人还是推荐使用<a target="_blank" rel="noopener" href="https://code.visualstudio.com/">VS Code</a>，这样你的很多工作都可以在VS code里一起完成。这一点会在以后的博客进阶里讲到。</p>
-<figure class="highlight markdown"><table><tr><td class="gutter hljs"><div class="hljs code-wrapper"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></div></td><td class="code"><div class="hljs code-wrapper"><pre><code class="hljs markdown">---<br>layout: 页面布局（配合主题文档使用，一般没有这一行）<br>title: 文章名称，一般自动写好了<br>date: 文章日期，一般自动写好了<br>tags: <br><span class="hljs-bullet">  -</span> 文章标签一<br><span class="hljs-bullet">  -</span> 文章标签二<br>categories: 文章分类<br>photos: 文章封面图（仅部分主题支持）<br>description: 文章描述，即要在首页显示的摘要（仅部分主题支持）<br><span class="hljs-bullet">-</span><br>这里是正文<br>使用markdown语法编辑<br>…………<br></code></pre></div></td></tr></table></figure>
+<p>关于markdown的语法，我的博客里有一份<a href="https://www.khlfyy.top/2021/08/10/Markdown%E8%AF%AD%E6%B3%95%E6%8C%87%E5%8D%97/">简略的基础教程</a></p>
+<p>打开你新建的 你的文章标题.md 文件，大概是这样的：</p>
+<figure class="highlight markdown"><table><tr><td class="gutter hljs"><div class="hljs code-wrapper"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></div></td><td class="code"><div class="hljs code-wrapper"><pre><code class="hljs markdown">---<br>title:<br>date:<br>tags:<br><br>---<br></code></pre></div></td></tr></table></figure>
+
+<p>因为这个很简略，你可以根据自己主题的需要，修改 hexo 文件夹下scaffolds的 post.md ，这个是使用指令 hexo n 之后生成的md中 已经写好的默认值，你可以根据主题和需要，将其修改成这样：</p>
+<figure class="highlight markdown"><table><tr><td class="gutter hljs"><div class="hljs code-wrapper"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></div></td><td class="code"><div class="hljs code-wrapper"><pre><code class="hljs markdown">---<br>layout: 页面布局（配合主题文档使用，一般没有这一行）<br>title: 文章名称，一般自动写好了<br>date: 文章日期，一般自动写好了<br>tags: <br><span class="hljs-bullet">  -</span> 文章标签一<br><span class="hljs-bullet">  -</span> 文章标签二<br>categories: 文章分类<br>photos: 文章封面图（仅部分主题支持）<br>description: 文章描述，即要在首页显示的摘要（仅部分主题支持）<br><span class="hljs-bullet">-</span><br>这里是正文<br>使用markdown语法编辑<br><br>......<br><br>正文结束<br></code></pre></div></td></tr></table></figure>
 
 <blockquote>
 <p>注意：description、photos等设置，具体还是要看你的主题是否支持。很多设置还需要根据主题具体分析。善于搜索、求教、交流。</p>
 </blockquote>
-<p>写完文章之后，最好在本地预览一下，看看有没有什么问题，使用命令：</p>
+<p>写完文章之后保存，最好在本地预览一下，看看有没有什么问题，使用命令：</p>
 <figure class="highlight bash"><table><tr><td class="gutter hljs"><div class="hljs code-wrapper"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></div></td><td class="code"><div class="hljs code-wrapper"><pre><code class="hljs bash">hexo clean<br><span class="hljs-comment"># 清除缓存</span><br>hexo g<br><span class="hljs-comment"># 生成网页文件</span><br>hexo s<br><span class="hljs-comment"># 开启本地服务器</span><br></code></pre></div></td></tr></table></figure>
 
 <p>然后你就可以在 <a target="_blank" rel="noopener" href="http://localhost:4000/">http://localhost:4000/</a> 本地查看博客效果。</p>
@@ -479,18 +485,12 @@
                   <article class="post-prev col-6">
                     
                     
-                      <a href="/2021/08/10/Markdown%E8%AF%AD%E6%B3%95%E6%8C%87%E5%8D%97/">
-                        <i class="iconfont icon-arrowleft"></i>
-                        <span class="hidden-mobile">Markdown语法指南</span>
-                        <span class="visible-mobile">上一篇</span>
-                      </a>
-                    
                   </article>
                   <article class="post-next col-6">
                     
                     
-                      <a href="/2021/08/08/%E6%AC%A2%E8%BF%8E%E5%85%89%E4%B8%B4KH%E7%9A%84%E5%8D%9A%E5%AE%A2/">
-                        <span class="hidden-mobile">欢迎光临KH的博客</span>
+                      <a href="/2021/08/18/%E3%80%90VGTB%E3%80%91%E6%88%91%E4%BB%AC%E7%9A%84MC%E7%94%9F%E7%94%B5%E6%9C%8D-%E5%9B%BE%E7%89%87%E6%AC%A3%E8%B5%8F/">
+                        <span class="hidden-mobile">【VGTB】我们的MC生电服-图片欣赏</span>
                         <span class="visible-mobile">下一篇</span>
                         <i class="iconfont icon-arrowright"></i>
                       </a>
