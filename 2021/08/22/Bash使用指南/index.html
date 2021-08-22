@@ -14,11 +14,11 @@
   <meta http-equiv="x-ua-compatible" content="ie=edge">
   
   <meta name="theme-color" content="#2f4154">
-  <meta name="description" content="Linux上最基础的命令教程">
+  <meta name="description" content="Bash最基础的命令教程">
   <meta name="author" content="KHLFYY">
   <meta name="keywords" content="">
   
-  <title>Linux命令指南 - KHLFYY&#39;s Blog</title>
+  <title>Bash使用指南 - KHLFYY&#39;s Blog</title>
 
   <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" />
 
@@ -164,7 +164,7 @@
       <div class="full-bg-img">
         <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
           <div class="page-header text-center fade-in-up">
-            <span class="h2" id="subtitle" title="Linux命令指南">
+            <span class="h2" id="subtitle" title="Bash使用指南">
               
             </span>
 
@@ -186,7 +186,7 @@
     
     <span class="post-meta mr-2">
       <i class="iconfont icon-chart"></i>
-      676 字
+      561 字
     </span>
   
 
@@ -196,7 +196,7 @@
       <i class="iconfont icon-clock-fill"></i>
       
       
-      9
+      7
        分钟
     </span>
   
@@ -229,7 +229,7 @@
         <div class="py-5" id="board">
           <article class="post-content mx-auto">
             <!-- SEO header -->
-            <h1 style="display: none">Linux命令指南</h1>
+            <h1 style="display: none">Bash使用指南</h1>
             
               <p class="note note-info">
                 
@@ -239,52 +239,32 @@
             
             <div class="markdown-body">
               <h2 id="写在前面"><a href="#写在前面" class="headerlink" title="写在前面"></a>写在前面</h2><ul>
-<li><p>本篇文章目的是让各位以及KH自己【简略】学习掌握关于Linux上的基础命令，用于在博客网站维护中使用，并作为各位和KH的备忘以供翻阅，所以本文仅介绍常用基础命令。</p>
+<li><p>本篇文章目的是让各位以及KH自己【简略】学习掌握关于 Bash 上的基础命令，并作为各位和KH的备忘以供翻阅，所以本文仅介绍常用基础命令。</p>
 </li>
 <li><p>本文参考连接：<a target="_blank" rel="noopener" href="http://cornmc.top:800/tips/1_Linux%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/">Linux基础命令——YMMC</a></p>
 </li>
 </ul>
-<h2 id="关于bash"><a href="#关于bash" class="headerlink" title="关于bash"></a>关于bash</h2><p>linux 的 bash 和 shell 关系：</p>
-<p>我们可以把 shell 的作用理解为：把用户输入的命令翻译给操作系统。而bash是 borne again shell 的缩写，它是 shell 的一种，Linux 上默认采用的是bash。</p>
-<blockquote>
-<p>参考链接：<a target="_blank" rel="noopener" href="https://www.cnblogs.com/cj2014/p/3887044.html">linux的bash和shell关系</a></p>
-</blockquote>
+<h2 id="关于bash"><a href="#关于bash" class="headerlink" title="关于bash"></a>关于bash</h2><p>博客维护中使用的 bash <strong>基本</strong>和 Linux 中使用命令要求相同，有些部分有差异。</p>
 <h2 id="关于目录"><a href="#关于目录" class="headerlink" title="关于目录"></a>关于目录</h2><p>目录 与 文件夹 的关系：</p>
 <p>目录是列表，文件夹是一个实际的对像。目录和文件夹是<strong>不同种类的概念</strong>，目录是<strong>统计</strong>群落，文件夹是单个<strong>个体</strong>事物，目录是对文件夹的罗列。</p>
 <p>对于我们的一般使用，可以 <em>近似</em> 等同这两个概念。</p>
 <h3 id="特殊目录"><a href="#特殊目录" class="headerlink" title="特殊目录"></a>特殊目录</h3><ul>
-<li><p>/ 为根目录</p>
-</li>
-<li><p>~为用户目录</p>
-</li>
-<li><p>.为当前目录</p>
-</li>
-<li><p>..为上一级目录</p>
-<blockquote>
-<p>根目录没有上一级目录</p>
-</blockquote>
-</li>
+<li>~   用户目录</li>
+<li>.   当前目录</li>
+<li>..  上一级目录</li>
 </ul>
-<h3 id="目录的表示"><a href="#目录的表示" class="headerlink" title="目录的表示"></a>目录的表示</h3><p>当前目录可以省略不写，例如 当前在 /markdown （根目录的markdown目录）下</p>
-<p>那么</p>
-<figure class="highlight bash"><table><tr><td class="gutter hljs"><div class="hljs code-wrapper"><pre><span class="line">1</span><br></pre></div></td><td class="code"><div class="hljs code-wrapper"><pre><code class="hljs bash">now<br></code></pre></div></td></tr></table></figure>
-
-<p>等价于</p>
-<figure class="highlight bash"><table><tr><td class="gutter hljs"><div class="hljs code-wrapper"><pre><span class="line">1</span><br></pre></div></td><td class="code"><div class="hljs code-wrapper"><pre><code class="hljs bash">/markdown/now<br></code></pre></div></td></tr></table></figure>
-
-<hr>
-<p>例1：用户目录下的 apple 目录：</p>
+<blockquote>
+<p>Windows下用户目录一般为：C:/Users/yourname</p>
+</blockquote>
+<h3 id="目录的表示"><a href="#目录的表示" class="headerlink" title="目录的表示"></a>目录的表示</h3><p>例：用户目录下的 apple 目录：</p>
 <figure class="highlight bash"><table><tr><td class="gutter hljs"><div class="hljs code-wrapper"><pre><span class="line">1</span><br></pre></div></td><td class="code"><div class="hljs code-wrapper"><pre><code class="hljs bash">~/apple<br></code></pre></div></td></tr></table></figure>
-
-<p>例2：根目录下的 markdown 目录：</p>
-<figure class="highlight bash"><table><tr><td class="gutter hljs"><div class="hljs code-wrapper"><pre><span class="line">1</span><br></pre></div></td><td class="code"><div class="hljs code-wrapper"><pre><code class="hljs bash">/markdown<br></code></pre></div></td></tr></table></figure>
 
 <h2 id="输入区"><a href="#输入区" class="headerlink" title="输入区"></a>输入区</h2><p>在此处输入命令，按回车执行。终端上会返回执行结果。按Ctrl+C强制停止当前运行的命令。</p>
 <h2 id="基本命令"><a href="#基本命令" class="headerlink" title="基本命令"></a>基本命令</h2><h3 id="list-列出"><a href="#list-列出" class="headerlink" title="list 列出"></a>list 列出</h3><p>列出当前目录下的文件及目录：</p>
 <figure class="highlight bash"><table><tr><td class="gutter hljs"><div class="hljs code-wrapper"><pre><span class="line">1</span><br></pre></div></td><td class="code"><div class="hljs code-wrapper"><pre><code class="hljs bash">ls<br></code></pre></div></td></tr></table></figure>
 
 <blockquote>
-<p>ls不会列出以.开头的隐藏文件。</p>
+<p>ls不会列出以 . 开头的隐藏文件。</p>
 </blockquote>
 <p>列出列出当前目录下<strong>所有</strong>文件及目录：</p>
 <figure class="highlight bash"><table><tr><td class="gutter hljs"><div class="hljs code-wrapper"><pre><span class="line">1</span><br></pre></div></td><td class="code"><div class="hljs code-wrapper"><pre><code class="hljs bash">ls -a<br></code></pre></div></td></tr></table></figure>
@@ -302,7 +282,7 @@
 <figure class="highlight bash"><table><tr><td class="gutter hljs"><div class="hljs code-wrapper"><pre><span class="line">1</span><br></pre></div></td><td class="code"><div class="hljs code-wrapper"><pre><code class="hljs bash">cp -r source_directory directory<br></code></pre></div></td></tr></table></figure>
 
 <h3 id="move-移动"><a href="#move-移动" class="headerlink" title="move 移动"></a>move 移动</h3><p>将 源文件 移动到 目标目录 下</p>
-<figure class="highlight bash"><table><tr><td class="gutter hljs"><div class="hljs code-wrapper"><pre><span class="line">1</span><br></pre></div></td><td class="code"><div class="hljs code-wrapper"><pre><code class="hljs bash">cp source_file directory<br></code></pre></div></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="gutter hljs"><div class="hljs code-wrapper"><pre><span class="line">1</span><br></pre></div></td><td class="code"><div class="hljs code-wrapper"><pre><code class="hljs bash">mv source_file directory<br></code></pre></div></td></tr></table></figure>
 
 <p>将 源目录整个文件夹 复制到 目标目录 下：</p>
 <figure class="highlight bash"><table><tr><td class="gutter hljs"><div class="hljs code-wrapper"><pre><span class="line">1</span><br></pre></div></td><td class="code"><div class="hljs code-wrapper"><pre><code class="hljs bash">mv source_directory directory<br></code></pre></div></td></tr></table></figure>
@@ -321,10 +301,9 @@
 <figure class="highlight bash"><table><tr><td class="gutter hljs"><div class="hljs code-wrapper"><pre><span class="line">1</span><br></pre></div></td><td class="code"><div class="hljs code-wrapper"><pre><code class="hljs bash">rm -rf dir<br></code></pre></div></td></tr></table></figure>
 
 <blockquote>
-<p>注意：linux下 remove 指令会<strong>彻底删除</strong>文件，<strong>无法恢复</strong>。</p>
+<p>注意：使用 remove 指令删除后<strong>无法恢复</strong>。</p>
 </blockquote>
-<h2 id="其他指令"><a href="#其他指令" class="headerlink" title="其他指令"></a>其他指令</h2><p>关于linux的其他详细指令，网络上有大量教程，各位可自行翻阅。</p>
-<p>相关链接：<a target="_blank" rel="noopener" href="https://www.runoob.com/linux/linux-tutorial.html">Linux教程|菜鸟教程</a></p>
+<h2 id="其他指令"><a href="#其他指令" class="headerlink" title="其他指令"></a>其他指令</h2><p>关于bash的其他详细指令，网络上有大量教程，各位可自行翻阅。</p>
 
             </div>
             <hr>
@@ -347,8 +326,6 @@
                       <a class="hover-with-bg" href="/tags/%E6%95%99%E7%A8%8B/">教程</a>
                     
                       <a class="hover-with-bg" href="/tags/%E5%A4%87%E5%BF%98/">备忘</a>
-                    
-                      <a class="hover-with-bg" href="/tags/Liunx/">Liunx</a>
                     
                       <a class="hover-with-bg" href="/tags/bash/">bash</a>
                     
