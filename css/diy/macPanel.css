@@ -1,4 +1,4 @@
-/*mac Panel效果代码块相关*/
+/* mac Panel效果代码块相关 */
 .highlight-wrap[data-rel] {
     position: relative;
     overflow: hidden;
@@ -21,20 +21,17 @@
 }
 .highlight-wrap[data-rel]::before {
     content: attr(data-rel);
+    display: block;
     height: 38px;
     line-height: 38px;
-    background: rgba(16,132,20,0.871);
+    background: #1f3144;
     color: #fff;
     font-size: 16px;
-    position: absolute;
-    top: 0;
-    left: 0;
     width: 100%;
     font-family: 'Source Sans Pro', sans-serif;
     font-weight: bold;
     padding: 0px 80px;
     text-indent: 15px;
-    float: left;
 }
 .highlight-wrap[data-rel]::after {
     content: ' ';
@@ -50,4 +47,21 @@
     -webkit-box-shadow: 20px 0px #fdbc40, 40px 0px #35cd4b;
     box-shadow: 20px 0px #fdbc40, 40px 0px #35cd4b;
     z-index: 3;
+    display: block;
+}
+
+.highlight-wrap[data-rel] figure{
+    margin-bottom: 0px;
+}
+
+.highlight-wrap[data-rel] pre{
+    background-color: rgb(24,28,39) !important;
+}
+
+.highlight-wrap[data-rel] td.gutter{
+    background-color: rgb(24,28,39) !important;
+}
+
+.highlight-wrap[data-rel] table,pre{
+    border-radius: 0 !important;
 }
