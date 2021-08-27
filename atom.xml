@@ -64,11 +64,11 @@
     <category term="博客教程" scheme="https://www.khlfyy.top/categories/%E5%8D%9A%E5%AE%A2%E6%95%99%E7%A8%8B/"/>
     
     
+    <category term="教程" scheme="https://www.khlfyy.top/tags/%E6%95%99%E7%A8%8B/"/>
+    
     <category term="备忘" scheme="https://www.khlfyy.top/tags/%E5%A4%87%E5%BF%98/"/>
     
     <category term="bilibili" scheme="https://www.khlfyy.top/tags/bilibili/"/>
-    
-    <category term="教程" scheme="https://www.khlfyy.top/tags/%E6%95%99%E7%A8%8B/"/>
     
     <category term="博客" scheme="https://www.khlfyy.top/tags/%E5%8D%9A%E5%AE%A2/"/>
     
@@ -143,11 +143,11 @@
     <category term="基本指南" scheme="https://www.khlfyy.top/categories/%E5%9F%BA%E6%9C%AC%E6%8C%87%E5%8D%97/"/>
     
     
-    <category term="备忘" scheme="https://www.khlfyy.top/tags/%E5%A4%87%E5%BF%98/"/>
+    <category term="指南" scheme="https://www.khlfyy.top/tags/%E6%8C%87%E5%8D%97/"/>
     
     <category term="教程" scheme="https://www.khlfyy.top/tags/%E6%95%99%E7%A8%8B/"/>
     
-    <category term="指南" scheme="https://www.khlfyy.top/tags/%E6%8C%87%E5%8D%97/"/>
+    <category term="备忘" scheme="https://www.khlfyy.top/tags/%E5%A4%87%E5%BF%98/"/>
     
     <category term="bash" scheme="https://www.khlfyy.top/tags/bash/"/>
     
@@ -174,9 +174,9 @@
     <category term="博客教程" scheme="https://www.khlfyy.top/categories/%E5%8D%9A%E5%AE%A2%E6%95%99%E7%A8%8B/"/>
     
     
-    <category term="备忘" scheme="https://www.khlfyy.top/tags/%E5%A4%87%E5%BF%98/"/>
-    
     <category term="教程" scheme="https://www.khlfyy.top/tags/%E6%95%99%E7%A8%8B/"/>
+    
+    <category term="备忘" scheme="https://www.khlfyy.top/tags/%E5%A4%87%E5%BF%98/"/>
     
     <category term="helloworld" scheme="https://www.khlfyy.top/tags/helloworld/"/>
     
@@ -232,9 +232,9 @@
     <category term="基本指南" scheme="https://www.khlfyy.top/categories/%E5%9F%BA%E6%9C%AC%E6%8C%87%E5%8D%97/"/>
     
     
-    <category term="备忘" scheme="https://www.khlfyy.top/tags/%E5%A4%87%E5%BF%98/"/>
-    
     <category term="教程" scheme="https://www.khlfyy.top/tags/%E6%95%99%E7%A8%8B/"/>
+    
+    <category term="备忘" scheme="https://www.khlfyy.top/tags/%E5%A4%87%E5%BF%98/"/>
     
     <category term="Markdown" scheme="https://www.khlfyy.top/tags/Markdown/"/>
     
@@ -268,9 +268,9 @@
     <link href="https://www.khlfyy.top/2021/08/08/%E7%AC%AC%E4%B8%80%E7%AF%87%E6%96%87%E7%AB%A0-%E5%BB%BA%E7%AB%8B%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/"/>
     <id>https://www.khlfyy.top/2021/08/08/%E7%AC%AC%E4%B8%80%E7%AF%87%E6%96%87%E7%AB%A0-%E5%BB%BA%E7%AB%8B%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/</id>
     <published>2021-08-08T07:43:54.000Z</published>
-    <updated>2021-08-22T03:32:58.864Z</updated>
+    <updated>2021-08-27T04:51:52.778Z</updated>
     
-    <content type="html"><![CDATA[<h2 id="关于网站"><a href="#关于网站" class="headerlink" title="关于网站"></a>关于网站</h2><ul><li><p>这是KHLFYY的第一个网站，也是个人博客。</p></li><li><p>关于页：<a href="https://www.khlfyy.top/about/">关于KH的博客</a></p></li><li><p>项目的GitHub地址：<a href="https://github.com/KHLFYY/KHLFYY.github.io">KHLFYY.github.io项目</a></p></li></ul><h2 id="一些教程"><a href="#一些教程" class="headerlink" title="一些教程"></a>一些教程</h2><ul><li><p>建立博客教程：<a href="https://blog.csdn.net/qq_36759224/article/details/82121420">CSDN-使用 Github Pages 和 Hexo 搭建自己的独立博客</a></p></li><li><p>Markdown教程：<a href="https://www.jianshu.com/p/q81RER/">献给写作者的 Markdown 新手指南</a></p></li><li><p>Hexo配置：<a href="https://hexo.io/zh-cn/docs/configuration.html">config.yml配置教程</a></p></li></ul><h2 id="基础设施"><a href="#基础设施" class="headerlink" title="基础设施"></a>基础设施</h2><ul><li><p>网站框架–Hexo：<a href="https://hexo.io/">官网</a></p></li><li><p>评论模块–Valine：<a href="https://valine.js.org/quickstart.html">官网</a></p></li><li><p>数据统计–LeanCloud：<a href="https://console.leancloud.cn/">官网</a></p></li><li><p>头像支持–Gravatar：<a href="http://cn.gravatar.com/">官网</a></p></li><li><p>网站图床–聚合图床：<a href="https://www.superbed.cn/">官网</a></p></li></ul><h2 id="蛮大的头像"><a href="#蛮大的头像" class="headerlink" title="蛮大的头像"></a>蛮大的头像</h2><p><img src="https://pic.imgdb.cn/item/610faeba5132923bf88a2bde.png" alt="KH的头像"></p>]]></content>
+    <content type="html"><![CDATA[<h2 id="关于网站"><a href="#关于网站" class="headerlink" title="关于网站"></a>关于网站</h2><ul><li><p>这是KHLFYY的第一个网站，也是个人博客。</p></li><li><p>关于页：<a href="https://www.khlfyy.top/about/">关于KH的博客</a></p></li><li><p>项目的GitHub地址：<a href="https://github.com/KHLFYY/KHLFYY.github.io">KHLFYY.github.io项目</a></p></li></ul><h2 id="一些教程"><a href="#一些教程" class="headerlink" title="一些教程"></a>一些教程</h2><ul><li><p>建立博客教程：<a href="https://blog.csdn.net/qq_36759224/article/details/82121420">CSDN-使用 Github Pages 和 Hexo 搭建自己的独立博客</a></p></li><li><p>Markdown教程：<a href="https://www.jianshu.com/p/q81RER/">献给写作者的 Markdown 新手指南</a></p></li><li><p>Hexo配置：<a href="https://hexo.io/zh-cn/docs/configuration.html">config.yml配置教程</a></p></li></ul><h2 id="基础设施"><a href="#基础设施" class="headerlink" title="基础设施"></a>基础设施</h2><ul><li><p>网站框架–Hexo：<a href="https://hexo.io/">官网</a></p></li><li><p>博客主题–Fluid：<a href="https://hexo.fluid-dev.com/">官网</a></p></li><li><p>评论模块–Valine：<a href="https://valine.js.org/quickstart.html">官网</a></p></li><li><p>数据统计–LeanCloud：<a href="https://console.leancloud.cn/">官网</a></p></li><li><p>头像支持–Gravatar：<a href="http://cn.gravatar.com/">官网</a></p></li><li><p>网站图床–聚合图床：<a href="https://www.superbed.cn/">官网</a></p></li></ul><h2 id="蛮大的头像"><a href="#蛮大的头像" class="headerlink" title="蛮大的头像"></a>蛮大的头像</h2><p><img src="https://pic.imgdb.cn/item/610faeba5132923bf88a2bde.png" alt="KH的头像"></p>]]></content>
     
     
     <summary type="html">关于这个网站的基本信息</summary>
@@ -280,9 +280,9 @@
     <category term="helloworld" scheme="https://www.khlfyy.top/categories/helloworld/"/>
     
     
-    <category term="备忘" scheme="https://www.khlfyy.top/tags/%E5%A4%87%E5%BF%98/"/>
-    
     <category term="教程" scheme="https://www.khlfyy.top/tags/%E6%95%99%E7%A8%8B/"/>
+    
+    <category term="备忘" scheme="https://www.khlfyy.top/tags/%E5%A4%87%E5%BF%98/"/>
     
     <category term="helloworld" scheme="https://www.khlfyy.top/tags/helloworld/"/>
     
