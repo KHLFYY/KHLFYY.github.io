@@ -62,7 +62,7 @@
 
   <script id="fluid-configs">
     var Fluid = window.Fluid || {};
-    var CONFIG = {"hostname":"www.khlfyy.top","root":"/","version":"1.8.11","typing":{"enable":true,"typeSpeed":100,"cursorChar":"|","loop":false},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"right","visible":"hover","icon":""},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"copy_btn":true,"image_zoom":{"enable":true,"img_url_replace":["",""]},"toc":{"enable":true,"headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":false,"loading_img":"/img/loading.gif","onlypost":false,"offset_factor":2},"web_analytics":{"enable":true,"baidu":null,"google":null,"gtag":null,"tencent":{"sid":null,"cid":null},"woyaola":null,"cnzz":null,"leancloud":{"app_id":"Hirw5HlTGAqNeo3OkOvYBzHd-gzGzoHsz","app_key":"nadoWzDtfVLTiDKazS9wU0Fh","server_url":null}},"search_path":"/local-search.xml"};
+    var CONFIG = {"hostname":"www.khlfyy.top","root":"/","version":"1.8.11","typing":{"enable":true,"typeSpeed":100,"cursorChar":"|","loop":false},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"right","visible":"hover","icon":""},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"copy_btn":true,"image_zoom":{"enable":true,"img_url_replace":["",""]},"toc":{"enable":true,"headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":false,"loading_img":"/img/loading.gif","onlypost":true,"offset_factor":3},"web_analytics":{"enable":true,"baidu":null,"google":null,"gtag":null,"tencent":{"sid":null,"cid":null},"woyaola":null,"cnzz":null,"leancloud":{"app_id":"Hirw5HlTGAqNeo3OkOvYBzHd-gzGzoHsz","app_key":"nadoWzDtfVLTiDKazS9wU0Fh","server_url":null}},"search_path":"/local-search.xml"};
   </script>
   <script  src="/js/utils.js" ></script>
   <script  src="/js/color-schema.js" ></script>
@@ -177,7 +177,7 @@
 </nav>
 
     <div class="banner" id="banner" parallax=true
-         style="background: url('https://pic.imgdb.cn/item/611c557a4907e2d39ce6df28.jpg') no-repeat center center;
+         style="background: url('/img/post_banner.png') no-repeat center center;
            background-size: cover;">
       <div class="full-bg-img">
         <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
@@ -251,7 +251,7 @@
             
               <p class="note note-info">
                 
-                  本文最后更新于：2021年8月22日 晚上
+                  本文最后更新于：2021年8月29日 下午
                 
               </p>
             
@@ -298,13 +298,11 @@
 
 <p>检验git的另一个简单方法是：在任意地方右键，如果看到菜单里多了 Git GUI Here 和 Git Bash Here 两个选项（第一个是图形界面的 Git 操作，第二个是<strong>常用的</strong>命令行），即安装成功。</p>
 <h2 id="安装-Hexo"><a href="#安装-Hexo" class="headerlink" title="安装 Hexo"></a>安装 Hexo</h2><p>首先，我们要选择一个文件夹来存放你的博客网站文件。</p>
-<blockquote>
-<p>注意：由于最后你的博客文件夹内将会有许许多多小文件，数万个文件数千个文件夹。如果你对其整体压缩打包作为备份的话，对于硬盘的读取速度就会有要求（主要是4k随机），所以我们可以把这个文件夹放在 SSD 里（如果你并不是非常介意你的 SSD 写入量）。</p>
-</blockquote>
-<p>比如，我在我电脑唯一是 SSD 的C盘（C:\）新建了一个文件夹，重命名为 KHLFYY_Blog 。打开这个空文件夹，右键 Git Bash Here ，</p>
-<blockquote>
-<p><strong>注意：所有关于博客的命令操作，都需要在这个文件夹下进行。</strong></p>
-</blockquote>
+<div class="note note-info">
+            <p>注意：由于最后你的博客文件夹内将会有许许多多小文件，数万个文件数千个文件夹。如果你对其整体压缩打包作为备份的话，对于硬盘的读取速度就会有要求（主要是4k随机），所以我们可以把这个文件夹放在 SSD 里（如果你并不是非常介意你的 SSD 写入量）。</p>
+          </div>
+
+<p>比如，我在我的C盘（C:\）新建了一个文件夹，重命名为 KHLFYY_Blog 。打开这个空文件夹，右键 Git Bash Here ，</p>
 <h3 id="换源"><a href="#换源" class="headerlink" title="换源"></a>换源</h3><p>由于某些原因，npm 的下载速度可能会和某盘速度一样感人，</p>
 <p><img src="https://pic.imgdb.cn/item/611b880c4907e2d39c09b2b8.jpg" alt="懂的都懂"></p>
 <p>所以，建议把 npm 的下载源换成淘宝源,在刚刚打开的命令行中依次输入下列两条命令。如果你自己有一些<strong>神奇</strong>的手段，也可以不更换下载源。</p>
@@ -318,6 +316,10 @@
 <div class="highlight-wrap"autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" contenteditable="false"data-rel="BASH"><figure class="iseeu highlight /bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">hexo init<br></code></pre></td></tr></table></figure></div>
 
 <p><img src="https://imgconvert.csdnimg.cn/aHR0cHM6Ly9pLmxvbGkubmV0LzIwMTkvMDMvMjUvNWM5OGY1NjZiNGI2Yi5wbmc" alt="还是借的图片"></p>
+<div class="note note-success">
+            <p><strong>注意：下文所有关于博客的 Bash命令 操作，都需要在 Hexo 文件夹下进行。</strong></p>
+          </div>
+
 <p>Hexo 安装完成后，将会在指定文件夹中新建所需要的文件，Hexo 文件夹下的目录如下：<br><img src="https://pic.imgdb.cn/item/611b8d104907e2d39c16ba16.png" alt="Hexo文件目录"></p>
 <h3 id="本地查看效果"><a href="#本地查看效果" class="headerlink" title="本地查看效果"></a>本地查看效果</h3><p>按照上述配置完成之后，我们可以查看一下 hexo 是否正确配置完成，<strong>依次</strong>输入下列命令：</p>
 <div class="highlight-wrap"autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" contenteditable="false"data-rel="BASH"><figure class="iseeu highlight /bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><code class="hljs bash">hexo generate  <br>hexo server<br><span class="hljs-comment"># 或者简写为</span><br>hexo g<br>hexo s<br></code></pre></td></tr></table></figure></div>
@@ -388,10 +390,11 @@
 <p>为了方便，我把代码打在这里：</p>
 <div class="highlight-wrap"autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" contenteditable="false"data-rel="YML"><figure class="iseeu highlight /yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><code class="hljs yml"><span class="hljs-attr">deploy:</span><br>  <span class="hljs-bullet">-</span> <span class="hljs-attr">type:</span> <span class="hljs-string">&#x27;git&#x27;</span><br>    <span class="hljs-attr">repository:</span> <br>     <span class="hljs-attr">github:</span> <span class="hljs-string">git@github.com:KHLFYY/KHLFYY.github.io.git,main</span><br><span class="hljs-comment"># 记得替换自己的repo地址（SSH） 注意空格</span><br></code></pre></td></tr></table></figure></div>
 
-<blockquote>
-<p>注意：Github中 branch（分支）的默认值，现在已经由 master 改为 main 。</p>
-<p>一些教程中（如图）可能写的仍为master，你需要将 master 改为 main ；你也可以像我的那样，不写 branch 那一行，直接在 github 后加个” ,main “就可以。<br><img src="https://imgconvert.csdnimg.cn/aHR0cHM6Ly9pLmxvbGkubmV0LzIwMTkvMDMvMjUvNWM5OGY3ZTExZWVkNy5wbmc" alt="借图"></p>
-</blockquote>
+<div class="note note-warning">
+            <p>注意：Github中 branch（分支）的默认值，现在已经由 master 改为 main 。<br>一些教程中（如图）可能写的仍为master，你需要将 master 改为 main ；你也可以像我的那样，不写 branch 那一行，直接在 github 后加个” ,main “就可以。</p>
+          </div>
+
+<p><img src="https://imgconvert.csdnimg.cn/aHR0cHM6Ly9pLmxvbGkubmV0LzIwMTkvMDMvMjUvNWM5OGY3ZTExZWVkNy5wbmc" alt="借图"></p>
 <p>ctrl+s 保存</p>
 <p>在 Bash 中 分别 执行：</p>
 <div class="highlight-wrap"autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" contenteditable="false"data-rel="BASH"><figure class="iseeu highlight /bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs bash">hexo g  <br>hexo d<br><span class="hljs-comment"># 即：hexo generate 和 hexo deploy</span><br></code></pre></td></tr></table></figure></div>
@@ -430,9 +433,10 @@
 <p>因为这个很简略，你可以根据自己主题的需要，修改 hexo 文件夹下scaffolds的 post.md ，这个是使用指令 hexo n 之后生成的md中 已经写好的默认值，你可以根据主题和需要，将其修改成这样：</p>
 <div class="highlight-wrap"autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" contenteditable="false"data-rel="MARKDOWN"><figure class="iseeu highlight /markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><code class="hljs markdown">---<br>layout: 页面布局（配合主题文档使用，一般没有这一行）<br>title: 文章名称，一般自动写好了<br>date: 文章日期，一般自动写好了<br>tags: <br><span class="hljs-bullet">  -</span> 文章标签一<br><span class="hljs-bullet">  -</span> 文章标签二<br>categories: 文章分类<br>photos: 文章封面图（仅部分主题支持）<br>description: 文章描述，即要在首页显示的摘要（仅部分主题支持）<br><span class="hljs-bullet">-</span><br>这里是正文<br>使用 markdown 语法编辑<br><br>......<br><br>正文结束<br></code></pre></td></tr></table></figure></div>
 
-<blockquote>
-<p>注意：description、photos 等设置，具体还是要看你的主题是否支持。很多设置还需要根据主题具体分析。善于搜索、求教、交流。</p>
-</blockquote>
+<div class="note note-info">
+            <p>注意：description、photos 等设置，具体还是要看你的主题是否支持。很多设置还需要根据主题具体分析。善于搜索、求教、交流。</p>
+          </div>
+
 <p>写完文章之后保存，最好在本地预览一下，看看有没有什么问题，使用命令：</p>
 <div class="highlight-wrap"autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" contenteditable="false"data-rel="BASH"><figure class="iseeu highlight /bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><code class="hljs bash">hexo clean<br><span class="hljs-comment"># 清除缓存</span><br>hexo g<br><span class="hljs-comment"># 生成网页文件</span><br>hexo s<br><span class="hljs-comment"># 开启本地服务器</span><br></code></pre></td></tr></table></figure></div>
 
@@ -503,7 +507,7 @@
                   <article class="post-prev col-6">
                     
                     
-                      <a href="/2021/08/22/Bash%E4%BD%BF%E7%94%A8%E6%8C%87%E5%8D%97/">
+                      <a href="/posts/Bash%E4%BD%BF%E7%94%A8%E6%8C%87%E5%8D%97/">
                         <i class="iconfont icon-arrowleft"></i>
                         <span class="hidden-mobile">Bash使用指南</span>
                         <span class="visible-mobile">上一篇</span>
@@ -513,7 +517,7 @@
                   <article class="post-next col-6">
                     
                     
-                      <a href="/2021/08/18/%E3%80%90VGTB%E3%80%91%E6%88%91%E4%BB%AC%E7%9A%84MC%E7%94%9F%E7%94%B5%E6%9C%8D-%E5%9B%BE%E7%89%87%E6%AC%A3%E8%B5%8F/">
+                      <a href="/posts/%E3%80%90VGTB%E3%80%91%E6%88%91%E4%BB%AC%E7%9A%84MC%E7%94%9F%E7%94%B5%E6%9C%8D-%E5%9B%BE%E7%89%87%E6%AC%A3%E8%B5%8F/">
                         <span class="hidden-mobile">【VGTB】我们的MC生电服-图片欣赏</span>
                         <span class="visible-mobile">下一篇</span>
                         <i class="iconfont icon-arrowright"></i>

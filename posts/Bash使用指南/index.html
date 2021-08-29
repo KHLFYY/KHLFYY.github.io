@@ -14,11 +14,11 @@
   <meta http-equiv="x-ua-compatible" content="ie=edge">
   
   <meta name="theme-color" content="#2f4154">
-  <meta name="description" content="关于这个网站的基本信息">
+  <meta name="description" content="Bash最基础的命令教程">
   <meta name="author" content="KHLFYY">
   <meta name="keywords" content="">
   
-  <title>我的第一篇文章——建立个人博客 - KHLFYY&#39;s Blog</title>
+  <title>Bash使用指南 - KHLFYY&#39;s Blog</title>
 
   <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" />
 
@@ -62,7 +62,7 @@
 
   <script id="fluid-configs">
     var Fluid = window.Fluid || {};
-    var CONFIG = {"hostname":"www.khlfyy.top","root":"/","version":"1.8.11","typing":{"enable":true,"typeSpeed":100,"cursorChar":"|","loop":false},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"right","visible":"hover","icon":""},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"copy_btn":true,"image_zoom":{"enable":true,"img_url_replace":["",""]},"toc":{"enable":true,"headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":false,"loading_img":"/img/loading.gif","onlypost":false,"offset_factor":2},"web_analytics":{"enable":true,"baidu":null,"google":null,"gtag":null,"tencent":{"sid":null,"cid":null},"woyaola":null,"cnzz":null,"leancloud":{"app_id":"Hirw5HlTGAqNeo3OkOvYBzHd-gzGzoHsz","app_key":"nadoWzDtfVLTiDKazS9wU0Fh","server_url":null}},"search_path":"/local-search.xml"};
+    var CONFIG = {"hostname":"www.khlfyy.top","root":"/","version":"1.8.11","typing":{"enable":true,"typeSpeed":100,"cursorChar":"|","loop":false},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"right","visible":"hover","icon":""},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"copy_btn":true,"image_zoom":{"enable":true,"img_url_replace":["",""]},"toc":{"enable":true,"headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":false,"loading_img":"/img/loading.gif","onlypost":true,"offset_factor":3},"web_analytics":{"enable":true,"baidu":null,"google":null,"gtag":null,"tencent":{"sid":null,"cid":null},"woyaola":null,"cnzz":null,"leancloud":{"app_id":"Hirw5HlTGAqNeo3OkOvYBzHd-gzGzoHsz","app_key":"nadoWzDtfVLTiDKazS9wU0Fh","server_url":null}},"search_path":"/local-search.xml"};
   </script>
   <script  src="/js/utils.js" ></script>
   <script  src="/js/color-schema.js" ></script>
@@ -177,12 +177,12 @@
 </nav>
 
     <div class="banner" id="banner" parallax=true
-         style="background: url('https://pic.imgdb.cn/item/611c557a4907e2d39ce6df28.jpg') no-repeat center center;
+         style="background: url('/img/post_banner.png') no-repeat center center;
            background-size: cover;">
       <div class="full-bg-img">
         <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
           <div class="page-header text-center fade-in-up">
-            <span class="h2" id="subtitle" title="我的第一篇文章——建立个人博客">
+            <span class="h2" id="subtitle" title="Bash使用指南">
               
             </span>
 
@@ -192,8 +192,8 @@
   
     <span class="post-meta">
       <i class="iconfont icon-date-fill" aria-hidden="true"></i>
-      <time datetime="2021-08-08 15:43" pubdate>
-        2021年8月8日 下午
+      <time datetime="2021-08-22 12:27" pubdate>
+        2021年8月22日 中午
       </time>
     </span>
   
@@ -204,7 +204,7 @@
     
     <span class="post-meta mr-2">
       <i class="iconfont icon-chart"></i>
-      142 字
+      561 字
     </span>
   
 
@@ -214,7 +214,7 @@
       <i class="iconfont icon-clock-fill"></i>
       
       
-      2
+      7
        分钟
     </span>
   
@@ -247,46 +247,82 @@
         <div class="py-5" id="board">
           <article class="post-content mx-auto">
             <!-- SEO header -->
-            <h1 style="display: none">我的第一篇文章——建立个人博客</h1>
+            <h1 style="display: none">Bash使用指南</h1>
             
               <p class="note note-info">
                 
-                  本文最后更新于：2021年8月27日 下午
+                  本文最后更新于：2021年8月29日 下午
                 
               </p>
             
             <div class="markdown-body">
-              <h2 id="关于网站"><a href="#关于网站" class="headerlink" title="关于网站"></a>关于网站</h2><ul>
-<li><p>这是KHLFYY的第一个网站，也是个人博客。</p>
+              <h2 id="写在前面"><a href="#写在前面" class="headerlink" title="写在前面"></a>写在前面</h2><ul>
+<li><p>本篇文章目的是让各位以及KH自己【简略】学习掌握关于 Bash 上的基础命令，并作为各位和KH的备忘以供翻阅，所以本文仅介绍常用基础命令。</p>
 </li>
-<li><p>关于页：<a href="https://www.khlfyy.top/about/">关于KH的博客</a></p>
-</li>
-<li><p>项目的GitHub地址：<a target="_blank" rel="noopener" href="https://github.com/KHLFYY/KHLFYY.github.io">KHLFYY.github.io项目</a></p>
+<li><p>本文参考连接：<a target="_blank" rel="noopener" href="http://cornmc.top:800/tips/1_Linux%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/">Linux基础命令——YMMC</a></p>
 </li>
 </ul>
-<h2 id="一些教程"><a href="#一些教程" class="headerlink" title="一些教程"></a>一些教程</h2><ul>
-<li><p>建立博客教程：<a target="_blank" rel="noopener" href="https://blog.csdn.net/qq_36759224/article/details/82121420">CSDN-使用 Github Pages 和 Hexo 搭建自己的独立博客</a></p>
-</li>
-<li><p>Markdown教程：<a target="_blank" rel="noopener" href="https://www.jianshu.com/p/q81RER/">献给写作者的 Markdown 新手指南</a></p>
-</li>
-<li><p>Hexo配置：<a target="_blank" rel="noopener" href="https://hexo.io/zh-cn/docs/configuration.html">config.yml配置教程</a></p>
-</li>
+<h2 id="关于bash"><a href="#关于bash" class="headerlink" title="关于bash"></a>关于bash</h2><p>博客维护中使用的 bash <strong>基本</strong>和 Linux 中使用命令要求相同，有些部分有差异。</p>
+<h2 id="关于目录"><a href="#关于目录" class="headerlink" title="关于目录"></a>关于目录</h2><p>目录 与 文件夹 的关系：</p>
+<p>目录是列表，文件夹是一个实际的对像。目录和文件夹是<strong>不同种类的概念</strong>，目录是<strong>统计</strong>群落，文件夹是单个<strong>个体</strong>事物，目录是对文件夹的罗列。</p>
+<p>对于我们的一般使用，可以 <em>近似</em> 等同这两个概念。</p>
+<h3 id="特殊目录"><a href="#特殊目录" class="headerlink" title="特殊目录"></a>特殊目录</h3><ul>
+<li>~   用户目录</li>
+<li>.   当前目录</li>
+<li>..  上一级目录</li>
 </ul>
-<h2 id="基础设施"><a href="#基础设施" class="headerlink" title="基础设施"></a>基础设施</h2><ul>
-<li><p>网站框架–Hexo：<a target="_blank" rel="noopener" href="https://hexo.io/">官网</a></p>
-</li>
-<li><p>博客主题–Fluid：<a target="_blank" rel="noopener" href="https://hexo.fluid-dev.com/">官网</a></p>
-</li>
-<li><p>评论模块–Valine：<a target="_blank" rel="noopener" href="https://valine.js.org/quickstart.html">官网</a></p>
-</li>
-<li><p>数据统计–LeanCloud：<a target="_blank" rel="noopener" href="https://console.leancloud.cn/">官网</a></p>
-</li>
-<li><p>头像支持–Gravatar：<a target="_blank" rel="noopener" href="http://cn.gravatar.com/">官网</a></p>
-</li>
-<li><p>网站图床–聚合图床：<a target="_blank" rel="noopener" href="https://www.superbed.cn/">官网</a></p>
-</li>
-</ul>
-<h2 id="蛮大的头像"><a href="#蛮大的头像" class="headerlink" title="蛮大的头像"></a>蛮大的头像</h2><p><img src="https://pic.imgdb.cn/item/610faeba5132923bf88a2bde.png" alt="KH的头像"></p>
+<blockquote>
+<p>Windows下用户目录一般为：C:/Users/yourname</p>
+</blockquote>
+<h3 id="目录的表示"><a href="#目录的表示" class="headerlink" title="目录的表示"></a>目录的表示</h3><p>例：用户目录下的 apple 目录：</p>
+<div class="highlight-wrap"autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" contenteditable="false"data-rel="BASH"><figure class="iseeu highlight /bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">~/apple<br></code></pre></td></tr></table></figure></div>
+
+<h2 id="输入区"><a href="#输入区" class="headerlink" title="输入区"></a>输入区</h2><p>在此处输入命令，按回车执行。终端上会返回执行结果。按Ctrl+C强制停止当前运行的命令。</p>
+<h2 id="基本命令"><a href="#基本命令" class="headerlink" title="基本命令"></a>基本命令</h2><h3 id="list-列出"><a href="#list-列出" class="headerlink" title="list 列出"></a>list 列出</h3><p>列出当前目录下的文件及目录：</p>
+<div class="highlight-wrap"autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" contenteditable="false"data-rel="BASH"><figure class="iseeu highlight /bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">ls<br></code></pre></td></tr></table></figure></div>
+
+<blockquote>
+<p>ls不会列出以 . 开头的隐藏文件。</p>
+</blockquote>
+<p>列出列出当前目录下<strong>所有</strong>文件及目录：</p>
+<div class="highlight-wrap"autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" contenteditable="false"data-rel="BASH"><figure class="iseeu highlight /bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">ls -a<br></code></pre></td></tr></table></figure></div>
+
+<h3 id="make-directory-新建目录"><a href="#make-directory-新建目录" class="headerlink" title="make directory 新建目录"></a>make directory 新建目录</h3><p>在当前目录下新建名为doc的目录：</p>
+<div class="highlight-wrap"autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" contenteditable="false"data-rel="BASH"><figure class="iseeu highlight /bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">mkdir doc<br></code></pre></td></tr></table></figure></div>
+
+<h3 id="change-directory-切换目录"><a href="#change-directory-切换目录" class="headerlink" title="change directory 切换目录"></a>change directory 切换目录</h3><p>进入当前目录下的doc目录：</p>
+<div class="highlight-wrap"autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" contenteditable="false"data-rel="BASH"><figure class="iseeu highlight /bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash"><span class="hljs-built_in">cd</span> doc<br></code></pre></td></tr></table></figure></div>
+
+<h3 id="copy-复制"><a href="#copy-复制" class="headerlink" title="copy 复制"></a>copy 复制</h3><p>将 源文件(source_file) 复制到 目标目录(directory) 下：</p>
+<div class="highlight-wrap"autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" contenteditable="false"data-rel="BASH"><figure class="iseeu highlight /bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">cp source_file directory<br></code></pre></td></tr></table></figure></div>
+
+<p>将 源目录整个文件夹 复制到 目标目录 下：</p>
+<div class="highlight-wrap"autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" contenteditable="false"data-rel="BASH"><figure class="iseeu highlight /bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">cp -r source_directory directory<br></code></pre></td></tr></table></figure></div>
+
+<h3 id="move-移动"><a href="#move-移动" class="headerlink" title="move 移动"></a>move 移动</h3><p>将 源文件 移动到 目标目录 下</p>
+<div class="highlight-wrap"autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" contenteditable="false"data-rel="BASH"><figure class="iseeu highlight /bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">mv source_file directory<br></code></pre></td></tr></table></figure></div>
+
+<p>将 源目录整个文件夹 复制到 目标目录 下：</p>
+<div class="highlight-wrap"autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" contenteditable="false"data-rel="BASH"><figure class="iseeu highlight /bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">mv source_directory directory<br></code></pre></td></tr></table></figure></div>
+
+<p>将 file1 重命名为 file2：</p>
+<div class="highlight-wrap"autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" contenteditable="false"data-rel="BASH"><figure class="iseeu highlight /bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">mv file1 file2<br></code></pre></td></tr></table></figure></div>
+
+<h3 id="remove-删除"><a href="#remove-删除" class="headerlink" title="remove 删除"></a>remove 删除</h3><p>将 文件 document.txt 删除：</p>
+<div class="highlight-wrap"autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" contenteditable="false"data-rel="BASH"><figure class="iseeu highlight /bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">rm document.txt<br></code></pre></td></tr></table></figure></div>
+
+<p>将 目录 dir （包含子目录和文件）删除：</p>
+<div class="highlight-wrap"autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" contenteditable="false"data-rel="BASH"><figure class="iseeu highlight /bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">rm -r dir<br></code></pre></td></tr></table></figure></div>
+
+<p>一般输入 remove 指令后，会返回确认信息。</p>
+<p>将 目录 dir 直接删除：</p>
+<div class="highlight-wrap"autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" contenteditable="false"data-rel="BASH"><figure class="iseeu highlight /bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">rm -rf dir<br></code></pre></td></tr></table></figure></div>
+
+<div class="note note-danger">
+            <p>注意：使用 remove 指令删除后<strong>无法恢复</strong>。</p>
+          </div>
+
+<h2 id="其他指令"><a href="#其他指令" class="headerlink" title="其他指令"></a>其他指令</h2><p>关于bash的其他详细指令，网络上有大量教程，各位可自行翻阅。</p>
 
             </div>
             <hr>
@@ -296,7 +332,7 @@
                   <div class="post-meta mr-3">
                     <i class="iconfont icon-category"></i>
                     
-                      <a class="hover-with-bg" href="/categories/helloworld/">helloworld</a>
+                      <a class="hover-with-bg" href="/categories/%E5%9F%BA%E6%9C%AC%E6%8C%87%E5%8D%97/">基本指南</a>
                     
                   </div>
                 
@@ -304,13 +340,17 @@
                   <div class="post-meta">
                     <i class="iconfont icon-tags"></i>
                     
+                      <a class="hover-with-bg" href="/tags/%E6%8C%87%E5%8D%97/">指南</a>
+                    
                       <a class="hover-with-bg" href="/tags/%E6%95%99%E7%A8%8B/">教程</a>
                     
                       <a class="hover-with-bg" href="/tags/%E5%A4%87%E5%BF%98/">备忘</a>
                     
-                      <a class="hover-with-bg" href="/tags/helloworld/">helloworld</a>
+                      <a class="hover-with-bg" href="/tags/bash/">bash</a>
                     
-                      <a class="hover-with-bg" href="/tags/%E5%9C%B0%E5%9D%80/">地址</a>
+                      <a class="hover-with-bg" href="/tags/%E5%91%BD%E4%BB%A4%E8%A1%8C/">命令行</a>
+                    
+                      <a class="hover-with-bg" href="/tags/%E5%91%BD%E4%BB%A4/">命令</a>
                     
                   </div>
                 
@@ -327,15 +367,21 @@
                   <article class="post-prev col-6">
                     
                     
-                      <a href="/2021/08/08/%E6%AC%A2%E8%BF%8E%E5%85%89%E4%B8%B4KH%E7%9A%84%E5%8D%9A%E5%AE%A2/">
+                      <a href="/posts/%E5%8D%9A%E5%AE%A2%E8%BF%9B%E9%98%B6%E2%80%94%E2%80%94%E5%85%85%E5%88%86%E4%BD%BF%E7%94%A8VScode/">
                         <i class="iconfont icon-arrowleft"></i>
-                        <span class="hidden-mobile">欢迎光临KH的博客</span>
+                        <span class="hidden-mobile">博客进阶——充分使用VScode</span>
                         <span class="visible-mobile">上一篇</span>
                       </a>
                     
                   </article>
                   <article class="post-next col-6">
                     
+                    
+                      <a href="/posts/KH%E7%9A%84%E5%8D%9A%E5%AE%A2%E6%98%AF%E5%A6%82%E4%BD%95%E5%BB%BA%E7%AB%8B%E7%9A%84/">
+                        <span class="hidden-mobile">KH的博客是如何建立的</span>
+                        <span class="visible-mobile">下一篇</span>
+                        <i class="iconfont icon-arrowright"></i>
+                      </a>
                     
                   </article>
                 </div>
