@@ -151,6 +151,20 @@
   </url>
   
   <url>
+    <loc>https://www.khlfyy.top/tags/%E5%8D%9A%E5%AE%A2/</loc>
+    <lastmod>2021-08-31</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.khlfyy.top/tags/VS-code/</loc>
+    <lastmod>2021-08-31</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://www.khlfyy.top/tags/%E5%9B%BE%E7%89%87/</loc>
     <lastmod>2021-08-31</lastmod>
     <changefreq>daily</changefreq>
@@ -193,27 +207,6 @@
   </url>
   
   <url>
-    <loc>https://www.khlfyy.top/tags/%E5%8D%9A%E5%AE%A2/</loc>
-    <lastmod>2021-08-31</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.khlfyy.top/tags/VS-code/</loc>
-    <lastmod>2021-08-31</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.khlfyy.top/tags/%E6%97%A5%E5%B8%B8/</loc>
-    <lastmod>2021-08-31</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>https://www.khlfyy.top/tags/valine/</loc>
     <lastmod>2021-08-31</lastmod>
     <changefreq>daily</changefreq>
@@ -242,14 +235,7 @@
   </url>
   
   <url>
-    <loc>https://www.khlfyy.top/tags/helloworld/</loc>
-    <lastmod>2021-08-31</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.khlfyy.top/tags/%E5%9C%B0%E5%9D%80/</loc>
+    <loc>https://www.khlfyy.top/tags/%E6%97%A5%E5%B8%B8/</loc>
     <lastmod>2021-08-31</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -271,6 +257,20 @@
   
   <url>
     <loc>https://www.khlfyy.top/tags/%E4%BD%99%E7%83%AC/</loc>
+    <lastmod>2021-08-31</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.khlfyy.top/tags/helloworld/</loc>
+    <lastmod>2021-08-31</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.khlfyy.top/tags/%E5%9C%B0%E5%9D%80/</loc>
     <lastmod>2021-08-31</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -300,14 +300,14 @@
   </url>
   
   <url>
-    <loc>https://www.khlfyy.top/categories/Minecraft/</loc>
+    <loc>https://www.khlfyy.top/categories/%E5%8D%9A%E5%AE%A2%E6%95%99%E7%A8%8B/</loc>
     <lastmod>2021-08-31</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>https://www.khlfyy.top/categories/%E5%8D%9A%E5%AE%A2%E6%95%99%E7%A8%8B/</loc>
+    <loc>https://www.khlfyy.top/categories/Minecraft/</loc>
     <lastmod>2021-08-31</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -321,14 +321,14 @@
   </url>
   
   <url>
-    <loc>https://www.khlfyy.top/categories/helloworld/</loc>
+    <loc>https://www.khlfyy.top/categories/%E5%88%86%E4%BA%AB/</loc>
     <lastmod>2021-08-31</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>https://www.khlfyy.top/categories/%E5%88%86%E4%BA%AB/</loc>
+    <loc>https://www.khlfyy.top/categories/helloworld/</loc>
     <lastmod>2021-08-31</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
