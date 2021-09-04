@@ -204,7 +204,7 @@
     
     <span class="post-meta mr-2">
       <i class="iconfont icon-chart"></i>
-      3.8k 字
+      3.9k 字
     </span>
   
 
@@ -214,7 +214,7 @@
       <i class="iconfont icon-clock-fill"></i>
       
       
-      48
+      49
        分钟
     </span>
   
@@ -251,7 +251,7 @@
             
               <p class="note note-info">
                 
-                  本文最后更新时间：2021年8月29日 下午
+                  本文最后更新时间：2021年9月4日 下午
                 
               </p>
             
@@ -293,6 +293,7 @@
 <h2 id="环境配置"><a href="#环境配置" class="headerlink" title="环境配置"></a>环境配置</h2><p>安装node.js、Git。</p>
 <h3 id="安装-node-js"><a href="#安装-node-js" class="headerlink" title="安装 node.js"></a>安装 node.js</h3><p><a target="_blank" rel="noopener" href="https://nodejs.org/zh-cn/download/">点击此处</a>访问node.js的官网，下载你的系统的长期维护版本（稳定版 LTS）。并进行安装。（若无特殊需求，一直下一步即可。）</p>
 <h3 id="安装-Git"><a href="#安装-Git" class="headerlink" title="安装 Git"></a>安装 Git</h3><p><a target="_blank" rel="noopener" href="https://git-scm.com/download/win">点击此处</a>访问Git的官网，下载你系统所需要的版本，或者直接点击“Click here to download manually”。并进行安装（若无特殊需求，一直下一步即可。）</p>
+<p>关于 Git Bash 中使用的 bash 基本语法，我的博客中有一份<a href="https://www.khlfyy.top/posts/Bash%E4%BD%BF%E7%94%A8%E6%8C%87%E5%8D%97/">简略的基础指南</a></p>
 <h3 id="检查环境配置"><a href="#检查环境配置" class="headerlink" title="检查环境配置"></a>检查环境配置</h3><p>同时按下键盘左下角的 windows键 + R，输入cmd，回车。<strong>逐条</strong>输入以下命令，有相应版本信息（数字）显示则安装成功，若不正确可以卸载软件重新安装。</p>
 <div class="highlight-wrap"autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" contenteditable="false"data-rel="CMD"><figure class="iseeu highlight /cmd"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs cmd">git --version  <br>node -v  <br>npm -v<br></code></pre></td></tr></table></figure></div>
 
@@ -426,11 +427,11 @@
 <p>Markdown是一种轻量级标记语言，创始人为约翰·格鲁伯（John Gruber）。 它允许人们使用易读易写的纯文本格式编写文档，然后转换成有效的XHTML（或者HTML）文档。这种语言吸收了很多在电子邮件中已有的纯文本标记的特性。——百度百科</p>
 </blockquote>
 <p>有很多编辑器都可以方便我们编辑markdown，但是我个人还是推荐使用<a target="_blank" rel="noopener" href="https://code.visualstudio.com/">VS Code</a>，这样你的很多工作都可以在VS code里一起完成。这一点会在以后的博客进阶里讲到。</p>
-<p>关于 markdown 的语法，我的博客里有一份<a href="https://www.khlfyy.top/2021/08/10/Markdown%E8%AF%AD%E6%B3%95%E6%8C%87%E5%8D%97/">简略的基础教程</a></p>
+<p>关于 markdown 的语法，我的博客里有一份<a href="https://www.khlfyy.top/posts/Markdown%E8%AF%AD%E6%B3%95%E6%8C%87%E5%8D%97/">简略的基础指南</a></p>
 <p>打开你新建的 你的文章标题.md 文件，大概是这样的：</p>
 <div class="highlight-wrap"autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" contenteditable="false"data-rel="MARKDOWN"><figure class="iseeu highlight /markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><code class="hljs markdown">---<br>title:<br>date:<br>tags:<br><br>---<br></code></pre></td></tr></table></figure></div>
 
-<p>因为这个很简略，你可以根据自己主题的需要，修改 hexo 文件夹下scaffolds的 post.md ，这个是使用指令 hexo n 之后生成的md中 已经写好的默认值，你可以根据主题和需要，将其修改成这样：</p>
+<p>因为这个很简略，你可以根据自己主题的需要，修改 hexo 文件夹下scaffolds的 post.md ，这个是使用 hexo n 命令之后，生成的md文件中 已经写好的默认值，你可以根据主题和需要，将其修改成这样：</p>
 <div class="highlight-wrap"autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" contenteditable="false"data-rel="MARKDOWN"><figure class="iseeu highlight /markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><code class="hljs markdown">---<br>layout: 页面布局（配合主题文档使用，一般没有这一行）<br>title: 文章名称，一般自动写好了<br>date: 文章日期，一般自动写好了<br>tags: <br><span class="hljs-bullet">  -</span> 文章标签一<br><span class="hljs-bullet">  -</span> 文章标签二<br>categories: 文章分类<br>photos: 文章封面图（仅部分主题支持）<br>description: 文章描述，即要在首页显示的摘要（仅部分主题支持）<br><span class="hljs-bullet">-</span><br>这里是正文<br>使用 markdown 语法编辑<br><br>......<br><br>正文结束<br></code></pre></td></tr></table></figure></div>
 
 <div class="note note-info">
