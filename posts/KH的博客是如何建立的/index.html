@@ -204,7 +204,7 @@
     
     <span class="post-meta mr-2">
       <i class="iconfont icon-chart"></i>
-      4k 字
+      4.1k 字
     </span>
   
 
@@ -214,7 +214,7 @@
       <i class="iconfont icon-clock-fill"></i>
       
       
-      50
+      52
        分钟
     </span>
   
@@ -251,16 +251,16 @@
             
               <p class="note note-info">
                 
-                  本文最后更新时间：2021年9月5日 早上
+                  本文最后更新时间：2021年9月5日 晚上
                 
               </p>
             
             <div class="markdown-body">
               <p>本文写作时间：20210810 - 20210820</p>
 <h2 id="写在前面"><a href="#写在前面" class="headerlink" title="写在前面"></a>写在前面</h2><ul>
-<li><p>这篇文章主要是为了以后再次搭建服务器时给自己一个导航提醒，防止忘得一干二净。</p>
+<li><p>这是一篇关于“如何零成本搭建个人博客”的保姆级教程。</p>
 </li>
-<li><p>由于KH自己在建立这个博客之前，对此方面知识几乎是白纸一张，所以这篇文章一定会写的很通俗易懂，其中也加上了我自己建立过程中的一些经验，和我一样的小白完全可以放心食用。</p>
+<li><p>由于我自己在建立这个博客之前，对此方面知识几乎是白纸一张，所以这篇文章一定会写的很通俗易懂，其中也加上了我自己建立过程中的一些经验，和我一样的小白完全可以放心食用。</p>
 </li>
 <li><p><strong>本文图文密度很高，请<em>仔细阅读</em> 以免漏掉重要信息。</strong></p>
 </li>
@@ -277,7 +277,7 @@
 <blockquote>
 <p>GitHub 是一个面向开源及私有软件项目的托管平台，因为只支持 Git 作为唯一的版本库格式进行托管，故名GitHub。——百度百科</p>
 </blockquote>
-<p>Github 是一个代码托管平台，有很多优秀的开源项目。比如前一阵很多人都知道的“美团骑手开发阿里云盘”的作者，他的<a target="_blank" rel="noopener" href="https://github.com/liupan1890/aliyunpan">阿里云盘小白羊版</a>就在 githu 上开源，很多人参与其中，提建议（issue），促使这个第三方客户端做的越来越好，此软件也深受好评。</p>
+<p>Github 是一个代码托管平台，有很多优秀的开源项目。比如前一阵很多人都知道的“美团骑手开发阿里云盘”的作者，他的<a target="_blank" rel="noopener" href="https://github.com/liupan1890/aliyunpan">阿里云盘小白羊版</a>就在 github 上开源，很多人参与其中，提建议（issue），促使这个第三方客户端做的越来越好，此软件也深受好评。</p>
 </li>
 <li><p><a target="_blank" rel="noopener" href="https://pages.github.com/">Github Pages</a></p>
 <p>GitHub Pages 是一个静态站点托管服务。Github 页面旨在直接从 GitHub 仓库中直接托管您的个人、组织或项目页面。</p>
@@ -293,7 +293,7 @@
 <h2 id="环境配置"><a href="#环境配置" class="headerlink" title="环境配置"></a>环境配置</h2><p>安装node.js、Git。</p>
 <h3 id="安装-node-js"><a href="#安装-node-js" class="headerlink" title="安装 node.js"></a>安装 node.js</h3><p><a target="_blank" rel="noopener" href="https://nodejs.org/zh-cn/download/">点击此处</a>访问node.js的官网，下载你的系统的长期维护版本（稳定版 LTS）。并进行安装。（若无特殊需求，一直下一步即可。）</p>
 <h3 id="安装-Git"><a href="#安装-Git" class="headerlink" title="安装 Git"></a>安装 Git</h3><p><a target="_blank" rel="noopener" href="https://git-scm.com/download/win">点击此处</a>访问Git的官网，下载你系统所需要的版本，或者直接点击“Click here to download manually”。并进行安装（若无特殊需求，一直下一步即可。）</p>
-<p>关于 Git Bash 中使用的 bash 基本语法，我的博客中有一份<a href="https://www.khlfyy.top/posts/Bash%E4%BD%BF%E7%94%A8%E6%8C%87%E5%8D%97/">简略的基础指南</a></p>
+<p>关于 Git Bash 中使用的 bash 基本语法，我的博客中有一份<a href="https://www.khlfyy.top/posts/Bash%E4%BD%BF%E7%94%A8%E6%8C%87%E5%8D%97/">简略的基础指南</a>。</p>
 <h3 id="检查环境配置"><a href="#检查环境配置" class="headerlink" title="检查环境配置"></a>检查环境配置</h3><p>同时按下键盘左下角的 windows键 + R，输入cmd，回车。<strong>逐条</strong>输入以下命令，有相应版本信息（数字）显示则安装成功，若不正确可以卸载软件重新安装。</p>
 <div class="highlight-wrap"autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" contenteditable="false"data-rel="CMD"><figure class="iseeu highlight /cmd"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs cmd">git --version  <br>node -v  <br>npm -v<br></code></pre></td></tr></table></figure></div>
 
@@ -336,6 +336,10 @@
 <h2 id="部署-Github-Pages"><a href="#部署-Github-Pages" class="headerlink" title="部署 Github Pages"></a>部署 Github Pages</h2><p>现在我们只能通过本地连接查看博客，我们要做的是让其他人也能够访问我们的博客，这就需要我们将博客部署到Github Pages上。</p>
 <h3 id="注册-Github"><a href="#注册-Github" class="headerlink" title="注册 Github"></a>注册 Github</h3><p>访问<a target="_blank" rel="noopener" href="https://github.com/">Github 官网</a>，注册一个账号。</p>
 <h3 id="新建项目仓库"><a href="#新建项目仓库" class="headerlink" title="新建项目仓库"></a>新建项目仓库</h3><p>点击 New repository 新建一个项目仓库，步骤及注意事项见下图：</p>
+<div class="note note-warning">
+            <p>看清下图中哪个是用户名！仓库（repo）名称必须要写成 <strong>用户名.github.io</strong> 。</p>
+          </div>
+
 <p><img src="https://imgconvert.csdnimg.cn/aHR0cHM6Ly9pLmxvbGkubmV0LzIwMTkvMDMvMjUvNWM5OGY1ZTA5MzBjMi5wbmc" alt="借用图片-新建注意事项"></p>
 <h3 id="配置SSH密钥"><a href="#配置SSH密钥" class="headerlink" title="配置SSH密钥"></a>配置<a target="_blank" rel="noopener" href="https://baike.baidu.com/item/ssh/10407">SSH密钥</a></h3><blockquote>
 <p>SSH 是一种网络协议，用于计算机之间的加密登录。以公钥进行的数据加密，只能与之对应的私钥才可以解密，反之亦然。——摘自<a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/217950357">知乎文章</a></p>
@@ -364,6 +368,7 @@
 <p><img src="https://imgconvert.csdnimg.cn/aHR0cHM6Ly9pLmxvbGkubmV0LzIwMTkvMDMvMjUvNWM5OGY2MDZlNzU1OC5wbmc" alt="步骤1"></p>
 <p><img src="https://imgconvert.csdnimg.cn/aHR0cHM6Ly9pLmxvbGkubmV0LzIwMTkvMDMvMjUvNWM5OGY2MjJiNDU4OC5wbmc" alt="步骤2"></p>
 <p><img src="https://imgconvert.csdnimg.cn/aHR0cHM6Ly9pLmxvbGkubmV0LzIwMTkvMDMvMjUvNWM5OGY2M2ViMWFiMi5wbmc" alt="步骤3"></p>
+<p>步骤四这里的名称，为了方便记忆，你可以写“我的笔记本”“我的手机”之类的设备识别名</p>
 <p><img src="https://imgconvert.csdnimg.cn/aHR0cHM6Ly9pLmxvbGkubmV0LzIwMTkvMDMvMjUvNWM5OGY2YmMxZmM4Ny5wbmc" alt="步骤4"></p>
 <h3 id="测试-SSH配置"><a href="#测试-SSH配置" class="headerlink" title="测试 SSH配置"></a>测试 SSH配置</h3><p>Git Bash Here ，输入以下命令</p>
 <div class="highlight-wrap"autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" contenteditable="false"data-rel="BASH"><figure class="iseeu highlight /bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs bash">ssh -T git@github.com<br><span class="hljs-comment"># 无需改动git@github.com</span><br></code></pre></td></tr></table></figure></div>
@@ -385,10 +390,10 @@
           </div>
 
 <p>登录 github ，进入到你的博客项目仓库中（如<a target="_blank" rel="noopener" href="https://github.com/KHLFYY/KHLFYY.github.io">https://github.com/KHLFYY/KHLFYY.github.io</a>）。<br><img src="https://pic.imgdb.cn/item/611dcf154907e2d39cff5b92.png" alt="进入自己的博客项目仓库"></p>
-<p>右侧找到 code ，复制一下 SSH的地址</p>
-<p><img src="https://pic.imgdb.cn/item/611dcfa14907e2d39c00b5ce.png" alt="复制SSH地址"></p>
+<p>右侧找到 code ，复制一下git仓库的SSH地址：</p>
+<p><img src="https://pic.imgdb.cn/item/611dcfa14907e2d39c00b5ce.png" alt="复制git仓库地址"></p>
 <p>打开我们的 Hexo 文件夹（如：C:\KHLFYY_Blog\Hexo），右键用记事本（推荐<a target="_blank" rel="noopener" href="https://code.visualstudio.com/">VS Code</a>）打开该文件夹下的_config.yml 文件，找到 <strong>deploy</strong>（可以使用ctrl+F进行搜索）</p>
-<p><strong>大致</strong>如图，，将 repository 后的链接改为你刚刚复制的链接，<strong>注意空格</strong>。<br><img src="https://pic.imgdb.cn/item/611dd06c4907e2d39c029130.png" alt="config"></p>
+<p><strong>大致</strong>如图，将 repository 后的链接改为你刚刚复制的链接，<strong>注意空格</strong>。<br><img src="https://pic.imgdb.cn/item/611dd06c4907e2d39c029130.png" alt="config"></p>
 <p>为了方便，我把代码打在这里：</p>
 <div class="highlight-wrap"autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" contenteditable="false"data-rel="YML"><figure class="iseeu highlight /yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><code class="hljs yml"><span class="hljs-attr">deploy:</span><br>  <span class="hljs-bullet">-</span> <span class="hljs-attr">type:</span> <span class="hljs-string">&#x27;git&#x27;</span><br>    <span class="hljs-attr">repository:</span> <br>     <span class="hljs-attr">github:</span> <span class="hljs-string">git@github.com:KHLFYY/KHLFYY.github.io.git,main</span><br><span class="hljs-comment"># 记得替换自己的repo地址（SSH） 注意空格</span><br></code></pre></td></tr></table></figure></div>
 
@@ -433,7 +438,7 @@
 <div class="highlight-wrap"autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" contenteditable="false"data-rel="MARKDOWN"><figure class="iseeu highlight /markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><code class="hljs markdown">---<br>title:<br>date:<br>tags:<br><br>---<br></code></pre></td></tr></table></figure></div>
 
 <p>因为这个很简略，你可以根据自己主题的需要，修改 hexo 文件夹下 scaffolds 的 post.md ，这个是使用 hexo n 命令之后，生成的md文件中 已经写好的默认值，你可以根据主题和需要，将其修改成这样：</p>
-<div class="highlight-wrap"autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" contenteditable="false"data-rel="MARKDOWN"><figure class="iseeu highlight /markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><code class="hljs markdown">---<br>title: &#123;&#123; title &#125;&#125;<br>date: &#123;&#123; date &#125;&#125;<br>index<span class="hljs-emphasis">_img: /img/example.jpg</span><br><span class="hljs-emphasis">banner_</span>img: /img/post<span class="hljs-emphasis">_banner.png</span><br><span class="hljs-emphasis">tags:</span><br><span class="hljs-emphasis">- </span><br><span class="hljs-emphasis">categories: </span><br><span class="hljs-emphasis">description: </span><br><span class="hljs-emphasis">---</span><br><span class="hljs-emphasis"></span><br></code></pre></td></tr></table></figure></div>
+<div class="highlight-wrap"autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" contenteditable="false"data-rel="MARKDOWN"><figure class="iseeu highlight /markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><code class="hljs markdown">---<br>title: &#123;&#123; title &#125;&#125;<br>date: &#123;&#123; date &#125;&#125;<br>index<span class="hljs-emphasis">_img: /img/example.jpg</span><br><span class="hljs-emphasis">banner_</span>img: /img/post<span class="hljs-emphasis">_banner.png</span><br><span class="hljs-emphasis">tags:</span><br><span class="hljs-emphasis">- </span><br><span class="hljs-emphasis">categories: </span><br><span class="hljs-emphasis">description: </span><br><span class="hljs-emphasis"></span><br><span class="hljs-emphasis">---</span><br><span class="hljs-emphasis"></span><br></code></pre></td></tr></table></figure></div>
 
 <div class="note note-primary">
             <p>使用 hexo n 命令生成的 文章标题.md ，会自动写好我们在 scaffolds 的 post.md 中预设的内容；而手动新建 txt 改成 md 就需要自己写入。这就是为什么上文建议使用指令来生成新文章。</p>
@@ -458,12 +463,18 @@
 <div class="highlight-wrap"autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" contenteditable="false"data-rel="BASH"><figure class="iseeu highlight /bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs bash">hexo cl<br>hexo g -d<br></code></pre></td></tr></table></figure></div>
 
 <p>如果你正确提交到 github 仓库了，过几分钟就可以在你的博客网站看见更新了！</p>
-<h2 id="更改主题"><a href="#更改主题" class="headerlink" title="更改主题"></a>更改主题</h2><p>默认的主题毕竟没有特色，或者你喜欢其他样式的主题。下面讲解如何为自己的博客更改想要的主题。</p>
-<p>你可以在<a target="_blank" rel="noopener" href="https://hexo.io/themes/">Hexo 官网的主题专栏</a>寻找心仪的主题，点进去之后，找找作者的github中这个主题的repo（仓库）。一般都会在文章的最下面，大致如图：</p>
+<h2 id="更改主题"><a href="#更改主题" class="headerlink" title="更改主题"></a>更改主题</h2><p>默认的主题毕竟没有特色，又或者你更喜欢其他样式的主题。下面讲解如何为自己的博客更改想要的主题。</p>
+<p>途径一：你可以在<a target="_blank" rel="noopener" href="https://hexo.io/themes/">Hexo 官网的主题专栏</a>寻找心仪的主题，点进去之后，找找作者的github中这个主题的repo（仓库）。一般都会在文章的最下面，大致如图：</p>
 <p><img src="https://imgconvert.csdnimg.cn/aHR0cHM6Ly9pLmxvbGkubmV0LzIwMTkvMDMvMjUvNWM5OGY4MjNmMTI3NS5wbmc" alt="借的图片"></p>
+<p>途径二:在 geihub 中搜索 hexo theme ，就可以找到许多 hexo 主题。</p>
+<p>然后将该主题（theme）下载下来：</p>
 <p><img src="https://imgconvert.csdnimg.cn/aHR0cHM6Ly9pLmxvbGkubmV0LzIwMTkvMDMvMjUvNWM5OGY4NWRiZGYyMy5wbmc" alt="借的图片"></p>
 <p>再打开 Hexo 文件夹下的 themes 目录（如：C:\KHLFYY_Blog\Hexo\themes），右键 Git Bash Here，输入以下命令：</p>
 <div class="highlight-wrap"autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" contenteditable="false"data-rel="BASH"><figure class="iseeu highlight /bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs bash">git <span class="hljs-built_in">clone</span> https://github.com/levblanc/hexo-theme-aero-dual<br><span class="hljs-comment"># 将地址换成你刚刚复制的主题的项目地址</span><br></code></pre></td></tr></table></figure></div>
+
+<div class="note note-info">
+            <p>也可以直接在 repo 页面点击 Code 然后点击 Download ZIP 下载，解压。<br><img src="https://pic.imgdb.cn/item/61349dd944eaada739a2f887.png" alt="手动下载"></p>
+          </div>
 
 <p>等待 clone 完成之后，你的 themes 文件夹下就会有一个 hexo-theme-aero-dual 文件夹了，为了方便期间，你可以将其重命名为 aero-dual。</p>
 <p>然后需要更改博客配置文件，让它来应用这个主题。打开 hexo 的配置 config 文件（比如C:\KHLFYY_Blog\Hexo_config.yml），ctrl+F搜索theme，然后改为刚刚的<strong>主题文件夹</strong>名称（图中名称是未修改的）：</p>
