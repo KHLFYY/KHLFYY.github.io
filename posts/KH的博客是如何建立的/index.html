@@ -336,8 +336,8 @@
 <h2 id="部署-Github-Pages"><a href="#部署-Github-Pages" class="headerlink" title="部署 Github Pages"></a>部署 Github Pages</h2><p>现在我们只能通过本地连接查看博客，我们要做的是让其他人也能够访问我们的博客，这就需要我们将博客部署到Github Pages上。</p>
 <h3 id="注册-Github"><a href="#注册-Github" class="headerlink" title="注册 Github"></a>注册 Github</h3><p>访问<a target="_blank" rel="noopener" href="https://github.com/">Github 官网</a>，注册一个账号。</p>
 <h3 id="新建项目仓库"><a href="#新建项目仓库" class="headerlink" title="新建项目仓库"></a>新建项目仓库</h3><p>点击 New repository 新建一个项目仓库，步骤及注意事项见下图：</p>
-<div class="note note-warning">
-            <p>看清下图中哪个是用户名！仓库（repo）名称必须要写成 <strong>用户名.github.io</strong> 。</p>
+<div class="note note-danger">
+            <p>看清下图中哪个是用户名！仓库（repo）名称必须要写成 <strong>用户名.github.io</strong> ！！</p>
           </div>
 
 <p><img src="https://imgconvert.csdnimg.cn/aHR0cHM6Ly9pLmxvbGkubmV0LzIwMTkvMDMvMjUvNWM5OGY1ZTA5MzBjMi5wbmc" alt="借用图片-新建注意事项"></p>
@@ -390,8 +390,8 @@
           </div>
 
 <p>登录 github ，进入到你的博客项目仓库中（如<a target="_blank" rel="noopener" href="https://github.com/KHLFYY/KHLFYY.github.io">https://github.com/KHLFYY/KHLFYY.github.io</a>）。<br><img src="https://pic.imgdb.cn/item/611dcf154907e2d39cff5b92.png" alt="进入自己的博客项目仓库"></p>
-<p>右侧找到 code ，复制一下git仓库的SSH地址：</p>
-<p><img src="https://pic.imgdb.cn/item/611dcfa14907e2d39c00b5ce.png" alt="复制git仓库地址"></p>
+<p>右侧找到 code ，复制一下 git 仓库的 SSH 地址：</p>
+<p><img src="https://pic.imgdb.cn/item/611dcfa14907e2d39c00b5ce.png" alt="复制 git 仓库地址"></p>
 <p>打开我们的 Hexo 文件夹（如：C:\KHLFYY_Blog\Hexo），右键用记事本（推荐<a target="_blank" rel="noopener" href="https://code.visualstudio.com/">VS Code</a>）打开该文件夹下的_config.yml 文件，找到 <strong>deploy</strong>（可以使用ctrl+F进行搜索）</p>
 <p><strong>大致</strong>如图，将 repository 后的链接改为你刚刚复制的链接，<strong>注意空格</strong>。<br><img src="https://pic.imgdb.cn/item/611dd06c4907e2d39c029130.png" alt="config"></p>
 <p>为了方便，我把代码打在这里：</p>
