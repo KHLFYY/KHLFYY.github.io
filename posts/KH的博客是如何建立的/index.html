@@ -204,7 +204,7 @@
     
     <span class="post-meta mr-2">
       <i class="iconfont icon-chart"></i>
-      3.9k 字
+      4k 字
     </span>
   
 
@@ -214,7 +214,7 @@
       <i class="iconfont icon-clock-fill"></i>
       
       
-      49
+      50
        分钟
     </span>
   
@@ -251,7 +251,7 @@
             
               <p class="note note-info">
                 
-                  本文最后更新时间：2021年9月4日 下午
+                  本文最后更新时间：2021年9月5日 早上
                 
               </p>
             
@@ -339,9 +339,9 @@
 <p><img src="https://imgconvert.csdnimg.cn/aHR0cHM6Ly9pLmxvbGkubmV0LzIwMTkvMDMvMjUvNWM5OGY1ZTA5MzBjMi5wbmc" alt="借用图片-新建注意事项"></p>
 <h3 id="配置SSH密钥"><a href="#配置SSH密钥" class="headerlink" title="配置SSH密钥"></a>配置<a target="_blank" rel="noopener" href="https://baike.baidu.com/item/ssh/10407">SSH密钥</a></h3><blockquote>
 <p>SSH 是一种网络协议，用于计算机之间的加密登录。以公钥进行的数据加密，只能与之对应的私钥才可以解密，反之亦然。——摘自<a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/217950357">知乎文章</a></p>
-<p>我们的公钥（后缀 .pub )是下文需要提交到 github 的，私钥需要保存好。</p>
 </blockquote>
-<p>要想通过 git 操作实现本地代码库与 Github 代码库同步，我们需要一个 SSH 密钥来确保远程操作人是该仓库的所有者。在我们第一次新建的博客文件夹里面（如：C:/KHLFYY_Blog）右键 Git Bash Here 输入以下命令：</p>
+<p>我们的公钥（后缀 .pub )是下文需要提交到 github 的，私钥需要保存好。</p>
+<p>要想通过 git 操作实现本地代码库与 Github 代码库同步，我们需要一个 SSH 密钥来确保远程操作人是可以写入该仓库。在我们第一次新建的博客文件夹里面（如：C:/KHLFYY_Blog）右键 Git Bash Here 输入以下命令：</p>
 <div class="highlight-wrap"autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" contenteditable="false"data-rel="BASH"><figure class="iseeu highlight /bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs bash">ssh-keygen -t rsa -C <span class="hljs-string">&quot;your email@example.com&quot;</span> <br><span class="hljs-comment"># 注意把邮箱换成你自己的邮箱 如khlfyy@outlook.com</span><br></code></pre></td></tr></table></figure></div>
 
 <p>返回信息如下：</p>
@@ -380,9 +380,10 @@
 <h3 id="配置Git"><a href="#配置Git" class="headerlink" title="配置Git"></a>配置Git</h3><p>Git 会根据用户的名字和邮箱来记录提交，GitHub 也是用这些信息来做权限的处理，输入以下命令进行个人信息的设置：</p>
 <div class="highlight-wrap"autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" contenteditable="false"data-rel="BASH"><figure class="iseeu highlight /bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs bash">git config --global user.name KHLFYY  <br>git config --global user.email  khlfyy@outlook.com<br><span class="hljs-comment">#替换成你自己的名字和邮箱，为方便记忆，建议与 GitHub 信息一致。</span><br></code></pre></td></tr></table></figure></div>
 
-<h2 id="将Hexo文件更新到Github的repo中"><a href="#将Hexo文件更新到Github的repo中" class="headerlink" title="将Hexo文件更新到Github的repo中"></a>将Hexo文件更新到Github的repo中</h2><blockquote>
-<p>repo=repository  即 github 项目仓库</p>
-</blockquote>
+<h2 id="将Hexo文件更新到Github的repo中"><a href="#将Hexo文件更新到Github的repo中" class="headerlink" title="将Hexo文件更新到Github的repo中"></a>将Hexo文件更新到Github的repo中</h2><div class="note note-info">
+            <p>repo=repository  即 github 项目仓库</p>
+          </div>
+
 <p>登录 github ，进入到你的博客项目仓库中（如<a target="_blank" rel="noopener" href="https://github.com/KHLFYY/KHLFYY.github.io">https://github.com/KHLFYY/KHLFYY.github.io</a>）。<br><img src="https://pic.imgdb.cn/item/611dcf154907e2d39cff5b92.png" alt="进入自己的博客项目仓库"></p>
 <p>右侧找到 code ，复制一下 SSH的地址</p>
 <p><img src="https://pic.imgdb.cn/item/611dcfa14907e2d39c00b5ce.png" alt="复制SSH地址"></p>
@@ -392,7 +393,7 @@
 <div class="highlight-wrap"autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" contenteditable="false"data-rel="YML"><figure class="iseeu highlight /yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><code class="hljs yml"><span class="hljs-attr">deploy:</span><br>  <span class="hljs-bullet">-</span> <span class="hljs-attr">type:</span> <span class="hljs-string">&#x27;git&#x27;</span><br>    <span class="hljs-attr">repository:</span> <br>     <span class="hljs-attr">github:</span> <span class="hljs-string">git@github.com:KHLFYY/KHLFYY.github.io.git,main</span><br><span class="hljs-comment"># 记得替换自己的repo地址（SSH） 注意空格</span><br></code></pre></td></tr></table></figure></div>
 
 <div class="note note-warning">
-            <p>注意：Github中 branch（分支）的默认值，现在已经由 master 改为 main 。<br>一些教程中（如图）可能写的仍为master，你需要将 master 改为 main ；你也可以像我的那样，不写 branch 那一行，直接在 github 后加个” ,main “就可以。</p>
+            <p>注意：Github中 branch（分支）的默认值，现在已经由 master 改为 main 。<br>一些教程中（如下图）可能写的仍为master，你需要将 master 改为 main ；你也可以像我的那样，不写 branch 那一行，直接在 github 后加个 <strong>,main</strong> 就可以。</p>
           </div>
 
 <p><img src="https://imgconvert.csdnimg.cn/aHR0cHM6Ly9pLmxvbGkubmV0LzIwMTkvMDMvMjUvNWM5OGY3ZTExZWVkNy5wbmc" alt="借图"></p>
@@ -426,13 +427,20 @@
 <h3 id="写博客-编辑markdown文本"><a href="#写博客-编辑markdown文本" class="headerlink" title="写博客-编辑markdown文本"></a>写博客-编辑markdown文本</h3><blockquote>
 <p>Markdown是一种轻量级标记语言，创始人为约翰·格鲁伯（John Gruber）。 它允许人们使用易读易写的纯文本格式编写文档，然后转换成有效的XHTML（或者HTML）文档。这种语言吸收了很多在电子邮件中已有的纯文本标记的特性。——百度百科</p>
 </blockquote>
-<p>有很多编辑器都可以方便我们编辑markdown，但是我个人还是推荐使用<a target="_blank" rel="noopener" href="https://code.visualstudio.com/">VS Code</a>，这样你的很多工作都可以在VS code里一起完成。这一点会在以后的博客进阶里讲到。</p>
+<p>有很多编辑器都可以方便我们编辑markdown，但是我个人还是推荐使用<a target="_blank" rel="noopener" href="https://code.visualstudio.com/">VS Code</a>，这样你的很多工作都可以在VS code里一起完成。详细可以看看这篇<a href="https://www.khlfyy.top/posts/%E5%8D%9A%E5%AE%A2%E8%BF%9B%E9%98%B6%E2%80%94%E2%80%94%E5%85%85%E5%88%86%E4%BD%BF%E7%94%A8VScode/">博客进阶——充分利用VScode</a>。</p>
 <p>关于 markdown 的语法，我的博客里有一份<a href="https://www.khlfyy.top/posts/Markdown%E8%AF%AD%E6%B3%95%E6%8C%87%E5%8D%97/">简略的基础指南</a></p>
 <p>打开你新建的 你的文章标题.md 文件，大概是这样的：</p>
 <div class="highlight-wrap"autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" contenteditable="false"data-rel="MARKDOWN"><figure class="iseeu highlight /markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><code class="hljs markdown">---<br>title:<br>date:<br>tags:<br><br>---<br></code></pre></td></tr></table></figure></div>
 
-<p>因为这个很简略，你可以根据自己主题的需要，修改 hexo 文件夹下scaffolds的 post.md ，这个是使用 hexo n 命令之后，生成的md文件中 已经写好的默认值，你可以根据主题和需要，将其修改成这样：</p>
-<div class="highlight-wrap"autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" contenteditable="false"data-rel="MARKDOWN"><figure class="iseeu highlight /markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><code class="hljs markdown">---<br>layout: 页面布局（配合主题文档使用，一般没有这一行）<br>title: 文章名称，一般自动写好了<br>date: 文章日期，一般自动写好了<br>tags: <br><span class="hljs-bullet">  -</span> 文章标签一<br><span class="hljs-bullet">  -</span> 文章标签二<br>categories: 文章分类<br>photos: 文章封面图（仅部分主题支持）<br>description: 文章描述，即要在首页显示的摘要（仅部分主题支持）<br><span class="hljs-bullet">-</span><br>这里是正文<br>使用 markdown 语法编辑<br><br>......<br><br>正文结束<br></code></pre></td></tr></table></figure></div>
+<p>因为这个很简略，你可以根据自己主题的需要，修改 hexo 文件夹下 scaffolds 的 post.md ，这个是使用 hexo n 命令之后，生成的md文件中 已经写好的默认值，你可以根据主题和需要，将其修改成这样：</p>
+<div class="highlight-wrap"autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" contenteditable="false"data-rel="MARKDOWN"><figure class="iseeu highlight /markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><code class="hljs markdown">---<br>title: &#123;&#123; title &#125;&#125;<br>date: &#123;&#123; date &#125;&#125;<br>index<span class="hljs-emphasis">_img: /img/example.jpg</span><br><span class="hljs-emphasis">banner_</span>img: /img/post<span class="hljs-emphasis">_banner.png</span><br><span class="hljs-emphasis">tags:</span><br><span class="hljs-emphasis">- </span><br><span class="hljs-emphasis">categories: </span><br><span class="hljs-emphasis">description: </span><br><span class="hljs-emphasis">---</span><br><span class="hljs-emphasis"></span><br></code></pre></td></tr></table></figure></div>
+
+<div class="note note-primary">
+            <p>使用 hexo n 命令生成的 文章标题.md ，会自动写好我们在 scaffolds 的 post.md 中预设的内容；而手动新建 txt 改成 md 就需要自己写入。这就是为什么上文建议使用指令来生成新文章。</p>
+          </div>
+
+<p>而我们刚刚新生成的 你的文章标题.md 里，每一项的用法如下</p>
+<div class="highlight-wrap"autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" contenteditable="false"data-rel="MARKDOWN"><figure class="iseeu highlight /markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><code class="hljs markdown">---<br>layout: 页面布局（配合主题文档使用，一般没有这一行）<br>title: 文章名称，一般自动写好了<br>date: 文章日期，一般自动写好了<br>tags: <br><span class="hljs-bullet">  -</span> 文章标签一<br><span class="hljs-bullet">  -</span> 文章标签二<br>categories: 文章分类<br>photos: 文章封面图（仅部分主题支持）<br><span class="hljs-section">description: 文章描述，即要在首页显示的摘要（仅部分主题支持）</span><br><span class="hljs-section">---</span><br><br><br>这里是正文<br>使用 markdown 语法编辑<br>（同时也可以使用html语法）<br><br>......正文内容......<br><br>(正文结束)<br><br></code></pre></td></tr></table></figure></div>
 
 <div class="note note-info">
             <p>注意：description、photos 等设置，具体还是要看你的主题是否支持。很多设置还需要根据主题具体分析。善于搜索、求教、交流。</p>
