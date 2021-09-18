@@ -204,7 +204,7 @@
     
     <span class="post-meta mr-2">
       <i class="iconfont icon-chart"></i>
-      561 字
+      555 字
     </span>
   
 
@@ -214,7 +214,7 @@
       <i class="iconfont icon-clock-fill"></i>
       
       
-      7
+      6
        分钟
     </span>
   
@@ -257,7 +257,7 @@
             
             <div class="markdown-body">
               <h2 id="写在前面"><a href="#写在前面" class="headerlink" title="写在前面"></a>写在前面</h2><ul>
-<li><p>本篇文章目的是让各位以及KH自己【简略】学习掌握关于 Bash 上的基础命令，并作为各位和KH的备忘以供翻阅，所以本文仅介绍常用基础命令。</p>
+<li><p>本篇文章目的是让各位以及我自己<strong>简略</strong>学习掌握关于 Bash 上的基础命令，并作为备忘以供翻阅，所以本文仅介绍常用基础命令。</p>
 </li>
 <li><p>本文参考连接：<a target="_blank" rel="noopener" href="http://cornmc.top:800/tips/1_Linux%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/">Linux基础命令——YMMC</a></p>
 </li>
@@ -274,10 +274,10 @@
 <blockquote>
 <p>Windows下用户目录一般为：C:/Users/yourname</p>
 </blockquote>
-<h3 id="目录的表示"><a href="#目录的表示" class="headerlink" title="目录的表示"></a>目录的表示</h3><p>例：用户目录下的 apple 目录：</p>
+<h3 id="目录的表示"><a href="#目录的表示" class="headerlink" title="目录的表示"></a>目录的表示</h3><p>例：用户目录下的<code>apple</code>目录：</p>
 <div class="highlight-wrap"autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" contenteditable="false"data-rel="BASH"><figure class="iseeu highlight /bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">~/apple<br></code></pre></td></tr></table></figure></div>
 
-<h2 id="输入区"><a href="#输入区" class="headerlink" title="输入区"></a>输入区</h2><p>在此处输入命令，按回车执行。终端上会返回执行结果。按Ctrl+C强制停止当前运行的命令。</p>
+<h2 id="输入区"><a href="#输入区" class="headerlink" title="输入区"></a>输入区</h2><p>在此处输入命令，按回车执行。终端上会返回执行结果。按<code>Ctrl+C</code>强制停止当前运行的命令。</p>
 <h2 id="基本命令"><a href="#基本命令" class="headerlink" title="基本命令"></a>基本命令</h2><h3 id="list-列出"><a href="#list-列出" class="headerlink" title="list 列出"></a>list 列出</h3><p>列出当前目录下的文件及目录：</p>
 <div class="highlight-wrap"autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" contenteditable="false"data-rel="BASH"><figure class="iseeu highlight /bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">ls<br></code></pre></td></tr></table></figure></div>
 
@@ -287,10 +287,10 @@
 <p>列出列出当前目录下<strong>所有</strong>文件及目录：</p>
 <div class="highlight-wrap"autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" contenteditable="false"data-rel="BASH"><figure class="iseeu highlight /bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">ls -a<br></code></pre></td></tr></table></figure></div>
 
-<h3 id="make-directory-新建目录"><a href="#make-directory-新建目录" class="headerlink" title="make directory 新建目录"></a>make directory 新建目录</h3><p>在当前目录下新建名为doc的目录：</p>
+<h3 id="make-directory-新建目录"><a href="#make-directory-新建目录" class="headerlink" title="make directory 新建目录"></a>make directory 新建目录</h3><p>在当前目录下新建名为<code>doc</code>的目录：</p>
 <div class="highlight-wrap"autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" contenteditable="false"data-rel="BASH"><figure class="iseeu highlight /bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">mkdir doc<br></code></pre></td></tr></table></figure></div>
 
-<h3 id="change-directory-切换目录"><a href="#change-directory-切换目录" class="headerlink" title="change directory 切换目录"></a>change directory 切换目录</h3><p>进入当前目录下的doc目录：</p>
+<h3 id="change-directory-切换目录"><a href="#change-directory-切换目录" class="headerlink" title="change directory 切换目录"></a>change directory 切换目录</h3><p>进入当前目录下的<code>doc</code>目录：</p>
 <div class="highlight-wrap"autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" contenteditable="false"data-rel="BASH"><figure class="iseeu highlight /bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash"><span class="hljs-built_in">cd</span> doc<br></code></pre></td></tr></table></figure></div>
 
 <h3 id="copy-复制"><a href="#copy-复制" class="headerlink" title="copy 复制"></a>copy 复制</h3><p>将 源文件(source_file) 复制到 目标目录(directory) 下：</p>
@@ -305,24 +305,24 @@
 <p>将 源目录整个文件夹 复制到 目标目录 下：</p>
 <div class="highlight-wrap"autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" contenteditable="false"data-rel="BASH"><figure class="iseeu highlight /bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">mv source_directory directory<br></code></pre></td></tr></table></figure></div>
 
-<p>将 file1 重命名为 file2：</p>
+<p>将<code>file1</code>重命名为<code>file2</code>：</p>
 <div class="highlight-wrap"autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" contenteditable="false"data-rel="BASH"><figure class="iseeu highlight /bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">mv file1 file2<br></code></pre></td></tr></table></figure></div>
 
-<h3 id="remove-删除"><a href="#remove-删除" class="headerlink" title="remove 删除"></a>remove 删除</h3><p>将 文件 document.txt 删除：</p>
+<h3 id="remove-删除"><a href="#remove-删除" class="headerlink" title="remove 删除"></a>remove 删除</h3><p>将 文件<code>document.txt</code>删除：</p>
 <div class="highlight-wrap"autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" contenteditable="false"data-rel="BASH"><figure class="iseeu highlight /bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">rm document.txt<br></code></pre></td></tr></table></figure></div>
 
-<p>将 目录 dir （包含子目录和文件）删除：</p>
+<p>将 目录<code>dir</code>（包含子目录和文件）删除：</p>
 <div class="highlight-wrap"autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" contenteditable="false"data-rel="BASH"><figure class="iseeu highlight /bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">rm -r dir<br></code></pre></td></tr></table></figure></div>
 
-<p>一般输入 remove 命令后，会返回确认信息。</p>
-<p>将 目录 dir 直接删除：</p>
+<p>一般输入<code>remove</code>命令后，会返回确认信息。</p>
+<p>将 目录<code>dir</code>直接删除：</p>
 <div class="highlight-wrap"autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" contenteditable="false"data-rel="BASH"><figure class="iseeu highlight /bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">rm -rf dir<br></code></pre></td></tr></table></figure></div>
 
 <div class="note note-danger">
-            <p>注意：使用 remove 命令删除后<strong>无法恢复</strong>。</p>
+            <p>注意：使用<code>remove</code>命令删除后<strong>无法恢复</strong>。</p>
           </div>
 
-<h2 id="其他命令"><a href="#其他命令" class="headerlink" title="其他命令"></a>其他命令</h2><p>关于bash的其他详细命令，网络上有大量教程，各位可自行翻阅。</p>
+<h2 id="其他命令"><a href="#其他命令" class="headerlink" title="其他命令"></a>其他命令</h2><p>关于 bash 的其他详细命令，网络上有大量教程，各位可自行翻阅。</p>
 
             </div>
             <hr>
