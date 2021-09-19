@@ -4,7 +4,7 @@
  document.addEventListener('visibilitychange', function () {
      if (document.hidden) {
          $('[rel="icon"]').attr('href', "/img/favicon.png");
-         document.title = '怎么不看我了Σ(っ°Д°;)っ';
+         document.title = OriginTitle;
          clearTimeout(titleTime);
      }
      else {
