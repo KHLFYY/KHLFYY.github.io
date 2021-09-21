@@ -200,6 +200,34 @@
   </url>
   
   <url>
+    <loc>https://www.khlfyy.top/tags/%E4%B8%AD%E7%A7%8B%E8%8A%82/</loc>
+    <lastmod>2021-09-21</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.khlfyy.top/tags/%E8%8A%82%E6%97%A5/</loc>
+    <lastmod>2021-09-21</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.khlfyy.top/tags/%E4%B9%9D%E4%B8%80%E5%85%AB/</loc>
+    <lastmod>2021-09-21</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.khlfyy.top/tags/%E7%BA%AA%E5%BF%B5%E6%97%A5/</loc>
+    <lastmod>2021-09-21</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://www.khlfyy.top/tags/%E5%9B%BE%E7%89%87/</loc>
     <lastmod>2021-09-21</lastmod>
     <changefreq>daily</changefreq>
@@ -229,41 +257,6 @@
   
   <url>
     <loc>https://www.khlfyy.top/tags/VGTB/</loc>
-    <lastmod>2021-09-21</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.khlfyy.top/tags/%E4%B9%9D%E4%B8%80%E5%85%AB/</loc>
-    <lastmod>2021-09-21</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.khlfyy.top/tags/%E7%BA%AA%E5%BF%B5%E6%97%A5/</loc>
-    <lastmod>2021-09-21</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.khlfyy.top/tags/%E4%B8%AD%E7%A7%8B%E8%8A%82/</loc>
-    <lastmod>2021-09-21</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.khlfyy.top/tags/%E8%8A%82%E6%97%A5/</loc>
-    <lastmod>2021-09-21</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.khlfyy.top/tags/bilibili/</loc>
     <lastmod>2021-09-21</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -306,6 +299,13 @@
   
   <url>
     <loc>https://www.khlfyy.top/tags/%E8%A1%A8%E6%83%85/</loc>
+    <lastmod>2021-09-21</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.khlfyy.top/tags/bilibili/</loc>
     <lastmod>2021-09-21</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -384,7 +384,7 @@
   </url>
   
   <url>
-    <loc>https://www.khlfyy.top/categories/Minecraft/</loc>
+    <loc>https://www.khlfyy.top/categories/%E8%8A%82%E6%97%A5/</loc>
     <lastmod>2021-09-21</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -398,7 +398,7 @@
   </url>
   
   <url>
-    <loc>https://www.khlfyy.top/categories/%E8%8A%82%E6%97%A5/</loc>
+    <loc>https://www.khlfyy.top/categories/Minecraft/</loc>
     <lastmod>2021-09-21</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
