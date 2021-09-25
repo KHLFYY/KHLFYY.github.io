@@ -14,11 +14,11 @@
   <meta http-equiv="x-ua-compatible" content="ie=edge">
   
   <meta name="theme-color" content="#2f4154">
-  <meta name="description" content="Bash最基础的命令教程">
+  <meta name="description" content="教程：如何自定义 valine 评论的表情">
   <meta name="author" content="KHLFYY">
   <meta name="keywords" content="">
   
-  <title>Bash使用指南 - KHLFYY&#39;s Blog</title>
+  <title>博客进阶——自定义valine评论表情 - KHLFYY&#39;s Blog</title>
 
   <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" />
 
@@ -182,7 +182,7 @@
       <div class="full-bg-img">
         <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
           <div class="page-header text-center fade-in-up">
-            <span class="h2" id="subtitle" title="Bash使用指南">
+            <span class="h2" id="subtitle" title="博客进阶——自定义valine评论表情">
               
             </span>
 
@@ -192,8 +192,8 @@
   
     <span class="post-meta">
       <i class="iconfont icon-date-fill" aria-hidden="true"></i>
-      <time datetime="2021-08-22 12:27" pubdate>
-        2021年8月22日 中午
+      <time datetime="2021-08-24 21:39" pubdate>
+        2021年8月24日 晚上
       </time>
     </span>
   
@@ -204,7 +204,7 @@
     
     <span class="post-meta mr-2">
       <i class="iconfont icon-chart"></i>
-      555 字
+      1.4k 字
     </span>
   
 
@@ -214,7 +214,7 @@
       <i class="iconfont icon-clock-fill"></i>
       
       
-      6
+      23
        分钟
     </span>
   
@@ -247,7 +247,7 @@
         <div class="py-5" id="board">
           <article class="post-content mx-auto">
             <!-- SEO header -->
-            <h1 style="display: none">Bash使用指南</h1>
+            <h1 style="display: none">博客进阶——自定义valine评论表情</h1>
             
               <p class="note note-info">
                 
@@ -257,72 +257,40 @@
             
             <div class="markdown-body">
               <h2 id="写在前面"><a href="#写在前面" class="headerlink" title="写在前面"></a>写在前面</h2><ul>
-<li><p>本篇文章目的是让各位以及我自己<strong>简略</strong>学习掌握关于 Bash 上的基础命令，并作为备忘以供翻阅，所以本文仅介绍常用基础命令。</p>
+<li><p>这一阵搜索学习博客美化，发现了自定义 valine 表情的方法。本来就不太习惯自带的微博表情，在简单的翻阅官方文档和他人博客后，成功替换成了 B站小电视表情。</p>
 </li>
-<li><p>本文参考连接：<a target="_blank" rel="noopener" href="http://cornmc.top:800/tips/1_Linux%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/">Linux基础命令——YMMC</a></p>
+<li><p>因为B站表情能够满足我的使用需求，所以这里只讲解替换为B站表情的方法。更多具体自定义可以参考相关链接。</p>
+</li>
+<li><p>相关连接：</p>
+<ul>
+<li><p><a target="_blank" rel="noopener" href="https://valine.js.org/">valine官网</a></p>
+</li>
+<li><p><a target="_blank" rel="noopener" href="https://bili33.top/posts/Valine-Magic/">Valine表情仓库——作者：GamerNoTitle</a></p>
 </li>
 </ul>
-<h2 id="关于bash"><a href="#关于bash" class="headerlink" title="关于bash"></a>关于bash</h2><p>博客维护中使用的 bash <strong>基本</strong>和 Linux 中使用命令要求相同，有些部分有差异。</p>
-<h2 id="关于目录"><a href="#关于目录" class="headerlink" title="关于目录"></a>关于目录</h2><p>目录 与 文件夹 的关系：</p>
-<p>目录是列表，文件夹是一个实际的对象。目录和文件夹是<strong>不同种类的概念</strong>，目录是<strong>统计</strong>群落，文件夹是单个<strong>个体</strong>事物，目录是对文件夹的罗列。</p>
-<p>对于我们的一般使用，可以 <em>近似</em> 等同这两个概念。</p>
-<h3 id="特殊目录"><a href="#特殊目录" class="headerlink" title="特殊目录"></a>特殊目录</h3><ul>
-<li>~   用户目录</li>
-<li>.   当前目录</li>
-<li>..  上一级目录</li>
+</li>
 </ul>
-<blockquote>
-<p>Windows下用户目录一般为：C:/Users/yourname</p>
-</blockquote>
-<h3 id="目录的表示"><a href="#目录的表示" class="headerlink" title="目录的表示"></a>目录的表示</h3><p>例：用户目录下的<code>apple</code>目录：</p>
-<div class="highlight-wrap"autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" contenteditable="false"data-rel="BASH"><figure class="iseeu highlight /bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">~/apple<br></code></pre></td></tr></table></figure></div>
+<h2 id="更新-valine-版本"><a href="#更新-valine-版本" class="headerlink" title="更新 valine 版本"></a>更新 valine 版本</h2><p>自定义表情要求 valine 版本是 v1.4.5 以上。因为我的主题本来就是 1.4.14，所以这里不讲解如何更新 valine。各位如果有需求可以查看这篇文章中的更新教程：<a target="_blank" rel="noopener" href="https://www.fezhu.top/2020/05/01/Valinebiaoqing/">Valine添加自定义表情——作者：uncleacc</a></p>
+<h2 id="自定义-valine-表情"><a href="#自定义-valine-表情" class="headerlink" title="自定义 valine 表情"></a>自定义 valine 表情</h2><h3 id="找到-valine-配置文件"><a href="#找到-valine-配置文件" class="headerlink" title="找到 valine 配置文件"></a>找到 valine 配置文件</h3><p>首先要找到关于valine评论的配置文件，一开始我只找到一个<code>ejs</code>，后来翻阅了 valine 的官方文档：</p>
+<p><img src="https://pic.imgdb.cn/item/6124fec544eaada739f2dd43.png" alt="valine 官方文档"></p>
+<p>对比<code>emojiCDN</code>和<code>emojiMaps</code>，我发现直接在主题配置文件里就有：</p>
+<p><img src="https://pic.imgdb.cn/item/6124fb3944eaada739ead9df.png" alt="我的主题 config 里的相关设置"></p>
+<p>也有些主题可能是单独的valine.json或者其他的文件，详细可以查看<a target="_blank" rel="noopener" href="https://www.fezhu.top/2020/05/01/Valinebiaoqing/">Valine添加自定义表情——作者：uncleacc</a>和<a target="_blank" rel="noopener" href="https://bili33.top/posts/Valine-Magic/">Valine表情仓库——作者：GamerNoTitle</a>中的介绍。</p>
+<h3 id="添加-CDN"><a href="#添加-CDN" class="headerlink" title="添加 CDN"></a>添加 CDN</h3><p>如上图，将<code>emojiCDN</code>添加为 <a target="_blank" rel="noopener" href="https://bili33.top/posts/Valine-Magic/">Valine表情仓库</a>中提供的CDN，选择一个即可，这里我选择的是第二个：</p>
+<p><img src="https://pic.imgdb.cn/item/6125007544eaada739f68ccb.png" alt="CDN"></p>
+<p>为方便，图片中的CDN链接已经复制在这里：</p>
+<div class="highlight-wrap"autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" contenteditable="false"data-rel="HTTPS"><figure class="iseeu highlight /https"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><code class="hljs https">https://valinecdn.bili33.top/<br>https://cdn.jsdelivr.net/gh/GamerNoTitle/ValineCDN@master/<br>https://mirrorcdn.bili33.top/<br>https://gamernotitle.coding.net/p/ValineCDN/d/ValineCDN/git/raw/master/<br></code></pre></td></tr></table></figure></div>
 
-<h2 id="输入区"><a href="#输入区" class="headerlink" title="输入区"></a>输入区</h2><p>在此处输入命令，按回车执行。终端上会返回执行结果。按<code>Ctrl+C</code>强制停止当前运行的命令。</p>
-<h2 id="基本命令"><a href="#基本命令" class="headerlink" title="基本命令"></a>基本命令</h2><h3 id="list-列出"><a href="#list-列出" class="headerlink" title="list 列出"></a>list 列出</h3><p>列出当前目录下的文件及目录：</p>
-<div class="highlight-wrap"autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" contenteditable="false"data-rel="BASH"><figure class="iseeu highlight /bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">ls<br></code></pre></td></tr></table></figure></div>
+<h3 id="添加-emojiMaps"><a href="#添加-emojiMaps" class="headerlink" title="添加 emojiMaps"></a>添加 emojiMaps</h3><p><a target="_blank" rel="noopener" href="https://bili33.top/posts/Valine-Magic/">Valine表情仓库</a>提供了众多种类的表情：</p>
+<p><img src="https://pic.imgdb.cn/item/612501f344eaada739fa8bb2.png" alt="图片是缩放后截的，所以看不清"></p>
+<p>我们只需要选择想要的表情，点击他提供的连接进入该表情项目的<code>readme.md</code>，找到需要的<code>emojiMaps</code>：</p>
+<p><img src="https://pic.imgdb.cn/item/6125028344eaada739fc20ed.png" alt="readme.md"></p>
+<p>同样，这里提供一下我采用的热词系列和小电视的<code>emojiMaps</code>：</p>
+<div class="highlight-wrap"autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" contenteditable="false"data-rel="YAML"><figure class="iseeu highlight /yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br></pre></td><td class="code"><pre><code class="hljs yaml">&#123;<br><span class="hljs-attr">&quot;bilibilitv2&quot;:</span> <span class="hljs-string">&quot;bilibilitv/[tv_doge].png&quot;</span>,<br><span class="hljs-attr">&quot;bilibilitv3&quot;:</span> <span class="hljs-string">&quot;bilibilitv/[tv_亲亲].png&quot;</span>,<br><span class="hljs-attr">&quot;bilibilitv4&quot;:</span> <span class="hljs-string">&quot;bilibilitv/[tv_偷笑].png&quot;</span>,<br><span class="hljs-attr">&quot;bilibilitv5&quot;:</span> <span class="hljs-string">&quot;bilibilitv/[tv_再见].png&quot;</span>,<br><span class="hljs-attr">&quot;bilibilitv6&quot;:</span> <span class="hljs-string">&quot;bilibilitv/[tv_冷漠].png&quot;</span>,<br><span class="hljs-attr">&quot;bilibilitv7&quot;:</span> <span class="hljs-string">&quot;bilibilitv/[tv_发怒].png&quot;</span>,<br><span class="hljs-attr">&quot;bilibilitv8&quot;:</span> <span class="hljs-string">&quot;bilibilitv/[tv_发财].png&quot;</span>,<br><span class="hljs-attr">&quot;bilibilitv9&quot;:</span> <span class="hljs-string">&quot;bilibilitv/[tv_可爱].png&quot;</span>,<br><span class="hljs-attr">&quot;bilibilitv10&quot;:</span> <span class="hljs-string">&quot;bilibilitv/[tv_吐血].png&quot;</span>,<br><span class="hljs-attr">&quot;bilibilitv11&quot;:</span> <span class="hljs-string">&quot;bilibilitv/[tv_呆].png&quot;</span>,<br><span class="hljs-attr">&quot;bilibilitv12&quot;:</span> <span class="hljs-string">&quot;bilibilitv/[tv_呕吐].png&quot;</span>,<br><span class="hljs-attr">&quot;bilibilitv13&quot;:</span> <span class="hljs-string">&quot;bilibilitv/[tv_困].png&quot;</span>,<br><span class="hljs-attr">&quot;bilibilitv14&quot;:</span> <span class="hljs-string">&quot;bilibilitv/[tv_坏笑].png&quot;</span>,<br><span class="hljs-attr">&quot;bilibilitv15&quot;:</span> <span class="hljs-string">&quot;bilibilitv/[tv_大佬].png&quot;</span>,<br><span class="hljs-attr">&quot;bilibilitv16&quot;:</span> <span class="hljs-string">&quot;bilibilitv/[tv_大哭].png&quot;</span>,<br><span class="hljs-attr">&quot;bilibilitv17&quot;:</span> <span class="hljs-string">&quot;bilibilitv/[tv_委屈].png&quot;</span>,<br><span class="hljs-attr">&quot;bilibilitv18&quot;:</span> <span class="hljs-string">&quot;bilibilitv/[tv_害羞].png&quot;</span>,<br><span class="hljs-attr">&quot;bilibilitv19&quot;:</span> <span class="hljs-string">&quot;bilibilitv/[tv_尴尬].png&quot;</span>,<br><span class="hljs-attr">&quot;bilibilitv20&quot;:</span> <span class="hljs-string">&quot;bilibilitv/[tv_微笑].png&quot;</span>,<br><span class="hljs-attr">&quot;bilibilitv21&quot;:</span> <span class="hljs-string">&quot;bilibilitv/[tv_思考].png&quot;</span>,<br><span class="hljs-attr">&quot;bilibilitv22&quot;:</span> <span class="hljs-string">&quot;bilibilitv/[tv_惊吓].png&quot;</span>,<br><span class="hljs-attr">&quot;bilibilitv23&quot;:</span> <span class="hljs-string">&quot;bilibilitv/[tv_打脸].png&quot;</span>,<br><span class="hljs-attr">&quot;bilibilitv24&quot;:</span> <span class="hljs-string">&quot;bilibilitv/[tv_抓狂].png&quot;</span>,<br><span class="hljs-attr">&quot;bilibilitv25&quot;:</span> <span class="hljs-string">&quot;bilibilitv/[tv_抠鼻].png&quot;</span>,<br><span class="hljs-attr">&quot;bilibilitv26&quot;:</span> <span class="hljs-string">&quot;bilibilitv/[tv_斜眼笑].png&quot;</span>,<br><span class="hljs-attr">&quot;bilibilitv27&quot;:</span> <span class="hljs-string">&quot;bilibilitv/[tv_无奈].png&quot;</span>,<br><span class="hljs-attr">&quot;bilibilitv28&quot;:</span> <span class="hljs-string">&quot;bilibilitv/[tv_晕].png&quot;</span>,<br><span class="hljs-attr">&quot;bilibilitv29&quot;:</span> <span class="hljs-string">&quot;bilibilitv/[tv_流汗].png&quot;</span>,<br><span class="hljs-attr">&quot;bilibilitv30&quot;:</span> <span class="hljs-string">&quot;bilibilitv/[tv_流泪].png&quot;</span>,<br><span class="hljs-attr">&quot;bilibilitv31&quot;:</span> <span class="hljs-string">&quot;bilibilitv/[tv_流鼻血].png&quot;</span>,<br><span class="hljs-attr">&quot;bilibilitv32&quot;:</span> <span class="hljs-string">&quot;bilibilitv/[tv_点赞].png&quot;</span>,<br><span class="hljs-attr">&quot;bilibilitv33&quot;:</span> <span class="hljs-string">&quot;bilibilitv/[tv_生气].png&quot;</span>,<br><span class="hljs-attr">&quot;bilibilitv34&quot;:</span> <span class="hljs-string">&quot;bilibilitv/[tv_生病].png&quot;</span>,<br><span class="hljs-attr">&quot;bilibilitv35&quot;:</span> <span class="hljs-string">&quot;bilibilitv/[tv_疑问].png&quot;</span>,<br><span class="hljs-attr">&quot;bilibilitv36&quot;:</span> <span class="hljs-string">&quot;bilibilitv/[tv_白眼].png&quot;</span>,<br><span class="hljs-attr">&quot;bilibilitv37&quot;:</span> <span class="hljs-string">&quot;bilibilitv/[tv_皱眉].png&quot;</span>,<br><span class="hljs-attr">&quot;bilibilitv38&quot;:</span> <span class="hljs-string">&quot;bilibilitv/[tv_目瞪口呆].png&quot;</span>,<br><span class="hljs-attr">&quot;bilibilitv39&quot;:</span> <span class="hljs-string">&quot;bilibilitv/[tv_睡着].png&quot;</span>,<br><span class="hljs-attr">&quot;bilibilitv40&quot;:</span> <span class="hljs-string">&quot;bilibilitv/[tv_笑哭].png&quot;</span>,<br><span class="hljs-attr">&quot;bilibilitv41&quot;:</span> <span class="hljs-string">&quot;bilibilitv/[tv_腼腆].png&quot;</span>,<br><span class="hljs-attr">&quot;bilibilitv42&quot;:</span> <span class="hljs-string">&quot;bilibilitv/[tv_色].png&quot;</span>,<br><span class="hljs-attr">&quot;bilibilitv43&quot;:</span> <span class="hljs-string">&quot;bilibilitv/[tv_调侃].png&quot;</span>,<br><span class="hljs-attr">&quot;bilibilitv44&quot;:</span> <span class="hljs-string">&quot;bilibilitv/[tv_调皮].png&quot;</span>,<br><span class="hljs-attr">&quot;bilibilitv45&quot;:</span> <span class="hljs-string">&quot;bilibilitv/[tv_鄙视].png&quot;</span>,<br><span class="hljs-attr">&quot;bilibilitv46&quot;:</span> <span class="hljs-string">&quot;bilibilitv/[tv_闭嘴].png&quot;</span>,<br><span class="hljs-attr">&quot;bilibilitv47&quot;:</span> <span class="hljs-string">&quot;bilibilitv/[tv_难过].png&quot;</span>,<br><span class="hljs-attr">&quot;bilibilitv48&quot;:</span> <span class="hljs-string">&quot;bilibilitv/[tv_馋].png&quot;</span>,<br><span class="hljs-attr">&quot;bilibilitv49&quot;:</span> <span class="hljs-string">&quot;bilibilitv/[tv_鬼脸].png&quot;</span>,<br><span class="hljs-attr">&quot;bilibilitv50&quot;:</span> <span class="hljs-string">&quot;bilibilitv/[tv_黑人问号].png&quot;</span>,<br><span class="hljs-attr">&quot;bilibilitv51&quot;:</span> <span class="hljs-string">&quot;bilibilitv/[tv_鼓掌].png&quot;</span>,<br><span class="hljs-attr">&quot;bilibiliHotKey1&quot;:</span> <span class="hljs-string">&quot;bilibiliHotKey/1.jpg&quot;</span>,<br><span class="hljs-attr">&quot;bilibiliHotKey2&quot;:</span> <span class="hljs-string">&quot;bilibiliHotKey/10.jpg&quot;</span>,<br><span class="hljs-attr">&quot;bilibiliHotKey3&quot;:</span> <span class="hljs-string">&quot;bilibiliHotKey/11.jpg&quot;</span>,<br><span class="hljs-attr">&quot;bilibiliHotKey4&quot;:</span> <span class="hljs-string">&quot;bilibiliHotKey/12.jpg&quot;</span>,<br><span class="hljs-attr">&quot;bilibiliHotKey5&quot;:</span> <span class="hljs-string">&quot;bilibiliHotKey/13.jpg&quot;</span>,<br><span class="hljs-attr">&quot;bilibiliHotKey6&quot;:</span> <span class="hljs-string">&quot;bilibiliHotKey/14.jpg&quot;</span>,<br><span class="hljs-attr">&quot;bilibiliHotKey7&quot;:</span> <span class="hljs-string">&quot;bilibiliHotKey/15.jpg&quot;</span>,<br><span class="hljs-attr">&quot;bilibiliHotKey8&quot;:</span> <span class="hljs-string">&quot;bilibiliHotKey/16.jpg&quot;</span>,<br><span class="hljs-attr">&quot;bilibiliHotKey9&quot;:</span> <span class="hljs-string">&quot;bilibiliHotKey/17.jpg&quot;</span>,<br><span class="hljs-attr">&quot;bilibiliHotKey10&quot;:</span> <span class="hljs-string">&quot;bilibiliHotKey/18.jpg&quot;</span>,<br><span class="hljs-attr">&quot;bilibiliHotKey11&quot;:</span> <span class="hljs-string">&quot;bilibiliHotKey/19.jpg&quot;</span>,<br><span class="hljs-attr">&quot;bilibiliHotKey12&quot;:</span> <span class="hljs-string">&quot;bilibiliHotKey/2.jpg&quot;</span>,<br><span class="hljs-attr">&quot;bilibiliHotKey13&quot;:</span> <span class="hljs-string">&quot;bilibiliHotKey/20.jpg&quot;</span>,<br><span class="hljs-attr">&quot;bilibiliHotKey14&quot;:</span> <span class="hljs-string">&quot;bilibiliHotKey/21.jpg&quot;</span>,<br><span class="hljs-attr">&quot;bilibiliHotKey15&quot;:</span> <span class="hljs-string">&quot;bilibiliHotKey/22.jpg&quot;</span>,<br><span class="hljs-attr">&quot;bilibiliHotKey16&quot;:</span> <span class="hljs-string">&quot;bilibiliHotKey/23.jpg&quot;</span>,<br><span class="hljs-attr">&quot;bilibiliHotKey17&quot;:</span> <span class="hljs-string">&quot;bilibiliHotKey/24.jpg&quot;</span>,<br><span class="hljs-attr">&quot;bilibiliHotKey18&quot;:</span> <span class="hljs-string">&quot;bilibiliHotKey/25.jpg&quot;</span>,<br><span class="hljs-attr">&quot;bilibiliHotKey19&quot;:</span> <span class="hljs-string">&quot;bilibiliHotKey/26.jpg&quot;</span>,<br><span class="hljs-attr">&quot;bilibiliHotKey20&quot;:</span> <span class="hljs-string">&quot;bilibiliHotKey/27.jpg&quot;</span>,<br><span class="hljs-attr">&quot;bilibiliHotKey21&quot;:</span> <span class="hljs-string">&quot;bilibiliHotKey/28.jpg&quot;</span>,<br><span class="hljs-attr">&quot;bilibiliHotKey22&quot;:</span> <span class="hljs-string">&quot;bilibiliHotKey/29.jpg&quot;</span>,<br><span class="hljs-attr">&quot;bilibiliHotKey23&quot;:</span> <span class="hljs-string">&quot;bilibiliHotKey/3.jpg&quot;</span>,<br><span class="hljs-attr">&quot;bilibiliHotKey24&quot;:</span> <span class="hljs-string">&quot;bilibiliHotKey/30.jpg&quot;</span>,<br><span class="hljs-attr">&quot;bilibiliHotKey25&quot;:</span> <span class="hljs-string">&quot;bilibiliHotKey/31.jpg&quot;</span>,<br><span class="hljs-attr">&quot;bilibiliHotKey26&quot;:</span> <span class="hljs-string">&quot;bilibiliHotKey/32.jpg&quot;</span>,<br><span class="hljs-attr">&quot;bilibiliHotKey27&quot;:</span> <span class="hljs-string">&quot;bilibiliHotKey/4.jpg&quot;</span>,<br><span class="hljs-attr">&quot;bilibiliHotKey28&quot;:</span> <span class="hljs-string">&quot;bilibiliHotKey/5.jpg&quot;</span>,<br><span class="hljs-attr">&quot;bilibiliHotKey29&quot;:</span> <span class="hljs-string">&quot;bilibiliHotKey/6.jpg&quot;</span>,<br><span class="hljs-attr">&quot;bilibiliHotKey30&quot;:</span> <span class="hljs-string">&quot;bilibiliHotKey/7.jpg&quot;</span>,<br><span class="hljs-attr">&quot;bilibiliHotKey31&quot;:</span> <span class="hljs-string">&quot;bilibiliHotKey/8.jpg&quot;</span>,<br><span class="hljs-attr">&quot;bilibiliHotKey32&quot;:</span> <span class="hljs-string">&quot;bilibiliHotKey/9.jpg&quot;</span><br>&#125;<br></code></pre></td></tr></table></figure></div>
 
-<blockquote>
-<p>ls不会列出以 . 开头的隐藏文件。</p>
-</blockquote>
-<p>列出列出当前目录下<strong>所有</strong>文件及目录：</p>
-<div class="highlight-wrap"autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" contenteditable="false"data-rel="BASH"><figure class="iseeu highlight /bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">ls -a<br></code></pre></td></tr></table></figure></div>
-
-<h3 id="make-directory-新建目录"><a href="#make-directory-新建目录" class="headerlink" title="make directory 新建目录"></a>make directory 新建目录</h3><p>在当前目录下新建名为<code>doc</code>的目录：</p>
-<div class="highlight-wrap"autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" contenteditable="false"data-rel="BASH"><figure class="iseeu highlight /bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">mkdir doc<br></code></pre></td></tr></table></figure></div>
-
-<h3 id="change-directory-切换目录"><a href="#change-directory-切换目录" class="headerlink" title="change directory 切换目录"></a>change directory 切换目录</h3><p>进入当前目录下的<code>doc</code>目录：</p>
-<div class="highlight-wrap"autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" contenteditable="false"data-rel="BASH"><figure class="iseeu highlight /bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash"><span class="hljs-built_in">cd</span> doc<br></code></pre></td></tr></table></figure></div>
-
-<h3 id="copy-复制"><a href="#copy-复制" class="headerlink" title="copy 复制"></a>copy 复制</h3><p>将 源文件(source_file) 复制到 目标目录(directory) 下：</p>
-<div class="highlight-wrap"autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" contenteditable="false"data-rel="BASH"><figure class="iseeu highlight /bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">cp source_file directory<br></code></pre></td></tr></table></figure></div>
-
-<p>将 源目录整个文件夹 复制到 目标目录 下：</p>
-<div class="highlight-wrap"autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" contenteditable="false"data-rel="BASH"><figure class="iseeu highlight /bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">cp -r source_directory directory<br></code></pre></td></tr></table></figure></div>
-
-<h3 id="move-移动"><a href="#move-移动" class="headerlink" title="move 移动"></a>move 移动</h3><p>将 源文件 移动到 目标目录 下</p>
-<div class="highlight-wrap"autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" contenteditable="false"data-rel="BASH"><figure class="iseeu highlight /bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">mv source_file directory<br></code></pre></td></tr></table></figure></div>
-
-<p>将 源目录整个文件夹 复制到 目标目录 下：</p>
-<div class="highlight-wrap"autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" contenteditable="false"data-rel="BASH"><figure class="iseeu highlight /bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">mv source_directory directory<br></code></pre></td></tr></table></figure></div>
-
-<p>将<code>file1</code>重命名为<code>file2</code>：</p>
-<div class="highlight-wrap"autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" contenteditable="false"data-rel="BASH"><figure class="iseeu highlight /bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">mv file1 file2<br></code></pre></td></tr></table></figure></div>
-
-<h3 id="remove-删除"><a href="#remove-删除" class="headerlink" title="remove 删除"></a>remove 删除</h3><p>将 文件<code>document.txt</code>删除：</p>
-<div class="highlight-wrap"autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" contenteditable="false"data-rel="BASH"><figure class="iseeu highlight /bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">rm document.txt<br></code></pre></td></tr></table></figure></div>
-
-<p>将 目录<code>dir</code>（包含子目录和文件）删除：</p>
-<div class="highlight-wrap"autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" contenteditable="false"data-rel="BASH"><figure class="iseeu highlight /bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">rm -r dir<br></code></pre></td></tr></table></figure></div>
-
-<p>一般输入<code>remove</code>命令后，会返回确认信息。</p>
-<p>将 目录<code>dir</code>直接删除：</p>
-<div class="highlight-wrap"autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" contenteditable="false"data-rel="BASH"><figure class="iseeu highlight /bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">rm -rf dir<br></code></pre></td></tr></table></figure></div>
-
-<div class="note note-danger">
-            <p>注意：使用<code>remove</code>命令删除后<strong>无法恢复</strong>。</p>
-          </div>
-
-<h2 id="其他命令"><a href="#其他命令" class="headerlink" title="其他命令"></a>其他命令</h2><p>关于 bash 的其他详细命令，网络上有大量教程，各位可自行翻阅。</p>
+<p>之后就可以看到，valine中默认的表情已经被替换为了你选择的表情。</p>
+<h2 id="结语"><a href="#结语" class="headerlink" title="结语"></a>结语</h2><p>hexo 博客的美化教程很多很多，有很多时候还需要自己动手调整。这里也感谢<a target="_blank" rel="noopener" href="https://myxrcrs.cn/">myxrcrs</a>帮我解决了我博客中的代码块美化的<code>css文件</code>调整。如果你感兴趣，也可以上网查阅资料研究学习，并运用到自己的博客中。</p>
+<p>快来我的评论区发个B站表情感受一下！</p>
 
             </div>
             <hr>
@@ -332,7 +300,7 @@
                   <div class="post-meta mr-3">
                     <i class="iconfont icon-category"></i>
                     
-                      <a class="hover-with-bg" href="/categories/%E5%9F%BA%E6%9C%AC%E6%8C%87%E5%8D%97/">基本指南</a>
+                      <a class="hover-with-bg" href="/categories/%E5%8D%9A%E5%AE%A2%E6%95%99%E7%A8%8B/">博客教程</a>
                     
                   </div>
                 
@@ -340,17 +308,17 @@
                   <div class="post-meta">
                     <i class="iconfont icon-tags"></i>
                     
-                      <a class="hover-with-bg" href="/tags/%E6%8C%87%E5%8D%97/">指南</a>
-                    
                       <a class="hover-with-bg" href="/tags/%E6%95%99%E7%A8%8B/">教程</a>
                     
-                      <a class="hover-with-bg" href="/tags/%E5%A4%87%E5%BF%98/">备忘</a>
+                      <a class="hover-with-bg" href="/tags/%E5%8D%9A%E5%AE%A2/">博客</a>
                     
-                      <a class="hover-with-bg" href="/tags/bash/">bash</a>
+                      <a class="hover-with-bg" href="/tags/valine/">valine</a>
                     
-                      <a class="hover-with-bg" href="/tags/%E5%91%BD%E4%BB%A4%E8%A1%8C/">命令行</a>
+                      <a class="hover-with-bg" href="/tags/%E8%AF%84%E8%AE%BA/">评论</a>
                     
-                      <a class="hover-with-bg" href="/tags/%E5%91%BD%E4%BB%A4/">命令</a>
+                      <a class="hover-with-bg" href="/tags/%E8%87%AA%E5%AE%9A%E4%B9%89/">自定义</a>
+                    
+                      <a class="hover-with-bg" href="/tags/%E8%A1%A8%E6%83%85/">表情</a>
                     
                   </div>
                 
@@ -367,9 +335,9 @@
                   <article class="post-prev col-6">
                     
                     
-                      <a href="/posts/%E5%8D%9A%E5%AE%A2%E8%BF%9B%E9%98%B6%E2%80%94%E2%80%94%E5%85%85%E5%88%86%E4%BD%BF%E7%94%A8VScode/">
+                      <a href="/posts/011%E7%BB%8F%E5%85%B8%E6%B0%B8%E6%B5%81%E4%BC%A0%E2%80%94%E2%80%94%E3%80%8A%E6%9D%B0%E5%93%A5%E4%B8%8D%E8%A6%81%E3%80%8B/">
                         <i class="iconfont icon-arrowleft"></i>
-                        <span class="hidden-mobile">博客进阶——充分使用VScode</span>
+                        <span class="hidden-mobile">经典永流传——《杰哥不要》</span>
                         <span class="visible-mobile">上一篇</span>
                       </a>
                     
@@ -377,8 +345,8 @@
                   <article class="post-next col-6">
                     
                     
-                      <a href="/posts/KH%E7%9A%84%E5%8D%9A%E5%AE%A2%E6%98%AF%E5%A6%82%E4%BD%95%E5%BB%BA%E7%AB%8B%E7%9A%84/">
-                        <span class="hidden-mobile">KH的博客是如何建立的</span>
+                      <a href="/posts/009%E5%8D%9A%E5%AE%A2%E8%BF%9B%E9%98%B6%E2%80%94%E2%80%94%E5%9C%A8%E7%BD%91%E9%A1%B5%E6%8F%92%E5%85%A5B%E7%AB%99%E8%A7%86%E9%A2%91/">
+                        <span class="hidden-mobile">博客进阶——在网页插入B站视频</span>
                         <span class="visible-mobile">下一篇</span>
                         <i class="iconfont icon-arrowright"></i>
                       </a>

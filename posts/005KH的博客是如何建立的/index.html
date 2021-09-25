@@ -251,7 +251,7 @@
             
               <p class="note note-info">
                 
-                  本文最后更新时间：2021年9月20日 晚上
+                  本文最后更新时间：2021年9月25日 下午
                 
               </p>
             
@@ -387,7 +387,7 @@
 <p>返回信息：</p>
 <div class="highlight-wrap"autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" contenteditable="false"data-rel="BASH"><figure class="iseeu highlight /bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">Hi yourname! You’ve successfully authenticated, but GitHub does not provide shell access.<br></code></pre></td></tr></table></figure></div>
 
-<p>则配置成功。</p>
+<p>看到此信息则配置成功；<br>如果报错，请重新配置 ssh 或上网查找解决办法。</p>
 <h3 id="配置-Git"><a href="#配置-Git" class="headerlink" title="配置 Git"></a>配置 Git</h3><p>Git 会根据用户的名字和邮箱来记录提交，GitHub 也是用这些信息来做权限的处理，输入以下命令进行个人信息的设置：</p>
 <div class="highlight-wrap"autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" contenteditable="false"data-rel="BASH"><figure class="iseeu highlight /bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs bash">git config --global user.name KHLFYY  <br>git config --global user.email  khlfyy@outlook.com<br><span class="hljs-comment">#替换成你自己的名字和邮箱，为方便记忆，建议与 GitHub 信息一致。</span><br></code></pre></td></tr></table></figure></div>
 
@@ -401,7 +401,7 @@
 <p>打开我们的 Hexo 文件夹（如：C:\KHLFYY_Blog\Hexo），右键用记事本（推荐<a target="_blank" rel="noopener" href="https://code.visualstudio.com/">VS Code</a>）打开该文件夹下的_config.yml 文件，找到 <code>deploy</code>（可以使用<code>ctrl+F</code>进行搜索）</p>
 <p><strong>大致</strong>如图，将 <code>repository</code> 后的链接改为你刚刚复制的链接，<strong>注意空格</strong>。<br><img src="https://pic.imgdb.cn/item/611dd06c4907e2d39c029130.png" alt="config"></p>
 <p>为了方便，我把代码打在这里：</p>
-<div class="highlight-wrap"autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" contenteditable="false"data-rel="YML"><figure class="iseeu highlight /yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><code class="hljs yml"><span class="hljs-attr">deploy:</span><br>  <span class="hljs-bullet">-</span> <span class="hljs-attr">type:</span> <span class="hljs-string">`git`</span><br>    <span class="hljs-attr">repository:</span> <br>     <span class="hljs-attr">github:</span> <span class="hljs-string">git@github.com:KHLFYY/KHLFYY.github.io.git,main</span><br><span class="hljs-comment"># 记得替换自己的repo地址（SSH） 注意空格</span><br></code></pre></td></tr></table></figure></div>
+<div class="highlight-wrap"autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" contenteditable="false"data-rel="YML"><figure class="iseeu highlight /yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><code class="hljs yml"><span class="hljs-attr">deploy:</span><br>  <span class="hljs-bullet">-</span> <span class="hljs-attr">type:</span> <span class="hljs-string">git</span><br>    <span class="hljs-attr">repository:</span> <br>     <span class="hljs-attr">github:</span> <span class="hljs-string">git@github.com:KHLFYY/KHLFYY.github.io.git,main</span><br><span class="hljs-comment"># 记得把&quot;github:&quot;后面替换自己的git仓库地址（SSH） 注意空格</span><br></code></pre></td></tr></table></figure></div>
 
 <div class="note note-warning">
             <p>注意：Github 中 branch（分支）的默认值，现在已经由 master 改为 main 。</p><p>一些教程中（如下图）可能写的仍为 master，你需要将 master 改为 main ；你也可以像我的那样，不写 branch 那一行，直接在 github 后加个 <strong>,main</strong> 就可以。<br><img src="https://imgconvert.csdnimg.cn/aHR0cHM6Ly9pLmxvbGkubmV0LzIwMTkvMDMvMjUvNWM5OGY3ZTExZWVkNy5wbmc" alt="写为`master`的教程"></p>
@@ -521,13 +521,13 @@
                   <div class="post-meta">
                     <i class="iconfont icon-tags"></i>
                     
-                      <a class="hover-with-bg" href="/tags/%E6%95%99%E7%A8%8B/">教程</a>
+                      <a class="hover-with-bg" href="/tags/helloworld/">helloworld</a>
                     
                       <a class="hover-with-bg" href="/tags/%E5%A4%87%E5%BF%98/">备忘</a>
                     
-                      <a class="hover-with-bg" href="/tags/%E5%8D%9A%E5%AE%A2/">博客</a>
+                      <a class="hover-with-bg" href="/tags/%E6%95%99%E7%A8%8B/">教程</a>
                     
-                      <a class="hover-with-bg" href="/tags/helloworld/">helloworld</a>
+                      <a class="hover-with-bg" href="/tags/%E5%8D%9A%E5%AE%A2/">博客</a>
                     
                       <a class="hover-with-bg" href="/tags/hexo/">hexo</a>
                     
@@ -546,7 +546,7 @@
                   <article class="post-prev col-6">
                     
                     
-                      <a href="/posts/Bash%E4%BD%BF%E7%94%A8%E6%8C%87%E5%8D%97/">
+                      <a href="/posts/006Bash%E4%BD%BF%E7%94%A8%E6%8C%87%E5%8D%97/">
                         <i class="iconfont icon-arrowleft"></i>
                         <span class="hidden-mobile">Bash使用指南</span>
                         <span class="visible-mobile">上一篇</span>
@@ -556,7 +556,7 @@
                   <article class="post-next col-6">
                     
                     
-                      <a href="/posts/%E3%80%90VGTB%E3%80%91%E6%88%91%E4%BB%AC%E7%9A%84MC%E7%94%9F%E7%94%B5%E6%9C%8D-%E5%9B%BE%E7%89%87%E6%AC%A3%E8%B5%8F/">
+                      <a href="/posts/004%E3%80%90VGTB%E3%80%91%E6%88%91%E4%BB%AC%E7%9A%84MC%E7%94%9F%E7%94%B5%E6%9C%8D-%E5%9B%BE%E7%89%87%E6%AC%A3%E8%B5%8F/">
                         <span class="hidden-mobile">【VGTB】我们的MC生电服-图片欣赏</span>
                         <span class="visible-mobile">下一篇</span>
                         <i class="iconfont icon-arrowright"></i>
