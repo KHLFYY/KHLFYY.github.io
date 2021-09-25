@@ -4,7 +4,7 @@
 
 - 博客地址：<https://www.KHLFYY.top>
 
-- 博客目前双线部署在 coding（境内访问）和 github（境外访问）。
+- 博客目前部署在 Github Pages。
 
 - 其他信息：[我的第一篇文章——建立个人博客](https://www.khlfyy.top/posts/%E7%AC%AC%E4%B8%80%E7%AF%87%E6%96%87%E7%AB%A0-%E5%BB%BA%E7%AB%8B%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/)
 
