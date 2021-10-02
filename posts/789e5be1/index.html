@@ -14,11 +14,11 @@
   <meta http-equiv="x-ua-compatible" content="ie=edge">
   
   <meta name="theme-color" content="#2f4154">
-  <meta name="description" content="教程：如何把B站视频加到博客文章里">
+  <meta name="description" content="使用 hexo 插件优化博客连接">
   <meta name="author" content="KHLFYY">
   <meta name="keywords" content="">
   
-  <title>博客进阶——在网页插入B站视频 - KHLFYY&#39;s Blog</title>
+  <title>博客进阶——优化博客的永久链接 - KHLFYY&#39;s Blog</title>
 
   <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" />
 
@@ -183,7 +183,7 @@
       <div class="full-bg-img">
         <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
           <div class="page-header text-center fade-in-up">
-            <span class="h2" id="subtitle" title="博客进阶——在网页插入B站视频">
+            <span class="h2" id="subtitle" title="博客进阶——优化博客的永久链接">
               
             </span>
 
@@ -193,8 +193,8 @@
   
     <span class="post-meta">
       <i class="iconfont icon-date-fill" aria-hidden="true"></i>
-      <time datetime="2021-08-24 15:31" pubdate>
-        2021年8月24日 下午
+      <time datetime="2021-10-02 17:05" pubdate>
+        2021年10月2日 下午
       </time>
     </span>
   
@@ -205,7 +205,7 @@
     
     <span class="post-meta mr-2">
       <i class="iconfont icon-chart"></i>
-      194 字
+      332 字
     </span>
   
 
@@ -215,7 +215,7 @@
       <i class="iconfont icon-clock-fill"></i>
       
       
-      3
+      5
        分钟
     </span>
   
@@ -248,24 +248,43 @@
         <div class="py-5" id="board">
           <article class="post-content mx-auto">
             <!-- SEO header -->
-            <h1 style="display: none">博客进阶——在网页插入B站视频</h1>
+            <h1 style="display: none">博客进阶——优化博客的永久链接</h1>
             
               <p class="note note-info">
                 
-                  本文最后更新时间：2021年9月28日 晚上
+                  本文最后更新时间：2021年10月2日 下午
                 
               </p>
             
             <div class="markdown-body">
-              <h2 id="写在前面"><a href="#写在前面" class="headerlink" title="写在前面"></a>写在前面</h2><ul>
-<li><p>今天本来在研究代码块样式美化，后来逛到了B站，就想能不能把B站视频放到博客里呢？在网上搜索研究后成功实现，现将方法分享给各位。</p>
-</li>
-<li><p>本文仅作为代码记录，故不解释代码。</p>
-</li>
-</ul>
-<h2 id="具体方法"><a href="#具体方法" class="headerlink" title="具体方法"></a>具体方法</h2><h3 id="获取分享链接"><a href="#获取分享链接" class="headerlink" title="获取分享链接"></a>获取分享链接</h3><p><img src="https://pic.imgdb.cn/item/6124a19644eaada7390e4d5a.png" alt="获取分享链接"></p>
-<h3 id="代码"><a href="#代码" class="headerlink" title="代码"></a>代码</h3><p>直接在post的md文件中加入：</p>
-<div class="highlight-wrap"autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" contenteditable="false"data-rel="MARKDOWN"><figure class="iseeu highlight /markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><code class="hljs markdown"><span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">style</span>=<span class="hljs-string">&quot;position:relative; padding-bottom:75%; width:100%; height:0&quot;</span>&gt;</span></span><br><span class="hljs-code">    &lt;iframe src=&quot;//player.bilibili.com/player.html?aid=204972683&amp;bvid=BV19h411D7wP&amp;cid=319176732&amp;page=1&quot; scrolling=&quot;no&quot; border=&quot;0&quot; frameborder=&quot;no&quot; framespacing=&quot;0&quot; allowfullscreen=&quot;true&quot;</span><br><span class="hljs-code">    style=&quot;position:absolute; height: 100%; width: 100%;&quot;&gt;&lt;/iframe&gt;</span><br><span class="hljs-code">&lt;/div&gt;</span><br><span class="hljs-code"> &lt;/iframe&gt;</span><br><span class="hljs-code">&lt;!-- 将行2的连接换为B站视频分享连接即可&gt;</span><br></code></pre></td></tr></table></figure></div>
+              <h2 id="之前的链接"><a href="#之前的链接" class="headerlink" title="之前的链接"></a>之前的链接</h2><p>之前给朋友分享博客的时候，发出去的链接经常这样：</p>
+<p><img src="https://pic.imgdb.cn/item/6158233d2ab3f51d911d1048.png" alt="旧链接"></p>
+<p>就像图片中这样，一长串的链接，非常的不美观。</p>
+<p>于是我上网找了找，发现了一个使用 <a target="_blank" rel="noopener" href="https://github.com/Rozbo/hexo-abbrlink">hexo-abbrlink</a> 插件的解决办法。</p>
+<h2 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h2><p>安装 hexo-abbrlink 插件，在 bash 中使用命令：</p>
+<div class="highlight-wrap"autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" contenteditable="false"data-rel="BASH"><figure class="iseeu highlight /bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">npm install hexo-abbrlink --save<br></code></pre></td></tr></table></figure></div>
+
+<h2 id="配置"><a href="#配置" class="headerlink" title="配置"></a>配置</h2><p>修改博客配置文件 _config.yml，<code>ctrl + F</code> 找到 <code>permalink</code>，修改成：</p>
+<div class="highlight-wrap"autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" contenteditable="false"data-rel="YML"><figure class="iseeu highlight /yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs yml"><span class="hljs-attr">permalink:</span> <span class="hljs-string">posts/:abbrlink/</span><br></code></pre></td></tr></table></figure></div>
+
+<p>当然也可以把<code>posts/</code>改成别的，比如<code>p/</code>或者不写，可以自行选择。</p>
+<p>然后在 _config.yml 里新加一项：</p>
+<div class="highlight-wrap"autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" contenteditable="false"data-rel="YML"><figure class="iseeu highlight /yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><code class="hljs yml"><span class="hljs-comment"># abbrlink config</span><br><span class="hljs-attr">abbrlink:</span><br>  <span class="hljs-attr">alg:</span> <span class="hljs-string">crc16</span>  <span class="hljs-comment"># 算法：crc16(default) and crc32</span><br>  <span class="hljs-attr">rep:</span> <span class="hljs-string">dec</span>    <span class="hljs-comment"># 进制：dec(default) and hex</span><br></code></pre></td></tr></table></figure></div>
+
+<p>不同的算法和进制生成的例子如下（引用<a target="_blank" rel="noopener" href="https://github.com/Rozbo/hexo-abbrlink#sample">官方文档例子</a>）</p>
+<div class="highlight-wrap"autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" contenteditable="false"data-rel="PLAINTEXT"><figure class="iseeu highlight /plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><code class="hljs txt">crc16 &amp; hex<br>https://post.zz173.com/posts/66c8.html<br><br>crc16 &amp; dec<br>https://post.zz173.com/posts/65535.html<br><br>crc32 &amp; hex<br>https://post.zz173.com/posts/8ddf18fb.html<br><br>crc32 &amp; dec<br>https://post.zz173.com/posts/1690090958.html<br></code></pre></td></tr></table></figure></div>
+
+<p>我采用的是：</p>
+<div class="highlight-wrap"autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" contenteditable="false"data-rel="YML"><figure class="iseeu highlight /yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><code class="hljs yml"><span class="hljs-comment"># abbrlink config</span><br><span class="hljs-attr">abbrlink:</span><br>  <span class="hljs-attr">alg:</span> <span class="hljs-string">crc32</span>  <span class="hljs-comment"># 算法：crc16(default) and crc32</span><br>  <span class="hljs-attr">rep:</span> <span class="hljs-string">hex</span>    <span class="hljs-comment"># 进制：dec(default) and hex</span><br></code></pre></td></tr></table></figure></div>
+
+<p>然后三连本地查看效果：</p>
+<div class="highlight-wrap"autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" contenteditable="false"data-rel="BASH"><figure class="iseeu highlight /bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs bash">hexo cl<br>hexo g<br>hexo s<br></code></pre></td></tr></table></figure></div>
+
+<p>确认无误之后就可以部署：</p>
+<div class="highlight-wrap"autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" contenteditable="false"data-rel="BASH"><figure class="iseeu highlight /bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">hexo d<br></code></pre></td></tr></table></figure></div>
+
+<p>以后分享博客连接的时候，就会更加优雅了。</p>
+<div class="highlight-wrap"autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" contenteditable="false"data-rel="PLAINTEXT"><figure class="iseeu highlight /plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><code class="hljs txt">https://www.khlfyy.top/2021/08/10/KH%E7%9A%84%E5%8D%9A%E5%AE%A2%E6%98%AF%E5%A6%82%E4%BD%95%E5%BB%BA%E7%AB%8B%E7%9A%84/<br>↓<br>↓<br>↓<br>https://www.khlfyy.top/posts/b637f248/<br></code></pre></td></tr></table></figure></div>
 
             </div>
             <hr>
@@ -283,13 +302,11 @@
                   <div class="post-meta">
                     <i class="iconfont icon-tags"></i>
                     
-                      <a class="hover-with-bg" href="/tags/%E5%A4%87%E5%BF%98/">备忘</a>
-                    
-                      <a class="hover-with-bg" href="/tags/%E6%95%99%E7%A8%8B/">教程</a>
-                    
                       <a class="hover-with-bg" href="/tags/%E5%8D%9A%E5%AE%A2/">博客</a>
                     
-                      <a class="hover-with-bg" href="/tags/bilibili/">bilibili</a>
+                      <a class="hover-with-bg" href="/tags/hexo/">hexo</a>
+                    
+                      <a class="hover-with-bg" href="/tags/%E8%BF%9E%E6%8E%A5/">连接</a>
                     
                   </div>
                 
@@ -306,18 +323,12 @@
                   <article class="post-prev col-6">
                     
                     
-                      <a href="/posts/8aa13de3/">
-                        <i class="iconfont icon-arrowleft"></i>
-                        <span class="hidden-mobile">博客进阶——自定义valine评论表情</span>
-                        <span class="visible-mobile">上一篇</span>
-                      </a>
-                    
                   </article>
                   <article class="post-next col-6">
                     
                     
-                      <a href="/posts/703db251/">
-                        <span class="hidden-mobile">高中生原创短片《余烬》</span>
+                      <a href="/posts/709068a6/">
+                        <span class="hidden-mobile">庆祝中华人民共和国成立72周年！</span>
                         <span class="visible-mobile">下一篇</span>
                         <i class="iconfont icon-arrowright"></i>
                       </a>
