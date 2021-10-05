@@ -258,13 +258,13 @@
     <category term="博客教程" scheme="https://www.khlfyy.top/categories/%E5%8D%9A%E5%AE%A2%E6%95%99%E7%A8%8B/"/>
     
     
-    <category term="教程" scheme="https://www.khlfyy.top/tags/%E6%95%99%E7%A8%8B/"/>
-    
     <category term="备忘" scheme="https://www.khlfyy.top/tags/%E5%A4%87%E5%BF%98/"/>
     
-    <category term="博客" scheme="https://www.khlfyy.top/tags/%E5%8D%9A%E5%AE%A2/"/>
+    <category term="教程" scheme="https://www.khlfyy.top/tags/%E6%95%99%E7%A8%8B/"/>
     
     <category term="bilibili" scheme="https://www.khlfyy.top/tags/bilibili/"/>
+    
+    <category term="博客" scheme="https://www.khlfyy.top/tags/%E5%8D%9A%E5%AE%A2/"/>
     
   </entry>
   
@@ -285,11 +285,11 @@
     <category term="日常" scheme="https://www.khlfyy.top/categories/%E6%97%A5%E5%B8%B8/"/>
     
     
-    <category term="bilibili" scheme="https://www.khlfyy.top/tags/bilibili/"/>
-    
     <category term="作品" scheme="https://www.khlfyy.top/tags/%E4%BD%9C%E5%93%81/"/>
     
     <category term="短片" scheme="https://www.khlfyy.top/tags/%E7%9F%AD%E7%89%87/"/>
+    
+    <category term="bilibili" scheme="https://www.khlfyy.top/tags/bilibili/"/>
     
     <category term="余烬" scheme="https://www.khlfyy.top/tags/%E4%BD%99%E7%83%AC/"/>
     
@@ -337,9 +337,9 @@
     <category term="基本指南" scheme="https://www.khlfyy.top/categories/%E5%9F%BA%E6%9C%AC%E6%8C%87%E5%8D%97/"/>
     
     
-    <category term="教程" scheme="https://www.khlfyy.top/tags/%E6%95%99%E7%A8%8B/"/>
-    
     <category term="备忘" scheme="https://www.khlfyy.top/tags/%E5%A4%87%E5%BF%98/"/>
+    
+    <category term="教程" scheme="https://www.khlfyy.top/tags/%E6%95%99%E7%A8%8B/"/>
     
     <category term="指南" scheme="https://www.khlfyy.top/tags/%E6%8C%87%E5%8D%97/"/>
     
@@ -368,11 +368,11 @@
     <category term="博客教程" scheme="https://www.khlfyy.top/categories/%E5%8D%9A%E5%AE%A2%E6%95%99%E7%A8%8B/"/>
     
     
-    <category term="教程" scheme="https://www.khlfyy.top/tags/%E6%95%99%E7%A8%8B/"/>
+    <category term="helloworld" scheme="https://www.khlfyy.top/tags/helloworld/"/>
     
     <category term="备忘" scheme="https://www.khlfyy.top/tags/%E5%A4%87%E5%BF%98/"/>
     
-    <category term="helloworld" scheme="https://www.khlfyy.top/tags/helloworld/"/>
+    <category term="教程" scheme="https://www.khlfyy.top/tags/%E6%95%99%E7%A8%8B/"/>
     
     <category term="博客" scheme="https://www.khlfyy.top/tags/%E5%8D%9A%E5%AE%A2/"/>
     
@@ -426,9 +426,9 @@
     <category term="基本指南" scheme="https://www.khlfyy.top/categories/%E5%9F%BA%E6%9C%AC%E6%8C%87%E5%8D%97/"/>
     
     
-    <category term="教程" scheme="https://www.khlfyy.top/tags/%E6%95%99%E7%A8%8B/"/>
-    
     <category term="备忘" scheme="https://www.khlfyy.top/tags/%E5%A4%87%E5%BF%98/"/>
+    
+    <category term="教程" scheme="https://www.khlfyy.top/tags/%E6%95%99%E7%A8%8B/"/>
     
     <category term="Markdown" scheme="https://www.khlfyy.top/tags/Markdown/"/>
     
@@ -474,11 +474,11 @@
     <category term="helloworld" scheme="https://www.khlfyy.top/categories/helloworld/"/>
     
     
-    <category term="教程" scheme="https://www.khlfyy.top/tags/%E6%95%99%E7%A8%8B/"/>
+    <category term="helloworld" scheme="https://www.khlfyy.top/tags/helloworld/"/>
     
     <category term="备忘" scheme="https://www.khlfyy.top/tags/%E5%A4%87%E5%BF%98/"/>
     
-    <category term="helloworld" scheme="https://www.khlfyy.top/tags/helloworld/"/>
+    <category term="教程" scheme="https://www.khlfyy.top/tags/%E6%95%99%E7%A8%8B/"/>
     
     <category term="地址" scheme="https://www.khlfyy.top/tags/%E5%9C%B0%E5%9D%80/"/>
     
