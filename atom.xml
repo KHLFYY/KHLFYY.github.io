@@ -6,7 +6,7 @@
   <link href="https://www.khlfyy.top/atom.xml" rel="self"/>
   
   <link href="https://www.khlfyy.top/"/>
-  <updated>2021-10-07T10:09:34.050Z</updated>
+  <updated>2021-10-07T10:23:33.157Z</updated>
   <id>https://www.khlfyy.top/</id>
   
   <author>
@@ -17,11 +17,11 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>摄影小思考——照片中的情感</title>
+    <title>摄影思考——照片中的情感</title>
     <link href="https://www.khlfyy.top/posts/77b2f57e/"/>
     <id>https://www.khlfyy.top/posts/77b2f57e/</id>
     <published>2021-10-03T14:10:00.000Z</published>
-    <updated>2021-10-07T10:09:34.050Z</updated>
+    <updated>2021-10-07T10:23:33.157Z</updated>
     
     <content type="html"><![CDATA[<h2 id="什么是摄影"><a href="#什么是摄影" class="headerlink" title="什么是摄影"></a>什么是摄影</h2><h3 id="简单的概念"><a href="#简单的概念" class="headerlink" title="简单的概念"></a>简单的概念</h3><p>摄影一词是源于希腊语φῶς（光线）和 γραφι（绘画、绘图）意思是”以光线绘图”。有人说：摄影家的能力是把日常生活中稍纵即逝的平凡事物转化为不朽的视觉图像。  ——摘自百度百科，有删改</p><h3 id="我的一些思考"><a href="#我的一些思考" class="headerlink" title="我的一些思考"></a>我的一些思考</h3><p>摄影是一门关于光与影的艺术。这是一种通过照片将生活记录下来，并给观者以美的感受的艺术形式。</p><p>所以说，当我们摄影（或者日常所说的 拍照 ）的时候，不应该仅仅是为了得到一张照片，让别人看见我们所看见的；还要通过这张照片传达出一种思想情感，<strong>让别人感受到我们所感受的</strong>，体会到我们所想表达的深层情感。</p><div class="note note-primary">            <p>这里我想说的情感，并不一定是指喜怒哀惧这种直观的情感体验。我指的大概是“态度”——对某个事物所持有的心理倾向。</p>          </div><p>当一张照片能让欣赏的人感受到作者所感受的（或者说 作者想表达的）情感态度，这样的作品才是一个好作品。</p><p>如果一张照片平淡无奇，我认为这只能算是所看到的东西的一个平面复制品罢了。</p><div class="note note-secondary">            <p>虽然说有些时候还是会存在这种复制品，比如仅仅是为了客观记录一篇文章，而恰好这个时候没法复印，于是掏出手机端正的拍了一张照片。又或者说一个成绩条……等等，好像这个物品肯定会带一些恐惧、害怕或者是开心、愉悦的情绪？……</p>          </div><h2 id="结语"><a href="#结语" class="headerlink" title="结语"></a>结语</h2><p>就像文章里所说的那样，下次拿起相机/手机拍照之前，你肯定已经对所要拍摄的东西有了一定的情感态度。试图在照片中带入这种情感，使其表现出来。</p><p>关于一些技巧，以后的文章会详细讲解（咕咕咕）。</p>]]></content>
     
@@ -48,9 +48,9 @@
     <link href="https://www.khlfyy.top/posts/b80f9124/"/>
     <id>https://www.khlfyy.top/posts/b80f9124/</id>
     <published>2021-10-03T00:00:00.000Z</published>
-    <updated>2021-10-07T10:10:09.383Z</updated>
+    <updated>2021-10-07T10:24:36.524Z</updated>
     
-    <content type="html"><![CDATA[<h2 id="写在前面"><a href="#写在前面" class="headerlink" title="写在前面"></a>写在前面</h2><ul><li><p>最近博客没什么内容，我一直在思考我的博客应该写些什么内容。</p><ul><li><p>后来一想，我还是对摄影方面略有涉猎的；</p></li><li><p>恰逢最近身边许多朋友对摄影感兴趣或者想了解摄影：</p><blockquote><p>运动会，同学拿借来的单反但是不知道怎么用，进行了光圈优先拍照模式的简单讲解；</p><p>有个<del>富婆</del>朋友最近买了个 SONY 的微单，但发现她在使用过程中 有很多使用技巧没有注意到，也没有充分发挥相机的功能；</p><p>有许多虽然没有相机但是对摄影方面也很感兴趣的朋友和同学；</p><p>校园电视台的新同学也可以通过这篇文章自学有关摄影的知识。</p></blockquote></li></ul></li><li><p>所以我写这样基础性的文章，希望朋友们能通过这些文章 对摄影的基础知识有一个较为充分的了解。</p></li></ul><div class="note note-info">            <p>这篇文章一开始是准备从光圈快门ISO讲起，写一个大概上手相机就能用的教程。</p><p>后来我觉得，既然写了关于<code>摄影</code>的一个新的系列，就从头讲起吧，从最基础的讲起。</p><blockquote><p>这个系列应该很多地方会讲到原理，就像物理知识一样，这些原理考试并不一定考，但是大家可以通过对原理的了解，更加方便的掌握知识点，记忆也就更牢，不容易记混记错。</p></blockquote>          </div><ul><li><p>我打算把这个主题作为一个系列，分为数篇文章讲解。</p><ul><li><p>一来是阅读时间限制，在快节奏的当下，许多人没有时间，也没有耐心，阅读完一篇长文章。而且如果按照一开始想做的，全写在这一篇文章里。可能大家一看到这一篇文章几千字甚至上万字，就会不想看了。</p></li><li><p>二来是写作时间限制，没有大把时间写博客；这样一直“未完成”的文章看上去并不好。</p></li></ul><p>综上，关于摄影将会分为一个大系列的 数篇文章 讲解。</p></li></ul><h2 id="关于此系列"><a href="#关于此系列" class="headerlink" title="关于此系列"></a>关于此系列</h2><ul><li><p>这将是一个全新的关于摄影的系列。主要讲解一些<strong>我自己</strong>所了解的关于摄影的知识，其中也会有很多我个人的思考。</p></li><li><p>文章内容可能不是那么专业，那么准确。毕竟我也没有过长时间的系统性学习。网上相关知识文章可能会有一大堆，但我仍希望我可以通过我的方式给大家浅显易懂的讲解一些摄影知识，让更多的朋友喜欢上摄影、提升摄影水平。</p></li><li><p>由于个人水平有限，如果有任何地方有错误或可改进之处，欢迎各位斧正。</p></li></ul><h2 id="相关文章"><a href="#相关文章" class="headerlink" title="相关文章"></a>相关文章</h2><ul><li><a href="">摄影小思考——照片中的情感</a></li></ul>]]></content>
+    <content type="html"><![CDATA[<h2 id="写在前面"><a href="#写在前面" class="headerlink" title="写在前面"></a>写在前面</h2><ul><li><p>最近博客没什么内容，我一直在思考我的博客应该写些什么内容。</p><ul><li><p>后来一想，我还是对摄影方面略有涉猎的；</p></li><li><p>恰逢最近身边许多朋友对摄影感兴趣或者想了解摄影：</p><blockquote><p>运动会，同学拿借来的单反但是不知道怎么用，进行了光圈优先拍照模式的简单讲解；</p><p>有个<del>富婆</del>朋友最近买了个 SONY 的微单，但发现她在使用过程中 有很多使用技巧没有注意到，也没有充分发挥相机的功能；</p><p>有许多虽然没有相机但是对摄影方面也很感兴趣的朋友和同学；</p><p>校园电视台的新同学也可以通过这篇文章自学有关摄影的知识。</p></blockquote></li></ul></li><li><p>所以我写这样基础性的文章，希望朋友们能通过这些文章 对摄影的基础知识有一个较为充分的了解。</p></li></ul><div class="note note-info">            <p>这篇文章一开始是准备从光圈快门ISO讲起，写一个大概上手相机就能用的教程。</p><p>后来我觉得，既然写了关于<code>摄影</code>的一个新的系列，就从头讲起吧，从最基础的讲起。</p><blockquote><p>这个系列应该很多地方会讲到原理，就像物理知识一样，这些原理考试并不一定考，但是大家可以通过对原理的了解，更加方便的掌握知识点，记忆也就更牢，不容易记混记错。</p></blockquote>          </div><ul><li><p>我打算把这个主题作为一个系列，分为数篇文章讲解。</p><ul><li><p>一来是阅读时间限制，在快节奏的当下，许多人没有时间，也没有耐心，阅读完一篇长文章。而且如果按照一开始想做的，全写在这一篇文章里。可能大家一看到这一篇文章几千字甚至上万字，就会不想看了。</p></li><li><p>二来是写作时间限制，没有大把时间写博客；这样一直“未完成”的文章看上去并不好。</p></li></ul><p>综上，关于摄影将会分为一个大系列的 数篇文章 讲解。</p></li></ul><h2 id="关于此系列"><a href="#关于此系列" class="headerlink" title="关于此系列"></a>关于此系列</h2><ul><li><p>这将是一个全新的关于摄影的系列。主要讲解一些<strong>我自己</strong>所了解的关于摄影的知识，其中也会有很多我个人的思考。</p></li><li><p>文章内容可能不是那么专业，那么准确。毕竟我也没有过长时间的系统性学习。网上相关知识文章可能会有一大堆，但我仍希望我可以通过我的方式给大家浅显易懂的讲解一些摄影知识，让更多的朋友喜欢上摄影、提升摄影水平。</p></li><li><p>由于个人水平有限，如果有任何地方有错误或可改进之处，欢迎各位斧正。</p></li></ul><h2 id="相关文章"><a href="#相关文章" class="headerlink" title="相关文章"></a>相关文章</h2><ul><li><p><a href="https://www.khlfyy.top/posts/77b2f57e/">摄影思考——照片中的情感</a></p></li><li><p>摄影知识——快门 正在写作中……</p></li></ul>]]></content>
     
     
     <summary type="html">博客新增摄影知识系列文章</summary>
@@ -283,13 +283,13 @@
     <category term="博客教程" scheme="https://www.khlfyy.top/categories/%E5%8D%9A%E5%AE%A2%E6%95%99%E7%A8%8B/"/>
     
     
-    <category term="教程" scheme="https://www.khlfyy.top/tags/%E6%95%99%E7%A8%8B/"/>
-    
     <category term="备忘" scheme="https://www.khlfyy.top/tags/%E5%A4%87%E5%BF%98/"/>
     
-    <category term="bilibili" scheme="https://www.khlfyy.top/tags/bilibili/"/>
+    <category term="教程" scheme="https://www.khlfyy.top/tags/%E6%95%99%E7%A8%8B/"/>
     
     <category term="博客" scheme="https://www.khlfyy.top/tags/%E5%8D%9A%E5%AE%A2/"/>
+    
+    <category term="bilibili" scheme="https://www.khlfyy.top/tags/bilibili/"/>
     
   </entry>
   
@@ -362,9 +362,9 @@
     <category term="基本指南" scheme="https://www.khlfyy.top/categories/%E5%9F%BA%E6%9C%AC%E6%8C%87%E5%8D%97/"/>
     
     
-    <category term="教程" scheme="https://www.khlfyy.top/tags/%E6%95%99%E7%A8%8B/"/>
-    
     <category term="备忘" scheme="https://www.khlfyy.top/tags/%E5%A4%87%E5%BF%98/"/>
+    
+    <category term="教程" scheme="https://www.khlfyy.top/tags/%E6%95%99%E7%A8%8B/"/>
     
     <category term="指南" scheme="https://www.khlfyy.top/tags/%E6%8C%87%E5%8D%97/"/>
     
@@ -393,11 +393,11 @@
     <category term="博客教程" scheme="https://www.khlfyy.top/categories/%E5%8D%9A%E5%AE%A2%E6%95%99%E7%A8%8B/"/>
     
     
-    <category term="教程" scheme="https://www.khlfyy.top/tags/%E6%95%99%E7%A8%8B/"/>
+    <category term="helloworld" scheme="https://www.khlfyy.top/tags/helloworld/"/>
     
     <category term="备忘" scheme="https://www.khlfyy.top/tags/%E5%A4%87%E5%BF%98/"/>
     
-    <category term="helloworld" scheme="https://www.khlfyy.top/tags/helloworld/"/>
+    <category term="教程" scheme="https://www.khlfyy.top/tags/%E6%95%99%E7%A8%8B/"/>
     
     <category term="博客" scheme="https://www.khlfyy.top/tags/%E5%8D%9A%E5%AE%A2/"/>
     
@@ -451,9 +451,9 @@
     <category term="基本指南" scheme="https://www.khlfyy.top/categories/%E5%9F%BA%E6%9C%AC%E6%8C%87%E5%8D%97/"/>
     
     
-    <category term="教程" scheme="https://www.khlfyy.top/tags/%E6%95%99%E7%A8%8B/"/>
-    
     <category term="备忘" scheme="https://www.khlfyy.top/tags/%E5%A4%87%E5%BF%98/"/>
+    
+    <category term="教程" scheme="https://www.khlfyy.top/tags/%E6%95%99%E7%A8%8B/"/>
     
     <category term="Markdown" scheme="https://www.khlfyy.top/tags/Markdown/"/>
     
@@ -499,11 +499,11 @@
     <category term="helloworld" scheme="https://www.khlfyy.top/categories/helloworld/"/>
     
     
-    <category term="教程" scheme="https://www.khlfyy.top/tags/%E6%95%99%E7%A8%8B/"/>
+    <category term="helloworld" scheme="https://www.khlfyy.top/tags/helloworld/"/>
     
     <category term="备忘" scheme="https://www.khlfyy.top/tags/%E5%A4%87%E5%BF%98/"/>
     
-    <category term="helloworld" scheme="https://www.khlfyy.top/tags/helloworld/"/>
+    <category term="教程" scheme="https://www.khlfyy.top/tags/%E6%95%99%E7%A8%8B/"/>
     
     <category term="地址" scheme="https://www.khlfyy.top/tags/%E5%9C%B0%E5%9D%80/"/>
     
