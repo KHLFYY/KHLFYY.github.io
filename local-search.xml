@@ -4,6 +4,35 @@
   
   
   <entry>
+    <title>日常—奇妙的名人名言</title>
+    <link href="/posts/7f227ff2/"/>
+    <url>/posts/7f227ff2/</url>
+    
+    <content type="html"><![CDATA[<p><img src="https://pic.imgdb.cn/item/617808f12ab3f51d9128c497.png" alt="名人名言（确信）"></p><hr><p>丢了个U盘 闪迪cz880……<br>虽然这种时候 一般是因为数据无价，所以很悲伤(；д；)<br>但还好里面没有什么重要的东西，而且都有备份  </p><p>这次主要是因为U盘价格有点贵……所以心疼  </p>]]></content>
+    
+    
+    <categories>
+      
+      <category>日常</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>日常</tag>
+      
+      <tag>名人名言</tag>
+      
+      <tag>黑板</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
     <title>【转载】现在拍的是照片是摄影吗</title>
     <link href="/posts/ecbdc82a/"/>
     <url>/posts/ecbdc82a/</url>
@@ -84,9 +113,9 @@
       
       <tag>摄影</tag>
       
-      <tag>知识</tag>
-      
       <tag>思考</tag>
+      
+      <tag>知识</tag>
       
     </tags>
     
@@ -196,9 +225,9 @@
     
     <tags>
       
-      <tag>中秋节</tag>
-      
       <tag>节日</tag>
+      
+      <tag>中秋节</tag>
       
     </tags>
     
@@ -636,22 +665,22 @@
   
   
   <entry>
-    <title>2022年 高考倒计时</title>
+    <title>about</title>
     <link href="/"/>
     <url>/</url>
     
-    <content type="html"><![CDATA[<body>  <p><div align=center><h2 class="count"></h2>  <script>      window.onload = function () {          countDown();          function addZero(i) {              return i < 10 ? "0" + i: i + "";          }          function countDown() {              var nowtime = new Date();              var endtime = new Date("2022/06/07,05:00:00");              var lefttime = parseInt((endtime.getTime() - nowtime.getTime()) / 1000);              var d = parseInt(lefttime / (24*60*60))              var h = parseInt(lefttime / (60 * 60) % 24);              var m = parseInt(lefttime / 60 % 60);              var s = parseInt(lefttime % 60);              d = addZero(d)              h = addZero(h);              m = addZero(m);              s = addZero(s);              document.querySelector(".count").innerHTML = `${d}天 ${h} 时 ${m} 分 ${s} 秒`;              if (lefttime <= 0) {                  document.querySelector(".count").innerHTML = "2022年高考已开始";                  return;              }              setTimeout(countDown, 1000);            }        }    </script></body><hr><p><img src="https://pic.imgdb.cn/item/616056592ab3f51d913823dd.png" alt="emmm……"></p><hr><p>本项目Github仓库：<a href="https://github.com/KHLFYY/countdown/">https://github.com/KHLFYY/countdown/</a></p>]]></content>
+    <content type="html"><![CDATA[<h2 id="关于网站"><a href="#关于网站" class="headerlink" title="关于网站"></a>关于网站</h2><ul><li><p>这是<a href="https://github.com/KHLFYY">KHLFYY</a>的第一个网站，也是个人博客。</p></li><li><p>项目的GitHub地址：<a href="https://github.com/KHLFYY/KHLFYY.github.io">KHLFYY.github.io项目</a></p></li><li><p>博客目前部署在 Github Pages。</p></li><li><p>其他信息：<a href="https://www.khlfyy.top/posts/7b32366e/">我的第一篇文章——建立个人博客</a></p></li></ul><h2 id="随便写写"><a href="#随便写写" class="headerlink" title="随便写写"></a>随便写写</h2><ul><li><p>感谢在搭建博客过程中提供帮助的crs、mjr和大理石。</p></li><li><p>搭建博客并不难，网上有很多教程（本博客里也有一篇<a href="https://www.khlfyy.top/posts/b637f248/">详细教程</a>，已经有两个朋友根据这篇教程成功搭建博客了），加上询问朋友和自己摸索，还是很容易的。</p></li><li><p>我也不知道博客应该写点啥，反正也没几个人看，可能就随便写写了，博客里应该不会有太多硬核向的东西。</p></li></ul><hr><p><div align=center><h2>理想灯塔永不灭 人生航行无止歇</h2><p><div align=center><h4>The ideal beacon will never go out, the voyage of life will never stop.</h4>]]></content>
     
   </entry>
   
   
   
   <entry>
-    <title>about</title>
+    <title>2022年 高考倒计时</title>
     <link href="/"/>
     <url>/</url>
     
-    <content type="html"><![CDATA[<h2 id="关于网站"><a href="#关于网站" class="headerlink" title="关于网站"></a>关于网站</h2><ul><li><p>这是<a href="https://github.com/KHLFYY">KHLFYY</a>的第一个网站，也是个人博客。</p></li><li><p>项目的GitHub地址：<a href="https://github.com/KHLFYY/KHLFYY.github.io">KHLFYY.github.io项目</a></p></li><li><p>博客目前部署在 Github Pages。</p></li><li><p>其他信息：<a href="https://www.khlfyy.top/posts/7b32366e/">我的第一篇文章——建立个人博客</a></p></li></ul><h2 id="随便写写"><a href="#随便写写" class="headerlink" title="随便写写"></a>随便写写</h2><ul><li><p>感谢在搭建博客过程中提供帮助的crs、mjr和大理石。</p></li><li><p>搭建博客并不难，网上有很多教程（本博客里也有一篇<a href="https://www.khlfyy.top/posts/b637f248/">详细教程</a>，已经有两个朋友根据这篇教程成功搭建博客了），加上询问朋友和自己摸索，还是很容易的。</p></li><li><p>我也不知道博客应该写点啥，反正也没几个人看，可能就随便写写了，博客里应该不会有太多硬核向的东西。</p></li></ul><hr><p><div align=center><h2>理想灯塔永不灭 人生航行无止歇</h2><p><div align=center><h4>The ideal beacon will never go out, the voyage of life will never stop.</h4>]]></content>
+    <content type="html"><![CDATA[<body>  <p><div align=center><h2 class="count"></h2>  <script>      window.onload = function () {          countDown();          function addZero(i) {              return i < 10 ? "0" + i: i + "";          }          function countDown() {              var nowtime = new Date();              var endtime = new Date("2022/06/07,05:00:00");              var lefttime = parseInt((endtime.getTime() - nowtime.getTime()) / 1000);              var d = parseInt(lefttime / (24*60*60))              var h = parseInt(lefttime / (60 * 60) % 24);              var m = parseInt(lefttime / 60 % 60);              var s = parseInt(lefttime % 60);              d = addZero(d)              h = addZero(h);              m = addZero(m);              s = addZero(s);              document.querySelector(".count").innerHTML = `${d}天 ${h} 时 ${m} 分 ${s} 秒`;              if (lefttime <= 0) {                  document.querySelector(".count").innerHTML = "2022年高考已开始";                  return;              }              setTimeout(countDown, 1000);            }        }    </script></body><hr><p><img src="https://pic.imgdb.cn/item/616056592ab3f51d913823dd.png" alt="emmm……"></p><hr><p>本项目Github仓库：<a href="https://github.com/KHLFYY/countdown/">https://github.com/KHLFYY/countdown/</a></p>]]></content>
     
   </entry>
   
