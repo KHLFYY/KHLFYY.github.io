@@ -6,7 +6,7 @@
   <link href="https://www.khlfyy.top/atom.xml" rel="self"/>
   
   <link href="https://www.khlfyy.top/"/>
-  <updated>2021-11-09T05:48:46.255Z</updated>
+  <updated>2021-11-09T05:50:23.450Z</updated>
   <id>https://www.khlfyy.top/</id>
   
   <author>
@@ -21,9 +21,9 @@
     <link href="https://www.khlfyy.top/posts/2720b876/"/>
     <id>https://www.khlfyy.top/posts/2720b876/</id>
     <published>2021-11-09T04:37:43.000Z</published>
-    <updated>2021-11-09T05:48:46.255Z</updated>
+    <updated>2021-11-09T05:50:23.450Z</updated>
     
-    <content type="html"><![CDATA[<h2 id="通知"><a href="#通知" class="headerlink" title="通知"></a>通知</h2><ul><li>“全市各幼儿园、小学、初中、普通高中学生即日起暂缓入校（园），中小学启动线上教学，幼儿园做好家长居家育儿和看护指导。全市校外培训机构立即停止线下教学，线下教学恢复时间视疫情防控情况确定。”</li></ul><h2 id="完蛋"><a href="#完蛋" class="headerlink" title="完蛋"></a>完蛋</h2><p>希望早点回去。</p>]]></content>
+    <content type="html"><![CDATA[<h2 id="通知"><a href="#通知" class="headerlink" title="通知"></a>通知</h2><ul><li>“全市各幼儿园、小学、初中、普通高中学生即日起暂缓入校（园），中小学启动<strong>线上教学</strong>，幼儿园做好家长居家育儿和看护指导。全市校外培训机构立即停止线下教学，线下教学<em>恢复时间视疫情防控情况确定</em> 。”</li></ul><h2 id="完蛋"><a href="#完蛋" class="headerlink" title="完蛋"></a>完蛋</h2><p>希望早点回去。</p>]]></content>
     
     
     <summary type="html">又开始网课了，完蛋</summary>
@@ -37,9 +37,9 @@
     
     <category term="疫情" scheme="https://www.khlfyy.top/tags/%E7%96%AB%E6%83%85/"/>
     
-    <category term="学校" scheme="https://www.khlfyy.top/tags/%E5%AD%A6%E6%A0%A1/"/>
-    
     <category term="网课" scheme="https://www.khlfyy.top/tags/%E7%BD%91%E8%AF%BE/"/>
+    
+    <category term="学校" scheme="https://www.khlfyy.top/tags/%E5%AD%A6%E6%A0%A1/"/>
     
   </entry>
   
@@ -62,11 +62,11 @@
     
     <category term="日常" scheme="https://www.khlfyy.top/tags/%E6%97%A5%E5%B8%B8/"/>
     
+    <category term="班会" scheme="https://www.khlfyy.top/tags/%E7%8F%AD%E4%BC%9A/"/>
+    
     <category term="疫情" scheme="https://www.khlfyy.top/tags/%E7%96%AB%E6%83%85/"/>
     
     <category term="网课" scheme="https://www.khlfyy.top/tags/%E7%BD%91%E8%AF%BE/"/>
-    
-    <category term="班会" scheme="https://www.khlfyy.top/tags/%E7%8F%AD%E4%BC%9A/"/>
     
   </entry>
   
@@ -264,9 +264,9 @@
     <category term="纪念日/节日" scheme="https://www.khlfyy.top/categories/%E7%BA%AA%E5%BF%B5%E6%97%A5-%E8%8A%82%E6%97%A5/"/>
     
     
-    <category term="中秋节" scheme="https://www.khlfyy.top/tags/%E4%B8%AD%E7%A7%8B%E8%8A%82/"/>
-    
     <category term="节日" scheme="https://www.khlfyy.top/tags/%E8%8A%82%E6%97%A5/"/>
+    
+    <category term="中秋节" scheme="https://www.khlfyy.top/tags/%E4%B8%AD%E7%A7%8B%E8%8A%82/"/>
     
   </entry>
   
@@ -414,9 +414,9 @@
     <category term="博客教程" scheme="https://www.khlfyy.top/categories/%E5%8D%9A%E5%AE%A2%E6%95%99%E7%A8%8B/"/>
     
     
-    <category term="备忘" scheme="https://www.khlfyy.top/tags/%E5%A4%87%E5%BF%98/"/>
-    
     <category term="教程" scheme="https://www.khlfyy.top/tags/%E6%95%99%E7%A8%8B/"/>
+    
+    <category term="备忘" scheme="https://www.khlfyy.top/tags/%E5%A4%87%E5%BF%98/"/>
     
     <category term="博客" scheme="https://www.khlfyy.top/tags/%E5%8D%9A%E5%AE%A2/"/>
     
@@ -493,9 +493,9 @@
     <category term="基本指南" scheme="https://www.khlfyy.top/categories/%E5%9F%BA%E6%9C%AC%E6%8C%87%E5%8D%97/"/>
     
     
-    <category term="备忘" scheme="https://www.khlfyy.top/tags/%E5%A4%87%E5%BF%98/"/>
-    
     <category term="教程" scheme="https://www.khlfyy.top/tags/%E6%95%99%E7%A8%8B/"/>
+    
+    <category term="备忘" scheme="https://www.khlfyy.top/tags/%E5%A4%87%E5%BF%98/"/>
     
     <category term="指南" scheme="https://www.khlfyy.top/tags/%E6%8C%87%E5%8D%97/"/>
     
@@ -524,11 +524,11 @@
     <category term="博客教程" scheme="https://www.khlfyy.top/categories/%E5%8D%9A%E5%AE%A2%E6%95%99%E7%A8%8B/"/>
     
     
-    <category term="helloworld" scheme="https://www.khlfyy.top/tags/helloworld/"/>
+    <category term="教程" scheme="https://www.khlfyy.top/tags/%E6%95%99%E7%A8%8B/"/>
     
     <category term="备忘" scheme="https://www.khlfyy.top/tags/%E5%A4%87%E5%BF%98/"/>
     
-    <category term="教程" scheme="https://www.khlfyy.top/tags/%E6%95%99%E7%A8%8B/"/>
+    <category term="helloworld" scheme="https://www.khlfyy.top/tags/helloworld/"/>
     
     <category term="博客" scheme="https://www.khlfyy.top/tags/%E5%8D%9A%E5%AE%A2/"/>
     
