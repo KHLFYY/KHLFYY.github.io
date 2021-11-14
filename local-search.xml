@@ -4,6 +4,39 @@
   
   
   <entry>
+    <title>记一次VUP(VTB)简单探索</title>
+    <link href="/posts/b9b57e39/"/>
+    <url>/posts/b9b57e39/</url>
+    
+    <content type="html"><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><ul><li>就像之前<a href="https://www.khlfyy.top/posts/2720b876/">那一篇日常</a>里面提到的，现在是网课期间。然后看到有的同学搞VUP，现在正好有一点空闲时间，所以探索一下。边学习就边写了这篇博客作为记录。</li></ul><h2 id="什么是VUP？"><a href="#什么是VUP？" class="headerlink" title="什么是VUP？"></a>什么是VUP？</h2><div class="note note-info">            <p>首先，明确一点，虚拟主播不是AI，并不是靠人工智能来控制，拥有虚拟形象外形的主播。</p><p>虚拟主播是指使用虚拟形象在视频网站上进行投稿活动的主播，以虚拟YouTuber最为人所知。</p><p>在国内，虚拟主播普遍被称为虚拟UP主，Virtual UP(VUP)。在台湾及国外，虚拟主播由于普遍活跃于YouTube被称为Virtual YouTuber(VTuber)。</p>          </div><p><img src="https://pic.imgdb.cn/item/61908f482ab3f51d91acc895.png" alt="知名VUP"></p><blockquote><p>摘自<a href="https://www.zhihu.com/question/336253862/answer/939518001">VUP官方账号的知乎回答</a></p></blockquote><p>我使用的是Steam里的VUP这个软件。</p><p><img src="https://pic.imgdb.cn/item/61908f142ab3f51d91acbab0.png" alt="Steam商店页面的VUP"></p><h2 id="下载VUP"><a href="#下载VUP" class="headerlink" title="下载VUP"></a>下载VUP</h2><p>在<a href="https://store.steampowered.com/">Steam</a>商店页面搜索<code>VUP</code>,并下载安装。</p><h2 id="启动VUP"><a href="#启动VUP" class="headerlink" title="启动VUP"></a>启动VUP</h2><p>在库中启动VUP。</p><h2 id="使用"><a href="#使用" class="headerlink" title="使用"></a>使用</h2><p>emmm这部分软件有新手引导，基本看了就弄明白了。</p><div class="note note-second">            <p>如果以后有进一步研究，将会再次更新本文章。</p>          </div>]]></content>
+    
+    
+    <categories>
+      
+      <category>娱乐</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>VUP</tag>
+      
+      <tag>VTB</tag>
+      
+      <tag>Steam</tag>
+      
+      <tag>虚拟主播</tag>
+      
+      <tag>娱乐</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
     <title>日常——网课，考不上大学了</title>
     <link href="/posts/2720b876/"/>
     <url>/posts/2720b876/</url>
@@ -24,9 +57,9 @@
       
       <tag>疫情</tag>
       
-      <tag>学校</tag>
-      
       <tag>网课</tag>
+      
+      <tag>学校</tag>
       
     </tags>
     
@@ -53,11 +86,11 @@
       
       <tag>日常</tag>
       
+      <tag>班会</tag>
+      
       <tag>疫情</tag>
       
       <tag>网课</tag>
-      
-      <tag>班会</tag>
       
     </tags>
     
@@ -465,9 +498,9 @@
       
       <tag>教程</tag>
       
-      <tag>博客</tag>
-      
       <tag>bilibili</tag>
+      
+      <tag>博客</tag>
       
     </tags>
     
@@ -613,7 +646,7 @@
     
     <categories>
       
-      <category>Minecraft</category>
+      <category>娱乐</category>
       
     </categories>
     
@@ -629,6 +662,10 @@
       <tag>生电服</tag>
       
       <tag>VGTB</tag>
+      
+      <tag>Minecraft</tag>
+      
+      <tag>游戏</tag>
       
     </tags>
     
