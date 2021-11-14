@@ -6,7 +6,7 @@
   <link href="https://www.khlfyy.top/atom.xml" rel="self"/>
   
   <link href="https://www.khlfyy.top/"/>
-  <updated>2021-11-14T10:35:54.809Z</updated>
+  <updated>2021-11-14T10:34:31.105Z</updated>
   <id>https://www.khlfyy.top/</id>
   
   <author>
@@ -15,19 +15,6 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
-  
-  <entry>
-    <title>Server虚拟机安装使用</title>
-    <link href="https://www.khlfyy.top/posts/undefined/"/>
-    <id>https://www.khlfyy.top/posts/undefined/</id>
-    <published>2021-11-14T10:35:54.000Z</published>
-    <updated>2021-11-14T10:35:54.809Z</updated>
-    
-    
-    
-    
-    
-  </entry>
   
   <entry>
     <title>记一次VUP(VTB)简单探索</title>
@@ -79,9 +66,9 @@
     
     <category term="疫情" scheme="https://www.khlfyy.top/tags/%E7%96%AB%E6%83%85/"/>
     
-    <category term="学校" scheme="https://www.khlfyy.top/tags/%E5%AD%A6%E6%A0%A1/"/>
-    
     <category term="网课" scheme="https://www.khlfyy.top/tags/%E7%BD%91%E8%AF%BE/"/>
+    
+    <category term="学校" scheme="https://www.khlfyy.top/tags/%E5%AD%A6%E6%A0%A1/"/>
     
   </entry>
   
@@ -104,11 +91,11 @@
     
     <category term="日常" scheme="https://www.khlfyy.top/tags/%E6%97%A5%E5%B8%B8/"/>
     
+    <category term="班会" scheme="https://www.khlfyy.top/tags/%E7%8F%AD%E4%BC%9A/"/>
+    
     <category term="疫情" scheme="https://www.khlfyy.top/tags/%E7%96%AB%E6%83%85/"/>
     
     <category term="网课" scheme="https://www.khlfyy.top/tags/%E7%BD%91%E8%AF%BE/"/>
-    
-    <category term="班会" scheme="https://www.khlfyy.top/tags/%E7%8F%AD%E4%BC%9A/"/>
     
   </entry>
   
@@ -466,9 +453,9 @@
     
     <category term="教程" scheme="https://www.khlfyy.top/tags/%E6%95%99%E7%A8%8B/"/>
     
-    <category term="bilibili" scheme="https://www.khlfyy.top/tags/bilibili/"/>
-    
     <category term="博客" scheme="https://www.khlfyy.top/tags/%E5%8D%9A%E5%AE%A2/"/>
+    
+    <category term="bilibili" scheme="https://www.khlfyy.top/tags/bilibili/"/>
     
   </entry>
   
@@ -489,11 +476,11 @@
     <category term="日常" scheme="https://www.khlfyy.top/categories/%E6%97%A5%E5%B8%B8/"/>
     
     
+    <category term="bilibili" scheme="https://www.khlfyy.top/tags/bilibili/"/>
+    
     <category term="作品" scheme="https://www.khlfyy.top/tags/%E4%BD%9C%E5%93%81/"/>
     
     <category term="短片" scheme="https://www.khlfyy.top/tags/%E7%9F%AD%E7%89%87/"/>
-    
-    <category term="bilibili" scheme="https://www.khlfyy.top/tags/bilibili/"/>
     
     <category term="余烬" scheme="https://www.khlfyy.top/tags/%E4%BD%99%E7%83%AC/"/>
     
@@ -523,6 +510,37 @@
     <category term="博客" scheme="https://www.khlfyy.top/tags/%E5%8D%9A%E5%AE%A2/"/>
     
     <category term="VS code" scheme="https://www.khlfyy.top/tags/VS-code/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Bash使用指南</title>
+    <link href="https://www.khlfyy.top/posts/d61c50c9/"/>
+    <id>https://www.khlfyy.top/posts/d61c50c9/</id>
+    <published>2021-08-22T04:27:22.000Z</published>
+    <updated>2021-09-28T12:54:00.991Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="写在前面"><a href="#写在前面" class="headerlink" title="写在前面"></a>写在前面</h2><ul><li><p>本篇文章目的是让各位以及我自己<strong>简略</strong>学习掌握关于 Bash 上的基础命令，并作为备忘以供翻阅，所以本文仅介绍常用基础命令。</p></li><li><p>本文参考连接：<a href="http://cornmc.top:800/tips/1_Linux%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/">Linux基础命令——YMMC</a></p></li></ul><h2 id="关于bash"><a href="#关于bash" class="headerlink" title="关于bash"></a>关于bash</h2><p>博客维护中使用的 bash <strong>基本</strong>和 Linux 中使用命令要求相同，有些部分有差异。</p><h2 id="关于目录"><a href="#关于目录" class="headerlink" title="关于目录"></a>关于目录</h2><p>目录 与 文件夹 的关系：</p><p>目录是列表，文件夹是一个实际的对象。目录和文件夹是<strong>不同种类的概念</strong>，目录是<strong>统计</strong>群落，文件夹是单个<strong>个体</strong>事物，目录是对文件夹的罗列。</p><p>对于我们的一般使用，可以 <em>近似</em> 等同这两个概念。</p><h3 id="特殊目录"><a href="#特殊目录" class="headerlink" title="特殊目录"></a>特殊目录</h3><ul><li>~   用户目录</li><li>.   当前目录</li><li>..  上一级目录</li></ul><blockquote><p>Windows下用户目录一般为：C:/Users/yourname</p></blockquote><h3 id="目录的表示"><a href="#目录的表示" class="headerlink" title="目录的表示"></a>目录的表示</h3><p>例：用户目录下的<code>apple</code>目录：</p><div class="highlight-wrap"autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" contenteditable="false"data-rel="BASH"><figure class="iseeu highlight /bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">~/apple<br></code></pre></td></tr></table></figure></div><h2 id="输入区"><a href="#输入区" class="headerlink" title="输入区"></a>输入区</h2><p>在此处输入命令，按回车执行。终端上会返回执行结果。按<code>Ctrl+C</code>强制停止当前运行的命令。</p><h2 id="基本命令"><a href="#基本命令" class="headerlink" title="基本命令"></a>基本命令</h2><h3 id="list-列出"><a href="#list-列出" class="headerlink" title="list 列出"></a>list 列出</h3><p>列出当前目录下的文件及目录：</p><div class="highlight-wrap"autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" contenteditable="false"data-rel="BASH"><figure class="iseeu highlight /bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">ls<br></code></pre></td></tr></table></figure></div><blockquote><p>ls不会列出以 . 开头的隐藏文件。</p></blockquote><p>列出列出当前目录下<strong>所有</strong>文件及目录：</p><div class="highlight-wrap"autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" contenteditable="false"data-rel="BASH"><figure class="iseeu highlight /bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">ls -a<br></code></pre></td></tr></table></figure></div><h3 id="make-directory-新建目录"><a href="#make-directory-新建目录" class="headerlink" title="make directory 新建目录"></a>make directory 新建目录</h3><p>在当前目录下新建名为<code>doc</code>的目录：</p><div class="highlight-wrap"autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" contenteditable="false"data-rel="BASH"><figure class="iseeu highlight /bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">mkdir doc<br></code></pre></td></tr></table></figure></div><h3 id="change-directory-切换目录"><a href="#change-directory-切换目录" class="headerlink" title="change directory 切换目录"></a>change directory 切换目录</h3><p>进入当前目录下的<code>doc</code>目录：</p><div class="highlight-wrap"autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" contenteditable="false"data-rel="BASH"><figure class="iseeu highlight /bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash"><span class="hljs-built_in">cd</span> doc<br></code></pre></td></tr></table></figure></div><h3 id="copy-复制"><a href="#copy-复制" class="headerlink" title="copy 复制"></a>copy 复制</h3><p>将 源文件(source_file) 复制到 目标目录(directory) 下：</p><div class="highlight-wrap"autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" contenteditable="false"data-rel="BASH"><figure class="iseeu highlight /bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">cp source_file directory<br></code></pre></td></tr></table></figure></div><p>将 源目录整个文件夹 复制到 目标目录 下：</p><div class="highlight-wrap"autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" contenteditable="false"data-rel="BASH"><figure class="iseeu highlight /bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">cp -r source_directory directory<br></code></pre></td></tr></table></figure></div><h3 id="move-移动"><a href="#move-移动" class="headerlink" title="move 移动"></a>move 移动</h3><p>将 源文件 移动到 目标目录 下</p><div class="highlight-wrap"autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" contenteditable="false"data-rel="BASH"><figure class="iseeu highlight /bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">mv source_file directory<br></code></pre></td></tr></table></figure></div><p>将 源目录整个文件夹 复制到 目标目录 下：</p><div class="highlight-wrap"autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" contenteditable="false"data-rel="BASH"><figure class="iseeu highlight /bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">mv source_directory directory<br></code></pre></td></tr></table></figure></div><p>将<code>file1</code>重命名为<code>file2</code>：</p><div class="highlight-wrap"autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" contenteditable="false"data-rel="BASH"><figure class="iseeu highlight /bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">mv file1 file2<br></code></pre></td></tr></table></figure></div><h3 id="remove-删除"><a href="#remove-删除" class="headerlink" title="remove 删除"></a>remove 删除</h3><p>将 文件<code>document.txt</code>删除：</p><div class="highlight-wrap"autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" contenteditable="false"data-rel="BASH"><figure class="iseeu highlight /bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">rm document.txt<br></code></pre></td></tr></table></figure></div><p>将 目录<code>dir</code>（包含子目录和文件）删除：</p><div class="highlight-wrap"autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" contenteditable="false"data-rel="BASH"><figure class="iseeu highlight /bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">rm -r dir<br></code></pre></td></tr></table></figure></div><p>一般输入<code>remove</code>命令后，会返回确认信息。</p><p>将 目录<code>dir</code>直接删除：</p><div class="highlight-wrap"autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" contenteditable="false"data-rel="BASH"><figure class="iseeu highlight /bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">rm -rf dir<br></code></pre></td></tr></table></figure></div><div class="note note-danger">            <p>注意：使用<code>remove</code>命令删除后<strong>无法恢复</strong>。</p>          </div><h2 id="其他命令"><a href="#其他命令" class="headerlink" title="其他命令"></a>其他命令</h2><p>关于 bash 的其他详细命令，网络上有大量教程，各位可自行翻阅。</p>]]></content>
+    
+    
+    <summary type="html">Bash最基础的命令教程</summary>
+    
+    
+    
+    <category term="基本指南" scheme="https://www.khlfyy.top/categories/%E5%9F%BA%E6%9C%AC%E6%8C%87%E5%8D%97/"/>
+    
+    
+    <category term="备忘" scheme="https://www.khlfyy.top/tags/%E5%A4%87%E5%BF%98/"/>
+    
+    <category term="教程" scheme="https://www.khlfyy.top/tags/%E6%95%99%E7%A8%8B/"/>
+    
+    <category term="指南" scheme="https://www.khlfyy.top/tags/%E6%8C%87%E5%8D%97/"/>
+    
+    <category term="bash" scheme="https://www.khlfyy.top/tags/bash/"/>
+    
+    <category term="命令行" scheme="https://www.khlfyy.top/tags/%E5%91%BD%E4%BB%A4%E8%A1%8C/"/>
+    
+    <category term="命令" scheme="https://www.khlfyy.top/tags/%E5%91%BD%E4%BB%A4/"/>
     
   </entry>
   
