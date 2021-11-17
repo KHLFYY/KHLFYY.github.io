@@ -4,6 +4,41 @@
   
   
   <entry>
+    <title>Terminal的安装与美化</title>
+    <link href="/posts/73f403c0/"/>
+    <url>/posts/73f403c0/</url>
+    
+    <content type="html"><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>最近有朋友在整MC服务端插件，交流的时候看到他原版 powershell 那个界面……  !!!∑(ﾟДﾟノ)ノ<br>所以就想起写这样一篇文章，介绍一下 Windows Terminal 的安装与 powershell 的美化。</p><p>参考文档：</p><ul><li><a href="https://ohmyposh.dev/docs">Introduction | Oh My Posh（官方文档）</a></li></ul><h2 id="成果图"><a href="#成果图" class="headerlink" title="成果图"></a>成果图</h2><p><img src="https://pic.imgdb.cn/item/61943b242ab3f51d91f63d14.png" alt="成果图1"><br><img src="https://pic.imgdb.cn/item/61943c552ab3f51d91f6b51a.png" alt="成果图2"></p><h2 id="安装Terminal"><a href="#安装Terminal" class="headerlink" title="安装Terminal"></a>安装Terminal</h2><p>在 Microsoft Store 搜索 <code>terminal</code> 并获取安装。</p><p><img src="https://pic.imgdb.cn/item/61943d022ab3f51d91f71922.jpg" alt="terminal 的商店页面"></p><h2 id="安装模块"><a href="#安装模块" class="headerlink" title="安装模块"></a>安装模块</h2><p>首先，<strong>以管理员方式</strong>运行 terminal 中的 powershell</p><p><img src="https://pic.imgdb.cn/item/61943eac2ab3f51d91f80dff.png" alt="运行 powershell"></p><p>安装 posh-git 依赖：</p><div class="highlight-wrap"autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" contenteditable="false"data-rel="POWERSHELL"><figure class="iseeu highlight /powershell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs powershell"><span class="hljs-built_in">Install-Module</span> posh<span class="hljs-literal">-git</span> <span class="hljs-literal">-Scope</span> CurrentUser<br></code></pre></td></tr></table></figure></div><p>安装过程中有提示，全都选Y</p><p><img src="https://pic.imgdb.cn/item/61943fc42ab3f51d91f87a8d.jpg" alt="全选Y"></p><div class="note note-info">            <p>如果没有权限执行此命令，需要先执行 <code>Set-ExecutionPolicy Bypass</code></p>          </div><p>安装 oh-my-posh</p><div class="highlight-wrap"autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" contenteditable="false"data-rel="POWERSHELL"><figure class="iseeu highlight /powershell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs powershell"><span class="hljs-built_in">Install-Module</span> <span class="hljs-built_in">oh</span><span class="hljs-literal">-my</span><span class="hljs-literal">-posh</span> <span class="hljs-literal">-Scope</span> CurrentUser<br></code></pre></td></tr></table></figure></div><p>安装完毕</p><h2 id="启用模块"><a href="#启用模块" class="headerlink" title="启用模块"></a>启用模块</h2><p>输入命令：</p><div class="highlight-wrap"autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" contenteditable="false"data-rel="POWERSHELL"><figure class="iseeu highlight /powershell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs powershell"><span class="hljs-built_in">Import-Module</span> <span class="hljs-built_in">oh</span><span class="hljs-literal">-my</span><span class="hljs-literal">-posh</span><br></code></pre></td></tr></table></figure></div><p>如果出现报错：</p><p><img src="https://pic.imgdb.cn/item/619441c42ab3f51d91f95d13.png" alt="报错"></p><p>使用命令：</p><div class="highlight-wrap"autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" contenteditable="false"data-rel="POWERSHELL"><figure class="iseeu highlight /powershell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs powershell"><span class="hljs-built_in">set-executionpolicy</span> remotesigned<br></code></pre></td></tr></table></figure></div><p>之后再次输入命令：</p><div class="highlight-wrap"autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" contenteditable="false"data-rel="POWERSHELL"><figure class="iseeu highlight /powershell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs powershell"><span class="hljs-built_in">Import-Module</span> <span class="hljs-built_in">oh</span><span class="hljs-literal">-my</span><span class="hljs-literal">-posh</span><br></code></pre></td></tr></table></figure></div><p>到这里，模块就成功启用并启用了。</p><h2 id="更改默认主题"><a href="#更改默认主题" class="headerlink" title="更改默认主题"></a>更改默认主题</h2><p>输入命令查看所有主题：</p><div class="highlight-wrap"autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" contenteditable="false"data-rel="POWERSHELL"><figure class="iseeu highlight /powershell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs powershell"><span class="hljs-built_in">Get-PoshThemes</span><br></code></pre></td></tr></table></figure></div><p>选择一个喜欢的复制下来名字，比如我使用的是<code>paradox</code>主题</p><p><img src="https://pic.imgdb.cn/item/61946f852ab3f51d911ced9c.png" alt="`paradox`主题"></p><p>输入命令</p><div class="highlight-wrap"autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" contenteditable="false"data-rel="POWERSHELL"><figure class="iseeu highlight /powershell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs powershell"><span class="hljs-variable">$profile</span><br></code></pre></td></tr></table></figure></div><p>获得文件路径，打开文件路径，修改或者新建这个文件：</p><p><img src="https://pic.imgdb.cn/item/6194705d2ab3f51d911dc95c.jpg" alt="新建文件"></p><p>右键文件，编辑，输入：</p><div class="highlight-wrap"autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" contenteditable="false"data-rel="PLAINTEXT"><figure class="iseeu highlight /plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs txt">Set-PoshPrompt -Theme paradox<br></code></pre></td></tr></table></figure></div><div class="note note-success">            <p>把<code>paradox</code>换成你喜欢的主题名称</p>          </div><h2 id="安装-Nerd-Font"><a href="#安装-Nerd-Font" class="headerlink" title="安装 Nerd Font"></a>安装 Nerd Font</h2><p>很明显，我们可以看到 powershell 里还有一些乱码（未显示完全的字或图标），<br>这是因为这里的 powershell 使用的不是 Nerd Font。</p><p>Nerd Font 官方下载页面：<a href="https://www.nerdfonts.com/font-downloads">https://www.nerdfonts.com/font-downloads</a></p><p>选择一款喜欢的字体（这里我推荐的是 Hack），下载下来</p><p><img src="https://pic.imgdb.cn/item/619481de2ab3f51d912d388c.jpg" alt="hack nerd font"></p><p>把ttf文件全部拖入<code>C:\Windows\Fonts</code>文件夹下安装</p><h2 id="使用powerline字体"><a href="#使用powerline字体" class="headerlink" title="使用powerline字体"></a>使用powerline字体</h2><p>打开 terminal 设置页面</p><p><img src="https://pic.imgdb.cn/item/619477da2ab3f51d9124eeae.jpg" alt="打开 terminal 设置"></p><p>找到 powershell 字体设置，选用 <code>Hack Nerd Font Mono</code> 字体，并保存设置</p><p><img src="https://pic.imgdb.cn/item/619482ec2ab3f51d912ddb1a.jpg" alt="选用 hack 字体"></p><h2 id="其他美化"><a href="#其他美化" class="headerlink" title="其他美化"></a>其他美化</h2><p>在 terminal 的设置里，还可以调整 powershell 的其他外观设置。<br>比如配色、背景、亚克力效果等。<br>大家可以自行研究探索。</p>]]></content>
+    
+    
+    <categories>
+      
+      <category>技术向</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>命令行</tag>
+      
+      <tag>terminal</tag>
+      
+      <tag>powershell</tag>
+      
+      <tag>终端</tag>
+      
+      <tag>美化</tag>
+      
+      <tag>技术</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
     <title>记一次VUP(VTB)简单探索</title>
     <link href="/posts/b9b57e39/"/>
     <url>/posts/b9b57e39/</url>
@@ -322,9 +357,9 @@
     
     <tags>
       
-      <tag>中秋节</tag>
-      
       <tag>节日</tag>
+      
+      <tag>中秋节</tag>
       
     </tags>
     
@@ -504,9 +539,9 @@
       
       <tag>教程</tag>
       
-      <tag>bilibili</tag>
-      
       <tag>博客</tag>
+      
+      <tag>bilibili</tag>
       
     </tags>
     
@@ -531,11 +566,11 @@
     
     <tags>
       
+      <tag>bilibili</tag>
+      
       <tag>作品</tag>
       
       <tag>短片</tag>
-      
-      <tag>bilibili</tag>
       
       <tag>余烬</tag>
       
@@ -774,22 +809,22 @@
   
   
   <entry>
-    <title>2022年 高考倒计时</title>
+    <title>about</title>
     <link href="/"/>
     <url>/</url>
     
-    <content type="html"><![CDATA[<body>  <p><div align=center><h2 class="count"></h2>  <script>      window.onload = function () {          countDown();          function addZero(i) {              return i < 10 ? "0" + i: i + "";          }          function countDown() {              var nowtime = new Date();              var endtime = new Date("2022/06/07,05:00:00");              var lefttime = parseInt((endtime.getTime() - nowtime.getTime()) / 1000);              var d = parseInt(lefttime / (24*60*60))              var h = parseInt(lefttime / (60 * 60) % 24);              var m = parseInt(lefttime / 60 % 60);              var s = parseInt(lefttime % 60);              d = addZero(d)              h = addZero(h);              m = addZero(m);              s = addZero(s);              document.querySelector(".count").innerHTML = `${d}天 ${h} 时 ${m} 分 ${s} 秒`;              if (lefttime <= 0) {                  document.querySelector(".count").innerHTML = "2022年高考已开始";                  return;              }              setTimeout(countDown, 1000);            }        }    </script></body><hr><p><img src="https://pic.imgdb.cn/item/616056592ab3f51d913823dd.png" alt="emmm……"></p><hr><p>本项目Github仓库：<a href="https://github.com/KHLFYY/countdown/">https://github.com/KHLFYY/countdown/</a></p>]]></content>
+    <content type="html"><![CDATA[<h2 id="关于网站"><a href="#关于网站" class="headerlink" title="关于网站"></a>关于网站</h2><ul><li><p>这是<a href="https://github.com/KHLFYY">KHLFYY</a>的第一个网站，也是个人博客。</p></li><li><p>项目的GitHub地址：<a href="https://github.com/KHLFYY/KHLFYY.github.io">KHLFYY.github.io项目</a></p></li><li><p>博客目前部署在 Github Pages。</p></li><li><p>其他信息：<a href="https://www.khlfyy.top/posts/7b32366e/">我的第一篇文章——建立个人博客</a></p></li></ul><h2 id="随便写写"><a href="#随便写写" class="headerlink" title="随便写写"></a>随便写写</h2><ul><li><p>感谢在搭建博客过程中提供帮助的crs、mjr和大理石。</p></li><li><p>搭建博客并不难，网上有很多教程（本博客里也有一篇<a href="https://www.khlfyy.top/posts/b637f248/">详细教程</a>，已经有两个朋友根据这篇教程成功搭建博客了），加上询问朋友和自己摸索，还是很容易的。</p></li><li><p>我也不知道博客应该写点啥，反正也没几个人看，可能就随便写写了，博客里应该不会有太多硬核向的东西。</p></li></ul><hr><p><div align=center><h2>理想灯塔永不灭 人生航行无止歇</h2><p><div align=center><h4>The ideal beacon will never go out, the voyage of life will never stop.</h4>]]></content>
     
   </entry>
   
   
   
   <entry>
-    <title>about</title>
+    <title>2022年 高考倒计时</title>
     <link href="/"/>
     <url>/</url>
     
-    <content type="html"><![CDATA[<h2 id="关于网站"><a href="#关于网站" class="headerlink" title="关于网站"></a>关于网站</h2><ul><li><p>这是<a href="https://github.com/KHLFYY">KHLFYY</a>的第一个网站，也是个人博客。</p></li><li><p>项目的GitHub地址：<a href="https://github.com/KHLFYY/KHLFYY.github.io">KHLFYY.github.io项目</a></p></li><li><p>博客目前部署在 Github Pages。</p></li><li><p>其他信息：<a href="https://www.khlfyy.top/posts/7b32366e/">我的第一篇文章——建立个人博客</a></p></li></ul><h2 id="随便写写"><a href="#随便写写" class="headerlink" title="随便写写"></a>随便写写</h2><ul><li><p>感谢在搭建博客过程中提供帮助的crs、mjr和大理石。</p></li><li><p>搭建博客并不难，网上有很多教程（本博客里也有一篇<a href="https://www.khlfyy.top/posts/b637f248/">详细教程</a>，已经有两个朋友根据这篇教程成功搭建博客了），加上询问朋友和自己摸索，还是很容易的。</p></li><li><p>我也不知道博客应该写点啥，反正也没几个人看，可能就随便写写了，博客里应该不会有太多硬核向的东西。</p></li></ul><hr><p><div align=center><h2>理想灯塔永不灭 人生航行无止歇</h2><p><div align=center><h4>The ideal beacon will never go out, the voyage of life will never stop.</h4>]]></content>
+    <content type="html"><![CDATA[<body>  <p><div align=center><h2 class="count"></h2>  <script>      window.onload = function () {          countDown();          function addZero(i) {              return i < 10 ? "0" + i: i + "";          }          function countDown() {              var nowtime = new Date();              var endtime = new Date("2022/06/07,05:00:00");              var lefttime = parseInt((endtime.getTime() - nowtime.getTime()) / 1000);              var d = parseInt(lefttime / (24*60*60))              var h = parseInt(lefttime / (60 * 60) % 24);              var m = parseInt(lefttime / 60 % 60);              var s = parseInt(lefttime % 60);              d = addZero(d)              h = addZero(h);              m = addZero(m);              s = addZero(s);              document.querySelector(".count").innerHTML = `${d}天 ${h} 时 ${m} 分 ${s} 秒`;              if (lefttime <= 0) {                  document.querySelector(".count").innerHTML = "2022年高考已开始";                  return;              }              setTimeout(countDown, 1000);            }        }    </script></body><hr><p><img src="https://pic.imgdb.cn/item/616056592ab3f51d913823dd.png" alt="emmm……"></p><hr><p>本项目Github仓库：<a href="https://github.com/KHLFYY/countdown/">https://github.com/KHLFYY/countdown/</a></p>]]></content>
     
   </entry>
   
