@@ -6,7 +6,7 @@
   <link href="https://www.khlfyy.top/atom.xml" rel="self"/>
   
   <link href="https://www.khlfyy.top/"/>
-  <updated>2021-11-17T05:08:03.382Z</updated>
+  <updated>2021-11-17T06:39:37.994Z</updated>
   <id>https://www.khlfyy.top/</id>
   
   <author>
@@ -21,7 +21,7 @@
     <link href="https://www.khlfyy.top/posts/73f403c0/"/>
     <id>https://www.khlfyy.top/posts/73f403c0/</id>
     <published>2021-11-16T04:10:50.000Z</published>
-    <updated>2021-11-17T05:08:03.382Z</updated>
+    <updated>2021-11-17T06:39:37.994Z</updated>
     
     <content type="html"><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>最近有朋友在整MC服务端插件，交流的时候看到他原版 powershell 那个界面……  !!!∑(ﾟДﾟノ)ノ<br>所以就想起写这样一篇文章，介绍一下 Windows Terminal 的安装与 powershell 的美化。</p><p>参考文档：</p><ul><li><a href="https://ohmyposh.dev/docs">Introduction | Oh My Posh（官方文档）</a></li></ul><h2 id="成果图"><a href="#成果图" class="headerlink" title="成果图"></a>成果图</h2><p><img src="https://pic.imgdb.cn/item/61943b242ab3f51d91f63d14.png" alt="成果图1"><br><img src="https://pic.imgdb.cn/item/61943c552ab3f51d91f6b51a.png" alt="成果图2"></p><h2 id="安装Terminal"><a href="#安装Terminal" class="headerlink" title="安装Terminal"></a>安装Terminal</h2><p>在 Microsoft Store 搜索 <code>terminal</code> 并获取安装。</p><p><img src="https://pic.imgdb.cn/item/61943d022ab3f51d91f71922.jpg" alt="terminal 的商店页面"></p><h2 id="安装模块"><a href="#安装模块" class="headerlink" title="安装模块"></a>安装模块</h2><p>首先，<strong>以管理员方式</strong>运行 terminal 中的 powershell</p><p><img src="https://pic.imgdb.cn/item/61943eac2ab3f51d91f80dff.png" alt="运行 powershell"></p><p>安装 posh-git 依赖：</p><div class="highlight-wrap"autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" contenteditable="false"data-rel="POWERSHELL"><figure class="iseeu highlight /powershell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs powershell"><span class="hljs-built_in">Install-Module</span> posh<span class="hljs-literal">-git</span> <span class="hljs-literal">-Scope</span> CurrentUser<br></code></pre></td></tr></table></figure></div><p>安装过程中有提示，全都选Y</p><p><img src="https://pic.imgdb.cn/item/61943fc42ab3f51d91f87a8d.jpg" alt="全选Y"></p><div class="note note-info">            <p>如果没有权限执行此命令，需要先执行 <code>Set-ExecutionPolicy Bypass</code></p>          </div><p>安装 oh-my-posh</p><div class="highlight-wrap"autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" contenteditable="false"data-rel="POWERSHELL"><figure class="iseeu highlight /powershell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs powershell"><span class="hljs-built_in">Install-Module</span> <span class="hljs-built_in">oh</span><span class="hljs-literal">-my</span><span class="hljs-literal">-posh</span> <span class="hljs-literal">-Scope</span> CurrentUser<br></code></pre></td></tr></table></figure></div><p>安装完毕</p><h2 id="启用模块"><a href="#启用模块" class="headerlink" title="启用模块"></a>启用模块</h2><p>输入命令：</p><div class="highlight-wrap"autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" contenteditable="false"data-rel="POWERSHELL"><figure class="iseeu highlight /powershell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs powershell"><span class="hljs-built_in">Import-Module</span> <span class="hljs-built_in">oh</span><span class="hljs-literal">-my</span><span class="hljs-literal">-posh</span><br></code></pre></td></tr></table></figure></div><p>如果出现报错：</p><p><img src="https://pic.imgdb.cn/item/619441c42ab3f51d91f95d13.png" alt="报错"></p><p>使用命令：</p><div class="highlight-wrap"autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" contenteditable="false"data-rel="POWERSHELL"><figure class="iseeu highlight /powershell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs powershell"><span class="hljs-built_in">set-executionpolicy</span> remotesigned<br></code></pre></td></tr></table></figure></div><p>之后再次输入命令：</p><div class="highlight-wrap"autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" contenteditable="false"data-rel="POWERSHELL"><figure class="iseeu highlight /powershell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs powershell"><span class="hljs-built_in">Import-Module</span> <span class="hljs-built_in">oh</span><span class="hljs-literal">-my</span><span class="hljs-literal">-posh</span><br></code></pre></td></tr></table></figure></div><p>到这里，模块就成功启用并启用了。</p><h2 id="更改默认主题"><a href="#更改默认主题" class="headerlink" title="更改默认主题"></a>更改默认主题</h2><p>输入命令查看所有主题：</p><div class="highlight-wrap"autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" contenteditable="false"data-rel="POWERSHELL"><figure class="iseeu highlight /powershell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs powershell"><span class="hljs-built_in">Get-PoshThemes</span><br></code></pre></td></tr></table></figure></div><p>选择一个喜欢的复制下来名字，比如我使用的是<code>paradox</code>主题</p><p><img src="https://pic.imgdb.cn/item/61946f852ab3f51d911ced9c.png" alt="`paradox`主题"></p><p>输入命令</p><div class="highlight-wrap"autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" contenteditable="false"data-rel="POWERSHELL"><figure class="iseeu highlight /powershell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs powershell"><span class="hljs-variable">$profile</span><br></code></pre></td></tr></table></figure></div><p>获得文件路径，打开文件路径，修改或者新建这个文件：</p><p><img src="https://pic.imgdb.cn/item/6194705d2ab3f51d911dc95c.jpg" alt="新建文件"></p><p>右键文件，编辑，输入：</p><div class="highlight-wrap"autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" contenteditable="false"data-rel="PLAINTEXT"><figure class="iseeu highlight /plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs txt">Set-PoshPrompt -Theme paradox<br></code></pre></td></tr></table></figure></div><div class="note note-success">            <p>把<code>paradox</code>换成你喜欢的主题名称</p>          </div><h2 id="安装-Nerd-Font"><a href="#安装-Nerd-Font" class="headerlink" title="安装 Nerd Font"></a>安装 Nerd Font</h2><p>很明显，我们可以看到 powershell 里还有一些乱码（未显示完全的字或图标），<br>这是因为这里的 powershell 使用的不是 Nerd Font。</p><p>Nerd Font 官方下载页面：<a href="https://www.nerdfonts.com/font-downloads">https://www.nerdfonts.com/font-downloads</a></p><p>选择一款喜欢的字体（这里我推荐的是 Hack），下载下来</p><p><img src="https://pic.imgdb.cn/item/619481de2ab3f51d912d388c.jpg" alt="hack nerd font"></p><p>把ttf文件全部拖入<code>C:\Windows\Fonts</code>文件夹下安装</p><h2 id="使用powerline字体"><a href="#使用powerline字体" class="headerlink" title="使用powerline字体"></a>使用powerline字体</h2><p>打开 terminal 设置页面</p><p><img src="https://pic.imgdb.cn/item/619477da2ab3f51d9124eeae.jpg" alt="打开 terminal 设置"></p><p>找到 powershell 字体设置，选用 <code>Hack Nerd Font Mono</code> 字体，并保存设置</p><p><img src="https://pic.imgdb.cn/item/619482ec2ab3f51d912ddb1a.jpg" alt="选用 hack 字体"></p><h2 id="其他美化"><a href="#其他美化" class="headerlink" title="其他美化"></a>其他美化</h2><p>在 terminal 的设置里，还可以调整 powershell 的其他外观设置。<br>比如配色、背景、亚克力效果等。<br>大家可以自行研究探索。</p>]]></content>
     
@@ -326,9 +326,9 @@
     <category term="纪念日/节日" scheme="https://www.khlfyy.top/categories/%E7%BA%AA%E5%BF%B5%E6%97%A5-%E8%8A%82%E6%97%A5/"/>
     
     
-    <category term="节日" scheme="https://www.khlfyy.top/tags/%E8%8A%82%E6%97%A5/"/>
-    
     <category term="中秋节" scheme="https://www.khlfyy.top/tags/%E4%B8%AD%E7%A7%8B%E8%8A%82/"/>
+    
+    <category term="节日" scheme="https://www.khlfyy.top/tags/%E8%8A%82%E6%97%A5/"/>
     
   </entry>
   
@@ -480,9 +480,9 @@
     <category term="博客教程" scheme="https://www.khlfyy.top/categories/%E6%8A%80%E6%9C%AF%E5%90%91/%E5%8D%9A%E5%AE%A2%E6%95%99%E7%A8%8B/"/>
     
     
-    <category term="备忘" scheme="https://www.khlfyy.top/tags/%E5%A4%87%E5%BF%98/"/>
-    
     <category term="教程" scheme="https://www.khlfyy.top/tags/%E6%95%99%E7%A8%8B/"/>
+    
+    <category term="备忘" scheme="https://www.khlfyy.top/tags/%E5%A4%87%E5%BF%98/"/>
     
     <category term="博客" scheme="https://www.khlfyy.top/tags/%E5%8D%9A%E5%AE%A2/"/>
     
@@ -507,11 +507,11 @@
     <category term="日常" scheme="https://www.khlfyy.top/categories/%E6%97%A5%E5%B8%B8/"/>
     
     
-    <category term="bilibili" scheme="https://www.khlfyy.top/tags/bilibili/"/>
-    
     <category term="作品" scheme="https://www.khlfyy.top/tags/%E4%BD%9C%E5%93%81/"/>
     
     <category term="短片" scheme="https://www.khlfyy.top/tags/%E7%9F%AD%E7%89%87/"/>
+    
+    <category term="bilibili" scheme="https://www.khlfyy.top/tags/bilibili/"/>
     
     <category term="余烬" scheme="https://www.khlfyy.top/tags/%E4%BD%99%E7%83%AC/"/>
     
