@@ -326,9 +326,9 @@
     <category term="纪念日/节日" scheme="https://www.khlfyy.top/categories/%E7%BA%AA%E5%BF%B5%E6%97%A5-%E8%8A%82%E6%97%A5/"/>
     
     
-    <category term="节日" scheme="https://www.khlfyy.top/tags/%E8%8A%82%E6%97%A5/"/>
-    
     <category term="中秋节" scheme="https://www.khlfyy.top/tags/%E4%B8%AD%E7%A7%8B%E8%8A%82/"/>
+    
+    <category term="节日" scheme="https://www.khlfyy.top/tags/%E8%8A%82%E6%97%A5/"/>
     
   </entry>
   
@@ -484,9 +484,9 @@
     
     <category term="教程" scheme="https://www.khlfyy.top/tags/%E6%95%99%E7%A8%8B/"/>
     
-    <category term="bilibili" scheme="https://www.khlfyy.top/tags/bilibili/"/>
-    
     <category term="博客" scheme="https://www.khlfyy.top/tags/%E5%8D%9A%E5%AE%A2/"/>
+    
+    <category term="bilibili" scheme="https://www.khlfyy.top/tags/bilibili/"/>
     
   </entry>
   
@@ -507,11 +507,11 @@
     <category term="日常" scheme="https://www.khlfyy.top/categories/%E6%97%A5%E5%B8%B8/"/>
     
     
-    <category term="bilibili" scheme="https://www.khlfyy.top/tags/bilibili/"/>
-    
     <category term="作品" scheme="https://www.khlfyy.top/tags/%E4%BD%9C%E5%93%81/"/>
     
     <category term="短片" scheme="https://www.khlfyy.top/tags/%E7%9F%AD%E7%89%87/"/>
+    
+    <category term="bilibili" scheme="https://www.khlfyy.top/tags/bilibili/"/>
     
     <category term="余烬" scheme="https://www.khlfyy.top/tags/%E4%BD%99%E7%83%AC/"/>
     
