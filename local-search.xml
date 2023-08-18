@@ -357,9 +357,9 @@
     
     <tags>
       
-      <tag>节日</tag>
-      
       <tag>中秋节</tag>
+      
+      <tag>节日</tag>
       
     </tags>
     
@@ -566,11 +566,11 @@
     
     <tags>
       
+      <tag>bilibili</tag>
+      
       <tag>作品</tag>
       
       <tag>短片</tag>
-      
-      <tag>bilibili</tag>
       
       <tag>余烬</tag>
       
@@ -809,17 +809,6 @@
   
   
   <entry>
-    <title>about</title>
-    <link href="/"/>
-    <url>/</url>
-    
-    <content type="html"><![CDATA[<h2 id="关于网站"><a href="#关于网站" class="headerlink" title="关于网站"></a>关于网站</h2><ul><li><p>这是<a href="https://github.com/KHLFYY">KHLFYY</a>的第一个网站，也是个人博客。</p></li><li><p>项目的GitHub地址：<a href="https://github.com/KHLFYY/KHLFYY.github.io">KHLFYY.github.io项目</a></p></li><li><p>博客目前部署在 Github Pages。</p></li><li><p>其他信息：<a href="https://www.khlfyy.top/posts/7b32366e/">我的第一篇文章——建立个人博客</a></p></li></ul><h2 id="随便写写"><a href="#随便写写" class="headerlink" title="随便写写"></a>随便写写</h2><ul><li><p>感谢在搭建博客过程中提供帮助的crs、mjr和大理石。</p></li><li><p>搭建博客并不难，网上有很多教程（本博客里也有一篇<a href="https://www.khlfyy.top/posts/b637f248/">详细教程</a>，已经有两个朋友根据这篇教程成功搭建博客了），加上询问朋友和自己摸索，还是很容易的。</p></li><li><p>我也不知道博客应该写点啥，反正也没几个人看，可能就随便写写了，博客里应该不会有太多硬核向的东西。</p></li></ul><hr><p><div align=center><h2>理想灯塔永不灭 人生航行无止歇</h2><p><div align=center><h4>The ideal beacon will never go out, the voyage of life will never stop.</h4>]]></content>
-    
-  </entry>
-  
-  
-  
-  <entry>
     <title>2023年 高考倒计时</title>
     <link href="/"/>
     <url>/</url>
@@ -836,6 +825,17 @@
     <url>/</url>
     
     <content type="html"><![CDATA[<div align="center">文章加载中，请稍后……</div><br><p align="center"><img src=http://www.patience-is-a-virtue.org/loader.gif></p>]]></content>
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>about</title>
+    <link href="/"/>
+    <url>/</url>
+    
+    <content type="html"><![CDATA[<h2 id="关于网站"><a href="#关于网站" class="headerlink" title="关于网站"></a>关于网站</h2><ul><li><p>这是<a href="https://github.com/KHLFYY">KHLFYY</a>的第一个网站，也是个人博客。</p></li><li><p>项目的GitHub地址：<a href="https://github.com/KHLFYY/KHLFYY.github.io">KHLFYY.github.io项目</a></p></li><li><p>博客目前部署在 Github Pages。</p></li><li><p>其他信息：<a href="https://www.khlfyy.top/posts/7b32366e/">我的第一篇文章——建立个人博客</a></p></li></ul><h2 id="随便写写"><a href="#随便写写" class="headerlink" title="随便写写"></a>随便写写</h2><ul><li><p>感谢在搭建博客过程中提供帮助的crs、mjr和大理石。</p></li><li><p>搭建博客并不难，网上有很多教程（本博客里也有一篇<a href="https://www.khlfyy.top/posts/b637f248/">详细教程</a>，已经有两个朋友根据这篇教程成功搭建博客了），加上询问朋友和自己摸索，还是很容易的。</p></li><li><p>我也不知道博客应该写点啥，反正也没几个人看，可能就随便写写了，博客里应该不会有太多硬核向的东西。</p></li></ul><hr><p><div align=center><h2>理想灯塔永不灭 人生航行无止歇</h2><p><div align=center><h4>The ideal beacon will never go out, the voyage of life will never stop.</h4>]]></content>
     
   </entry>
   
